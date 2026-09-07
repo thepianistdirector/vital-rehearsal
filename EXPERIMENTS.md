@@ -1,6 +1,6 @@
 # Vital Rehearsal experiment and evaluation contract
 
-Status: design requirements; no experiments have run in this repository.
+Status: accepted architecture-foundation requirements; no experiment has run in this repository.
 
 ## Research question
 

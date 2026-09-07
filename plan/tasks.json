@@ -1,15 +1,61 @@
 {
   "schemaVersion": 1,
   "project": "vital-rehearsal",
-  "contractVersion": "initial-2026-09-07",
+  "contractVersion": "foundation-2026-09-07",
   "stateAuthority": "../STATUS.md",
   "tasks": [
+    {
+      "id": "VR-F01",
+      "wave": 0,
+      "title": "Establish the architecture contract",
+      "status": "DONE",
+      "dependsOn": [],
+      "ownedPaths": [
+        "ARCHITECTURE.md",
+        "SOURCES.md"
+      ],
+      "acceptance": "Define domain boundaries, model applicability, time/unit/conservation and coupling contracts, provenance and lawful-input controls, producer/evaluator separation, result/failure semantics, reproducibility, local recovery, security boundaries and measured scale triggers without claiming scientific implementation."
+    },
+    {
+      "id": "VR-F02",
+      "wave": 0,
+      "title": "Establish the outcome and dependency roadmap",
+      "status": "DONE",
+      "dependsOn": [
+        "VR-F01"
+      ],
+      "ownedPaths": [
+        "ROADMAP.md",
+        "TASKS.md",
+        "plan/tasks.json",
+        "STATUS.md"
+      ],
+      "acceptance": "Add Wave 0 and four-level programme logic while preserving all original 24 task IDs, acceptance criteria, wave numbers and dependency edges; identify critical constraints, evidence gates, cut order and replanning triggers."
+    },
+    {
+      "id": "VR-F03",
+      "wave": 0,
+      "title": "Establish the executable next-work packet and repository-plan validation",
+      "status": "DONE",
+      "dependsOn": [
+        "VR-F02"
+      ],
+      "ownedPaths": [
+        "plan/NEXT_WORK.md",
+        "tools/validate_plan.py",
+        "README.md",
+        "CONTRIBUTING.md"
+      ],
+      "acceptance": "Define a bounded VR-001 packet with explicit public benchmark selection questions and justified acceptance, and provide a dependency/DAG/status/navigation validator that supports maintainer promotion of foundation tasks from READY_FOR_REVIEW to DONE."
+    },
     {
       "id": "VR-001",
       "wave": 1,
       "title": "Define the benchmark and clinical scope",
       "status": "PLANNED",
-      "dependsOn": [],
+      "dependsOn": [
+        "VR-F03"
+      ],
       "ownedPaths": [
         "docs/benchmarks/"
       ],

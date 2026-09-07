@@ -1,16 +1,43 @@
 # Vital Rehearsal roadmap
 
-All eight waves and 24 tasks are **PLANNED**. No delivery date, compute allocation or completed research is promised.
+Wave 0 is **DONE**: its three architecture-foundation tasks were accepted by the authorized root after independent review and reproduced checks. All 24 original scientific/build tasks remain **PLANNED** across Waves 1–8. The programme now contains nine waves and 27 tasks; no scientific result or runtime is claimed.
 
 ## Product objective
 
 Help researchers compare medical hypotheses in reproducible virtual experiments using public models, public aggregate evidence and wholly synthetic patients. The ambition includes diseases, immune and vaccine-response research, heart-lung-liver physiology, injury recovery and the organization of care. Each result must say what the model can and cannot establish.
 
-## First milestone
+## Research-programme foundation
 
-Reproduce one published, non-patient-specific cardiopulmonary benchmark, then compare baseline and delayed-care workflow scenarios over a small synthetic cohort. Export trajectories, uncertainty and a reproducible experiment report. The initial experiment studies model response and workflow timing; it does not recommend treatment or simulate a surgical technique.
+Wave 0 defines the platform architecture, outcome/dependency roadmap and the executable next-work packet. These are real documentation and plan-tooling deliverables, but they do not implement or validate a simulator. The assigned root reviewer may move VR-F01 through VR-F03 from **READY_FOR_REVIEW** to **DONE** under the maintainer's current instruction after inspecting the changes and recording evidence in [STATUS.md](STATUS.md).
+
+The programme is organized at four levels:
+
+1. **Product contract:** an open, non-clinical research laboratory using lawful public aggregate or wholly synthetic inputs.
+2. **Outcome roadmap:** Wave 0 establishes foundations; Waves 1–4 earn the first reproducible and falsifiable cardiopulmonary/care-process experiment; Waves 5–8 extend domains, bounded research agents, scale and independent release evidence.
+3. **Milestone contract:** the next original milestone is VR-001, whose selection and acceptance questions are explicit in [plan/NEXT_WORK.md](plan/NEXT_WORK.md).
+4. **Work packet:** one bounded owner, exact paths, entry conditions, protected surfaces, acceptance, checks, failure states and handoff.
+
+## First scientific milestone
+
+Select and then reproduce one published, non-patient-specific cardiopulmonary benchmark. Only after its source, rights, units, acceptance basis and applicability pass review should the programme compare baseline and delayed-care workflow scenarios over a small synthetic cohort. Export trajectories, uncertainty and a reproducible experiment report. The initial experiment studies model response and workflow timing; it does not recommend treatment or simulate a surgical technique.
 
 Waves 1–3 establish the first integrated experiment. Wave 4 tests whether its evidence is robust. Later waves expand domains, add agents, improve collaboration and prepare an independently reproduced research preview. Wave order is an integration dependency, not a calendar. The explicit task dependencies are in [TASKS.md](TASKS.md).
+
+## Outcome and dependency logic
+
+| Programme outcome | Required prior evidence | Gate |
+| --- | --- | --- |
+| Foundation can guide independent sessions | architecture, dependency graph, next packet and automated plan validation | maintainer accepts VR-F01 → VR-F02 → VR-F03 |
+| First model can be implemented without inventing science | exact benchmark/context, lawful inputs and dependency/runtime decision | Wave 1 accepted |
+| Workflow and physiology can exchange one supported event | each kernel verified separately; time, units and failure behavior tested | Wave 2 accepted |
+| First paired synthetic study is inspectable | fixed cohort contract, paired inputs, retained failures and reproducible report | Wave 3 accepted |
+| Evidence resists easy self-deception | sensitivity/identifiability, frozen confirmation evidence and invalid-state tests | Wave 4 accepted |
+| New scientific domains remain bounded | each disease, immune and hepatic adapter has independent applicability evidence | Wave 5 accepted |
+| Agents cannot grade or authorize themselves | grounded proposals, equal budgets and evaluator separation | Wave 6 accepted |
+| More users/work does not corrupt evidence | accessible comparison, recovery/idempotency and portable bundles | Wave 7 accepted |
+| Research preview claims are independently checked | two reproductions, qualified interpretation/usability review and exact candidate approval | Wave 8 accepted |
+
+Critical path: VR-F01 → VR-F02 → VR-F03 → VR-001 → VR-002 → VR-003, then the existing wave gates. Near-critical constraints are qualified reviewer availability, rights clarity, supported hardware/runtime and access to machine-readable reference outputs. A blocked scientific candidate does not block contract and validator work, but it does block model adoption and every downstream claim that depends on it.
 
 ## Capacity and next planning window
 
@@ -20,11 +47,22 @@ Proposed initial experiment ceiling for future approval: one local worker, at mo
 
 ## Waves and tasks
 
+## Wave 0: Architecture and research-programme foundation
+
+Outcome/gate: Future sessions can start the correct bounded work without guessing, and the plan detects dependency or synchronization drift.
+
+Entry: Clean planning baseline at repository commit 94608775e6f93815688fa3e0e14b7e9332443dc7; documentation and standard-library tooling only.
+- **VR-F01: Establish the architecture contract.** Define domain boundaries, model applicability, time/unit/conservation and coupling contracts, provenance and lawful-input controls, producer/evaluator separation, result/failure semantics, reproducibility, local recovery, security boundaries and measured scale triggers without claiming scientific implementation.
+- **VR-F02: Establish the outcome and dependency roadmap.** Add Wave 0 and four-level programme logic while preserving all original 24 task IDs, acceptance criteria, wave numbers and dependency edges; identify critical constraints, evidence gates, cut order and replanning triggers.
+- **VR-F03: Establish the executable next-work packet and repository-plan validation.** Define a bounded VR-001 packet with explicit public benchmark selection questions and justified acceptance, and provide a dependency/DAG/status/navigation validator that supports maintainer promotion of foundation tasks from READY_FOR_REVIEW to DONE.
+
+Gate decision: the assigned root reviewer inspects the stable foundation diff, runs python3 tools/validate_plan.py, records evidence in [STATUS.md](STATUS.md), and moves VR-F01 through VR-F03 to **DONE** in dependency order under the maintainer's current instruction. Until then they remain **READY_FOR_REVIEW**. Scientific work remains **PLANNED**.
+
 ## Wave 1: Evidence and first benchmark
 
 Outcome/gate: A reproducible, lawful and scientifically bounded first experiment is specified.
 
-Entry: No implementation prerequisite; inspect the initial plan.
+Entry: Wave 0 accepted; inspect the accepted foundation and [VR-001 packet](plan/NEXT_WORK.md). Only reviewed built-in code and non-protected development fixtures may execute until an OS/container/VM boundary demonstrably enforces filesystem, credential, device, network, subprocess and resource isolation. Untrusted adapters, agent-generated code and protected confirmation artifacts cannot execute or mount before that gate passes.
 - **VR-001: Define the benchmark and clinical scope.** Record the exact publication, variables, units, applicable population, numerical tolerances justified by the source, and excluded clinical uses; obtain a qualified review before clinical interpretation.
 - **VR-002: Audit model and data rights.** Record release, license, redistribution permission, model limitations and public/synthetic provenance; no restricted or patient-level data enters the fixture.
 - **VR-003: Create the local experiment skeleton.** After the exact dependency review, implement CLI validation and a tiny synthetic smoke fixture; malformed units and unknown fields fail with a clear error.
