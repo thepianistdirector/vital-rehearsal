@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "project": "vital-rehearsal",
+  "contractVersion": "initial-2026-09-07",
+  "stateAuthority": "../STATUS.md",
+  "tasks": [
+    {
+      "id": "VR-001",
+      "wave": 1,
+      "title": "Define the benchmark and clinical scope",
+      "status": "PLANNED",
+      "dependsOn": [],
+      "ownedPaths": [
+        "docs/benchmarks/"
+      ],
+      "acceptance": "Record the exact publication, variables, units, applicable population, numerical tolerances justified by the source, and excluded clinical uses; obtain a qualified review before clinical interpretation."
+    },
+    {
+      "id": "VR-002",
+      "wave": 1,
+      "title": "Audit model and data rights",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-001"
+      ],
+      "ownedPaths": [
+        "docs/data/"
+      ],
+      "acceptance": "Record release, license, redistribution permission, model limitations and public/synthetic provenance; no restricted or patient-level data enters the fixture."
+    },
+    {
+      "id": "VR-003",
+      "wave": 1,
+      "title": "Create the local experiment skeleton",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-001",
+        "VR-002"
+      ],
+      "ownedPaths": [
+        "src/",
+        "tests/",
+        "scenarios/"
+      ],
+      "acceptance": "After the exact dependency review, implement CLI validation and a tiny synthetic smoke fixture; malformed units and unknown fields fail with a clear error."
+    },
+    {
+      "id": "VR-004",
+      "wave": 2,
+      "title": "Implement the physiology adapter",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-001",
+        "VR-002",
+        "VR-003"
+      ],
+      "ownedPaths": [
+        "adapters/physiology/"
+      ],
+      "acceptance": "Reproduce the fixed reference trajectory within the predeclared tolerance and report solver/version metadata."
+    },
+    {
+      "id": "VR-005",
+      "wave": 2,
+      "title": "Implement the event-time scheduler",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-001",
+        "VR-002",
+        "VR-003"
+      ],
+      "ownedPaths": [
+        "src/workflows/"
+      ],
+      "acceptance": "A hand-computable queue example matches expected waiting times; simultaneous events have a stable ordering."
+    },
+    {
+      "id": "VR-006",
+      "wave": 2,
+      "title": "Specify and test model coupling",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-001",
+        "VR-002",
+        "VR-003"
+      ],
+      "ownedPaths": [
+        "src/coupling/"
+      ],
+      "acceptance": "Prove unit/time conversion, reject unsupported actions and show uncoupled versus coupled traces without hidden state changes."
+    },
+    {
+      "id": "VR-007",
+      "wave": 3,
+      "title": "Build the synthetic cohort generator",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-004",
+        "VR-005",
+        "VR-006"
+      ],
+      "ownedPaths": [
+        "src/cohorts/"
+      ],
+      "acceptance": "Generate bounded synthetic parameters with explicit distributions and seeds; no invented representativeness claim."
+    },
+    {
+      "id": "VR-008",
+      "wave": 3,
+      "title": "Run paired care-delay scenarios",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-004",
+        "VR-005",
+        "VR-006",
+        "VR-007"
+      ],
+      "ownedPaths": [
+        "scenarios/cardiopulmonary/"
+      ],
+      "acceptance": "Use the same cohort and random inputs for both arms; retain all runs including failures and unknown applicability."
+    },
+    {
+      "id": "VR-009",
+      "wave": 3,
+      "title": "Export the first study report",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-004",
+        "VR-005",
+        "VR-006",
+        "VR-008"
+      ],
+      "ownedPaths": [
+        "src/reports/"
+      ],
+      "acceptance": "A fresh checkout regenerates tables, curves, sources and limitations; every clinical-sounding claim links to its evidence scope."
+    },
+    {
+      "id": "VR-010",
+      "wave": 4,
+      "title": "Add sensitivity and identifiability checks",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-007",
+        "VR-008",
+        "VR-009"
+      ],
+      "ownedPaths": [
+        "src/analysis/"
+      ],
+      "acceptance": "Show which parameters affect the result and which cannot be estimated from the selected data."
+    },
+    {
+      "id": "VR-011",
+      "wave": 4,
+      "title": "Separate calibration and validation",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-007",
+        "VR-008",
+        "VR-009"
+      ],
+      "ownedPaths": [
+        "benchmarks/"
+      ],
+      "acceptance": "Freeze a holdout before optimization and detect leakage; report prediction error by supported cohort slice."
+    },
+    {
+      "id": "VR-012",
+      "wave": 4,
+      "title": "Test numerical and physiological failures",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-007",
+        "VR-008",
+        "VR-009"
+      ],
+      "ownedPaths": [
+        "tests/validation/"
+      ],
+      "acceptance": "Representative unit errors, nonconvergence and impossible states cause explicit invalid results rather than favorable scores."
+    },
+    {
+      "id": "VR-013",
+      "wave": 5,
+      "title": "Reproduce one disease-response model",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-010",
+        "VR-011",
+        "VR-012"
+      ],
+      "ownedPaths": [
+        "adapters/disease/"
+      ],
+      "acceptance": "Select a publicly reusable model and reproduce its published behavior without asserting therapeutic efficacy."
+    },
+    {
+      "id": "VR-014",
+      "wave": 5,
+      "title": "Reproduce an immune or vaccine-response model",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-010",
+        "VR-011",
+        "VR-012"
+      ],
+      "ownedPaths": [
+        "adapters/immunity/"
+      ],
+      "acceptance": "Use public aggregate model inputs, predeclared endpoints and a qualified review; retain the no-sequence/no-pathogen-engineering boundary."
+    },
+    {
+      "id": "VR-015",
+      "wave": 5,
+      "title": "Add liver and trauma-process research scope",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-010",
+        "VR-011",
+        "VR-012"
+      ],
+      "ownedPaths": [
+        "adapters/hepatic/",
+        "scenarios/care-process/"
+      ],
+      "acceptance": "Independently validate a hepatic model and an abstract trauma-workflow case; document why neither establishes a surgical protocol."
+    },
+    {
+      "id": "VR-016",
+      "wave": 6,
+      "title": "Implement source-grounded hypothesis proposals",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-013",
+        "VR-014",
+        "VR-015"
+      ],
+      "ownedPaths": [
+        "src/agents/"
+      ],
+      "acceptance": "Every hypothesis cites an approved source and declares the measurable prediction and falsifier; unsupported medical claims are rejected."
+    },
+    {
+      "id": "VR-017",
+      "wave": 6,
+      "title": "Add budgeted experiment selection",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-013",
+        "VR-014",
+        "VR-015"
+      ],
+      "ownedPaths": [
+        "src/search/"
+      ],
+      "acceptance": "Compare agent proposals with a fixed search baseline using equal evaluation budgets and untouched holdouts."
+    },
+    {
+      "id": "VR-018",
+      "wave": 6,
+      "title": "Add independent result checking",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-013",
+        "VR-014",
+        "VR-015"
+      ],
+      "ownedPaths": [
+        "src/evaluation/"
+      ],
+      "acceptance": "A separate evaluator reproduces selected candidates and flags selective reporting or altered metrics."
+    },
+    {
+      "id": "VR-019",
+      "wave": 7,
+      "title": "Build the local study comparison view",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-016",
+        "VR-017",
+        "VR-018"
+      ],
+      "ownedPaths": [
+        "apps/workbench/"
+      ],
+      "acceptance": "Keyboard-accessible baseline/candidate comparison exposes uncertainty, sources, invalid results and simulation-only status."
+    },
+    {
+      "id": "VR-020",
+      "wave": 7,
+      "title": "Add isolated batch workers",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-016",
+        "VR-017",
+        "VR-018"
+      ],
+      "ownedPaths": [
+        "src/workers/"
+      ],
+      "acceptance": "Cancellation and timeout terminate subprocesses; interrupted studies resume without duplicate terminal results."
+    },
+    {
+      "id": "VR-021",
+      "wave": 7,
+      "title": "Package portable research bundles",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-016",
+        "VR-017",
+        "VR-018"
+      ],
+      "ownedPaths": [
+        "src/export/"
+      ],
+      "acceptance": "Another machine can inspect the bundle offline and reproduce a supported benchmark without private credentials."
+    },
+    {
+      "id": "VR-022",
+      "wave": 8,
+      "title": "Replicate two distinct scenarios",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-019",
+        "VR-020",
+        "VR-021"
+      ],
+      "ownedPaths": [
+        "benchmarks/replication/"
+      ],
+      "acceptance": "A contributor who did not author the adapter reproduces two cases; discrepancies remain visible."
+    },
+    {
+      "id": "VR-023",
+      "wave": 8,
+      "title": "Review scientific interpretation and usability",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-019",
+        "VR-020",
+        "VR-021"
+      ],
+      "ownedPaths": [
+        "docs/review/"
+      ],
+      "acceptance": "Qualified reviewers check supported claims and a researcher completes the import-run-compare-export flow."
+    },
+    {
+      "id": "VR-024",
+      "wave": 8,
+      "title": "Prepare the research preview release",
+      "status": "PLANNED",
+      "dependsOn": [
+        "VR-019",
+        "VR-020",
+        "VR-021"
+      ],
+      "ownedPaths": [
+        "docs/releases/"
+      ],
+      "acceptance": "Publish only after maintainer approval; include evidence, dependency notices, known gaps and an explicit non-clinical-use statement."
+    }
+  ]
+}
