@@ -932,7 +932,7 @@ Current delivery: tanduna-v1-research-20260908-vital-rehearsal. See [v1.0 contra
 
 ## VR-W05-08 — Publish the authorized versioned release
 
-- Wave: 105; status: **BLOCKED**; owner: assign in a bounded execution packet.
+- Wave: 105; status: **IN PROGRESS**; owner: assign in a bounded execution packet.
 - Dependencies: VR-W05-05, VR-W05-06.
 - Textual-only prerequisites: none recorded.
 - Owned scope: `benchmarks/replication/`, `docs/releases/`, `docs/review/`, `src/export/`, `src/reports/`.
@@ -942,7 +942,7 @@ Current delivery: tanduna-v1-research-20260908-vital-rehearsal. See [v1.0 contra
 - Acceptance: After exact candidate approval and distribution-rights clearance, the public version and artifacts are read back without developer credentials.
 - Sources/decisions: owner-launch-2026-09-07, VR-009, VR-021, VR-022, VR-023, VR-024.
 - Risk/evidence needs: Exact outcome evidence; failed and inconclusive checks retained. Qualified human review is required where acceptance calls for it; agent checks cannot substitute.
-- Evidence: STATUS.md; docs/benchmarks/VR-001-benchmark-decision.md; docs/publication/README.md; Physiology admission, required human evidence, or supported authorized public publication remains unavailable..
+- Evidence: STATUS.md; docs/benchmarks/VR-001-benchmark-decision.md; docs/publication/README.md; Physiology admission, required human evidence, or supported authorized public publication remains unavailable.; docs/publication/v1/receipt.json: owner-approved rc4 prerelease publicly uploaded, anonymous asset hashes verified and actual downloaded package tested. This is not final human-verified v1.0 completion; qualified/external review remain pending..
 
 ## VR-W05-09 — Publish and read back the native Tanduna plan
 

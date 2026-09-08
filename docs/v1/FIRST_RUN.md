@@ -1,6 +1,6 @@
 # First run: Vital Rehearsal v1.0 release candidate
 
-Status: local candidate; public download and independent human first run pending. This package is for bounded computational research. The included respiratory exposure has a demonstrated source pressure-derivative discrepancy. It does not represent any single model in the original paper. No clinical use, patient data, physiological validation or care-to-model coupling is supported.
+Status: [public unreviewed rc4 prerelease](https://github.com/thepianistdirector/vital-rehearsal/releases/tag/v1.0.0rc4); independent human first run remains pending. Anonymous public downloads and same-host first-run checks passed; see [receipt](../publication/v1/receipt.json). This package is for bounded computational research. The included respiratory exposure has a demonstrated source pressure-derivative discrepancy. It does not represent any single model in the original paper. No clinical use, patient data, physiological validation or care-to-model coupling is supported.
 
 ## Supported environment
 
@@ -8,7 +8,7 @@ Linux x86_64, CPython **3.12**, glibc compatible with the supplied manylinux whe
 
 ## Install from the prepared archive
 
-Extract the versioned archive into a new directory and enter that directory. Verify its published SHA256 before using it (public release not yet authorized). Then:
+Extract the versioned archive into a new directory and enter that directory. Verify its published SHA256 before using it (approved prerelease; human review remains pending). Then:
 
 ```sh
 python3.12 -m venv .venv

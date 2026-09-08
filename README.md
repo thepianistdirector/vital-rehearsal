@@ -4,11 +4,11 @@ A bounded physiology and synthetic care-process research workbench. Inspect a pu
 
 Maintained by Lucas Santana ([thepianistdirector](https://github.com/thepianistdirector)). [Repository](https://github.com/thepianistdirector/vital-rehearsal) · [Tanduna project](https://tanduna.com/projects/vital-rehearsal).
 
-**v1.0 prerelease candidate — publication approved; human review pending.** The admitted Ben-Tal 2006 CellML combination exposure is licensed for reuse and executable, with a documented source pressure-derivative inconsistency. It does not equal any single model from the original paper. Results are numerical reproduction and engineering evidence, not physiological validation, clinical advice or patient outcomes. Synthetic scheduling runs independently; no scientific event mapping currently supports coupling it to this model.
+**Public prerelease 1.0.0rc4 — human review and final v1.0 acceptance pending.** [Download the release and checksums](https://github.com/thepianistdirector/vital-rehearsal/releases/tag/v1.0.0rc4). The admitted Ben-Tal 2006 CellML combination exposure is licensed for reuse and executable, with a documented source pressure-derivative inconsistency. It does not equal any single model from the original paper. Results are numerical reproduction and engineering evidence, not physiological validation, clinical advice or patient outcomes. Synthetic scheduling runs independently; no scientific event mapping currently supports coupling it to this model.
 
 ## Start a study
 
-Supported: Linux x86_64, CPython 3.12, NumPy 2.2.6, SciPy 1.15.3. The prepared release archive contains offline dependency wheels, the executable and source. See the [external first-run guide](docs/v1/FIRST_RUN.md) for installation, supported resources, report navigation, export and recovery.
+Supported: Linux x86_64, CPython 3.12, NumPy 2.2.6, SciPy 1.15.3. The public release archive contains offline dependency wheels, the executable and source. See the [external first-run guide](docs/v1/FIRST_RUN.md) for installation, supported resources, report navigation, export and recovery.
 
 From this checkout:
 
@@ -51,4 +51,4 @@ python3 tools/validate_plan.py
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). Useful contributions include qualified review of source semantics, independent first-run reproduction on the supported environment, rights-cleared reference datasets, numerical evaluator checks and accessibility testing. Report exact source/build, sealed study, expected/actual behavior and complete failed evidence; never send patient records.
 
-Application code is [AGPL-3.0](LICENSE). The attributed Ben-Tal CellML model and generated Python retain **CC BY 3.0**, separately documented in [BENTAL_NOTICE.txt](src/vital_rehearsal/BENTAL_NOTICE.txt). NumPy/SciPy and bundled native-library notices accompany dependency wheels. The owner has approved publishing 1.0.0rc4 as an explicitly unreviewed prerelease, these research drafts and the prepared plan. Human-qualified review, external human reproduction and final v1.0 acceptance remain pending. Paper submission and participant outreach are not authorized.
+Application code is [AGPL-3.0](LICENSE). The attributed Ben-Tal CellML model and generated Python retain **CC BY 3.0**, separately documented in [BENTAL_NOTICE.txt](src/vital_rehearsal/BENTAL_NOTICE.txt). NumPy/SciPy and bundled native-library notices accompany dependency wheels. The approved 1.0.0rc4 GitHub prerelease and research drafts are public. Anonymous downloads and the actual public package workflow have been verified; see [publication receipt](docs/publication/v1/receipt.json). Native Tanduna plan/story publication is prepared and awaiting authenticated access. Human-qualified review, external human reproduction and final v1.0 acceptance remain pending. Paper submission and participant outreach are not authorized.

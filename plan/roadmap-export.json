@@ -33,9 +33,9 @@
     "historicalProposalRevision": 1
   },
   "accessInstructions": {
-    "releaseStatus": "LOCAL CANDIDATE; NOT PUBLICLY RELEASED",
-    "releaseUrl": null,
-    "text": "Local v1.0 candidate supports the admitted Ben-Tal CellML combination exposure and independent synthetic scheduling. See docs/v1/FIRST_RUN.md and docs/v1/CONTRACT.md. Public release, external human reproduction, qualified review and Tanduna updates remain pending."
+    "releaseStatus": "PUBLIC PRERELEASE; HUMAN REVIEW PENDING",
+    "releaseUrl": "https://github.com/thepianistdirector/vital-rehearsal/releases/tag/v1.0.0rc4",
+    "text": "Public 1.0.0rc4 prerelease available at https://github.com/thepianistdirector/vital-rehearsal/releases/tag/v1.0.0rc4. Anonymous checksums and same-host first run verified. See docs/v1/FIRST_RUN.md and docs/publication/v1/receipt.json. Final v1.0, qualified review, external human reproduction and native Tanduna publication remain pending."
   },
   "currentDelivery": {
     "dispatchId": "tanduna-v1-research-20260908-vital-rehearsal",
@@ -44,23 +44,26 @@
     "historicalGoalTask": "01a07e1c-6880-70d3-af4a-f148c90cfa0b",
     "historicalGoalStatus": "unchanged",
     "localBuild": "1.0.0rc4",
-    "status": "APPROVED PRERELEASE PUBLICATION IN PROGRESS; HUMAN GATES PENDING",
+    "status": "GITHUB PRERELEASE VERIFIED; TANDUNA AUTHENTICATION AND HUMAN GATES PENDING",
     "finiteResearch": [
       "research/reproduction/publication-manuscript.md",
       "research/robustness/publication-manuscript.md",
       "research/scheduling/publication-manuscript.md"
     ],
     "review": "research/review/review.md",
-    "localPlan": "prepared, not submitted",
-    "publicRelease": "owner approved 1.0.0rc4 prerelease and research/plan publication",
+    "localPlan": "prepared native packet; not submitted",
+    "publicRelease": "APPROVED AND PUBLISHED: 1.0.0rc4 prerelease",
     "qualifiedReview": "pending; owner previously reported no reviewer available",
     "externalHumanReproduction": "pending",
     "nativeGoalStatus": "active",
     "blockedOn": [
-      "Tanduna authenticated connection",
+      "Authenticated Tanduna maintainer connection",
       "Qualified interpretation review",
       "External human reproduction"
-    ]
+    ],
+    "githubRelease": "https://github.com/thepianistdirector/vital-rehearsal/releases/tag/v1.0.0rc4",
+    "githubSourceCommit": "b9b39139de7bf5ff48683435a54937ccc32a539a",
+    "githubEvidence": "docs/publication/v1/receipt.json"
   },
   "nativeWorkflow": "Create authorized draft tasks, reconcile actual returned IDs, save a draft task plan, submit its exact revision, obtain actual approval/review, then read back public native pages. This file does not perform publication or claim native completion.",
   "waves": [
@@ -2428,12 +2431,13 @@
         "Exact outcome evidence; failed and inconclusive checks retained.",
         "Qualified human review is required where acceptance calls for it; agent checks cannot substitute."
       ],
-      "status": "BLOCKED",
+      "status": "IN PROGRESS",
       "evidence": [
         "STATUS.md",
         "docs/benchmarks/VR-001-benchmark-decision.md",
         "docs/publication/README.md",
-        "Physiology admission, required human evidence, or supported authorized public publication remains unavailable."
+        "Physiology admission, required human evidence, or supported authorized public publication remains unavailable.",
+        "docs/publication/v1/receipt.json: owner-approved rc4 prerelease publicly uploaded, anonymous asset hashes verified and actual downloaded package tested. This is not final human-verified v1.0 completion; qualified/external review remain pending."
       ],
       "platformId": null
     },

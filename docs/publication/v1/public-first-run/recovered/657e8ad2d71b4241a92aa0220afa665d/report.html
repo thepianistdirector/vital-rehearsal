@@ -1,0 +1,105 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vital Rehearsal · research report</title><style>
+    :root{color-scheme:light}body{font:17px/1.6 system-ui,sans-serif;color:#172f36;background:#f3f6f3;margin:0}main{max-width:1040px;margin:auto;padding:32px 24px}header{border-bottom:2px solid #245e62}h1{font-size:clamp(2rem,6vw,3.5rem);line-height:1.1}h2{margin-top:2rem}.label{font-size:13px;letter-spacing:.12em;text-transform:uppercase}.notice{overflow-wrap:anywhere;padding:20px;background:#fff1d2;border-left:5px solid #986400;margin:24px 0}section{padding:16px 0}a{color:#125465;margin-right:18px;display:inline-block;padding:5px 0}a:focus-visible,summary:focus-visible,.scroll:focus-visible{outline:3px solid #a34b00;outline-offset:3px}table{border-collapse:collapse;width:100%;background:white}th,td{text-align:left;padding:12px;border-bottom:1px solid #ccd7d4}.scroll{overflow:auto}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#e3ece7;padding:18px;font-size:13px}.id{overflow-wrap:anywhere}.skip{position:absolute;left:24px;top:-80px;background:white;padding:8px}.skip:focus{top:0}@media print{body{background:white}main{max-width:none}details{display:block}}</style>
+    <a class="skip" href="#evidence">Skip to evidence</a><main><header><p class="label">Vital Rehearsal / 1.0.0rc4 / research workbench</p><h1>Inspect the evidence.</h1><p>bental-2006-combination</p></header><div class="notice"><strong>Numerical result · source warnings</strong><p>Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. A source pressure-derivative inconsistency is retained; normalized unit interpretation and qualified review remain pending.</p></div>
+    <p class="id">Experiment seal: 993e33293c28135fd7c8b807112ff73f8609309e87304407a6fdd45dfc0441f9</p><p>Execution: <strong>COMPLETED</strong> · Qualified interpretation review: pending</p><h2>Source-default solver comparison</h2><p>Shared equations; this comparator is numerical evidence. Each observable retains its own units. On a narrow screen, scroll the table horizontally.</p><div class="scroll" tabindex="0" role="region" aria-label="Observable comparison table"><table><caption>Candidate versus source VODE</caption><thead><tr><th scope="col">Observable</th><th scope="col">Unit</th><th scope="col">Maximum absolute difference</th><th scope="col">Final value</th></tr></thead><tbody><tr><th scope="row">P_A</th><td>mmHg</td><td>1.66053e-05</td><td>757.297</td></tr><tr><th scope="row">V_A</th><td>litre</td><td>9.92601e-06</td><td>2.28439</td></tr><tr><th scope="row">f_c</th><td>dimensionless</td><td>2.54527e-07</td><td>0.000135116</td></tr><tr><th scope="row">f_o</th><td>dimensionless</td><td>3.54059e-07</td><td>0.209839</td></tr><tr><th scope="row">p_c</th><td>mmHg</td><td>0.00020737</td><td>0.90109</td></tr><tr><th scope="row">p_o</th><td>mmHg</td><td>0.00139155</td><td>149.046</td></tr><tr><th scope="row">z</th><td>dimensionless (source normalization)</td><td>4.16222e-08</td><td>0.00121968</td></tr></tbody></table></div><h2 id="evidence" tabindex="-1">Diagnostics and measurements</h2><pre>{
+  &quot;basic_state_bounds&quot;: true,
+  &quot;finite&quot;: true,
+  &quot;physiological_validity&quot;: &quot;NOT_ESTABLISHED&quot;,
+  &quot;qualified_review&quot;: &quot;PENDING&quot;,
+  &quot;source_derivative_max_abs_error_mmHg_per_s&quot;: 7.406520731539602
+}</pre><h2>Reproduce and export</h2><p>Retain this complete folder. Inspect its manifest using the CLI. Rerun study.json into a new store with the retained source.pyz and the documented dependencies. Use your browser’s Print action for a PDF.</p><nav aria-label="Evidence files"><a href="BENTAL_NOTICE.txt">BENTAL_NOTICE.txt</a> <a href="algebraic.csv">algebraic.csv</a> <a href="model-card.json">model-card.json</a> <a href="reference.csv">reference.csv</a> <a href="result.json">result.json</a> <a href="source.pyz">source.pyz</a> <a href="study.json">study.json</a> <a href="trajectory.csv">trajectory.csv</a></nav><details><summary>Full result and measured costs</summary><pre>{
+  &quot;comparison&quot;: {
+    &quot;P_A&quot;: {
+      &quot;final&quot;: 757.2974945477558,
+      &quot;max_absolute_difference&quot;: 1.6605272207925736e-05,
+      &quot;maximum&quot;: 760.0,
+      &quot;minimum&quot;: 757.2756642601672,
+      &quot;rms_difference&quot;: 5.2446690092839785e-06,
+      &quot;unit&quot;: &quot;mmHg&quot;
+    },
+    &quot;V_A&quot;: {
+      &quot;final&quot;: 2.2843884314420104,
+      &quot;max_absolute_difference&quot;: 9.926011198757578e-06,
+      &quot;maximum&quot;: 2.7166329657801054,
+      &quot;minimum&quot;: 1.0,
+      &quot;rms_difference&quot;: 3.695480873580228e-06,
+      &quot;unit&quot;: &quot;litre&quot;
+    },
+    &quot;f_c&quot;: {
+      &quot;final&quot;: 0.00013511551784658072,
+      &quot;max_absolute_difference&quot;: 2.545270675839012e-07,
+      &quot;maximum&quot;: 0.05263,
+      &quot;minimum&quot;: 0.00013511551784658072,
+      &quot;rms_difference&quot;: 1.1157620752228654e-07,
+      &quot;unit&quot;: &quot;dimensionless&quot;
+    },
+    &quot;f_o&quot;: {
+      &quot;final&quot;: 0.20983854338606261,
+      &quot;max_absolute_difference&quot;: 3.5405875412064525e-07,
+      &quot;maximum&quot;: 0.20983854338606261,
+      &quot;minimum&quot;: 0.1368,
+      &quot;rms_difference&quot;: 1.5537394568729604e-07,
+      &quot;unit&quot;: &quot;dimensionless&quot;
+    },
+    &quot;p_c&quot;: {
+      &quot;final&quot;: 0.9010903498906022,
+      &quot;max_absolute_difference&quot;: 0.0002073700961808811,
+      &quot;maximum&quot;: 46.0,
+      &quot;minimum&quot;: 0.9010903498906022,
+      &quot;rms_difference&quot;: 4.3280069240001644e-05,
+      &quot;unit&quot;: &quot;mmHg&quot;
+    },
+    &quot;p_o&quot;: {
+      &quot;final&quot;: 149.04629088422192,
+      &quot;max_absolute_difference&quot;: 0.001391551712899286,
+      &quot;maximum&quot;: 149.04629088422192,
+      &quot;minimum&quot;: 40.0,
+      &quot;rms_difference&quot;: 0.00018408487915499308,
+      &quot;unit&quot;: &quot;mmHg&quot;
+    },
+    &quot;z&quot;: {
+      &quot;final&quot;: 0.0012196803557140883,
+      &quot;max_absolute_difference&quot;: 4.162219927657945e-08,
+      &quot;maximum&quot;: 0.006504167600675944,
+      &quot;minimum&quot;: 4.4219e-07,
+      &quot;rms_difference&quot;: 1.4635852776044387e-08,
+      &quot;unit&quot;: &quot;dimensionless (source normalization)&quot;
+    }
+  },
+  &quot;conclusion&quot;: &quot;NUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS&quot;,
+  &quot;cost&quot;: {
+    &quot;nfev&quot;: 70009,
+    &quot;rows&quot;: 500,
+    &quot;wall_seconds&quot;: 3.730424743029289
+  },
+  &quot;diagnostics&quot;: {
+    &quot;basic_state_bounds&quot;: true,
+    &quot;finite&quot;: true,
+    &quot;physiological_validity&quot;: &quot;NOT_ESTABLISHED&quot;,
+    &quot;qualified_review&quot;: &quot;PENDING&quot;,
+    &quot;source_derivative_max_abs_error_mmHg_per_s&quot;: 7.406520731539602
+  },
+  &quot;execution_state&quot;: &quot;COMPLETED&quot;,
+  &quot;limitation&quot;: &quot;Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. A source pressure-derivative inconsistency is retained; normalized unit interpretation and qualified review remain pending.&quot;,
+  &quot;reference_cost&quot;: {
+    &quot;nfev&quot;: null,
+    &quot;rows&quot;: 500,
+    &quot;wall_seconds&quot;: 0.08360332000302151
+  },
+  &quot;attempt_id&quot;: &quot;657e8ad2d71b4241a92aa0220afa665d&quot;,
+  &quot;total_wall_seconds&quot;: 4.523216998029966
+}</pre></details><details><summary>Immutable experiment settings</summary><pre>{
+  &quot;atol&quot;: 1e-10,
+  &quot;duration_s&quot;: 10.0,
+  &quot;max_step_s&quot;: 0.001,
+  &quot;model&quot;: &quot;bental-2006-combination&quot;,
+  &quot;resistance_scale&quot;: 1.0,
+  &quot;rtol&quot;: 1e-08,
+  &quot;samples&quot;: 500,
+  &quot;schema&quot;: &quot;vital-research/1&quot;,
+  &quot;seal&quot;: &quot;993e33293c28135fd7c8b807112ff73f8609309e87304407a6fdd45dfc0441f9&quot;,
+  &quot;solver&quot;: &quot;Radau&quot;,
+  &quot;source_sha256&quot;: &quot;080d7472e2e162a6c76d1a9486601d9007ab11cfb28e964be8195b0d1e93947c&quot;,
+  &quot;time_unit&quot;: &quot;second&quot;,
+  &quot;timeout_s&quot;: 60
+}</pre></details><p>Hashes detect changes relative to the manifest; they do not establish authorship. No patient records or clinical recommendations.</p></main></html>

@@ -8,7 +8,7 @@ Build Vital Rehearsal v1.0 as an externally usable, carefully bounded physiology
 
 The preserved original path is admission and rights → immutable study → real admitted adapter → independent source-based evaluation → durable bundles and recovery → qualified review → authorized public release → external public-artifact reproduction → native plan readback. The current finite v1.0 contract is docs/v1/CONTRACT.md; bounded exact-exposure numerical admission now supplements the original software control. Wave entry dependencies are integration prerequisites; each task’s explicit prerequisites govern work that may proceed independently.
 
-Wave order expresses integration and release horizon, not dates or promised throughput. Later and exploratory scope does not expand the finite current v1.0 contract. Public access: Local v1.0 candidate supports the admitted Ben-Tal CellML combination exposure and independent synthetic scheduling. See docs/v1/FIRST_RUN.md and docs/v1/CONTRACT.md. Public release, external human reproduction, qualified review and Tanduna updates remain pending.
+Wave order expresses integration and release horizon, not dates or promised throughput. Later and exploratory scope does not expand the finite current v1.0 contract. Public access: Public 1.0.0rc4 prerelease available at https://github.com/thepianistdirector/vital-rehearsal/releases/tag/v1.0.0rc4. Anonymous checksums and same-host first run verified. See docs/v1/FIRST_RUN.md and docs/publication/v1/receipt.json. Final v1.0, qualified review, external human reproduction and native Tanduna publication remain pending.
 
 ## Limits
 
@@ -124,7 +124,7 @@ Exit evidence: every assigned acceptance below must be supported at its specifie
 - **VR-W05-03: Export limitation-first JSON CSV and HTML.** Offline reports expose scope, provenance, per-observable findings and failures; HTML has labels, keyboard access and usable narrow/zoomed layouts. Status: **RUNTIME VERIFIED**.
 - **VR-W05-05: Verify the actual release candidate.** The packaged candidate performs validate-run-evaluate-inspect and interruption recovery on the declared CPU environment with real physiology evidence. Status: **RUNTIME VERIFIED**.
 - **VR-W05-06: Obtain qualified wording and user review.** A qualified reviewer assesses the exact claims and a real researcher completes the workflow; agent checks are recorded separately and never substitute. Status: **BLOCKED**.
-- **VR-W05-08: Publish the authorized versioned release.** After exact candidate approval and distribution-rights clearance, the public version and artifacts are read back without developer credentials. Status: **BLOCKED**.
+- **VR-W05-08: Publish the authorized versioned release.** After exact candidate approval and distribution-rights clearance, the public version and artifacts are read back without developer credentials. Status: **IN PROGRESS**.
 - **VR-W05-07: Verify public artifact reproduction.** A fresh external researcher obtains the public release and reproduces supported results plus a recovery path; identity, environment and discrepancies are retained. Status: **BLOCKED**.
 - **VR-W05-09: Publish and read back the native Tanduna plan.** Authorized native tasks and waves expose actual counts, dependencies, scope and 0.1 access; unpublished drafts or pending proposals cannot pass. Status: **BLOCKED**.
 

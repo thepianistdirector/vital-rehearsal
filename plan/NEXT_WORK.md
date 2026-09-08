@@ -1,3 +1,9 @@
+# Remaining approved work
+
+GitHub rc4 publication and anonymous public-package verification are complete. Activate an authenticated Tanduna maintainer connection, reconcile existing drafts/proposals, then save/submit the prepared 220-outcome plan and update the project story through the supported workflow. Publication approval is already recorded; do not ask again for this scope. Qualified interpretation and external human reproduction remain open. See ../docs/publication/v1/receipt.json.
+
+---
+
 # Approved next work
 
 Publish the approved v1.0.0rc4 prerelease and drafts to GitHub, verify anonymous downloads and execution, then publish the prepared Tanduna plan/findings through the supported authenticated workflow. Preserve original proposal and platform approval/review distinctions. Qualified and external human review remain pending. See ../docs/publication/v1/authorization.json.

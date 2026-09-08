@@ -1,3 +1,13 @@
+# Public rc4 prerelease — verified September 8, 2026
+
+[GitHub release](https://github.com/thepianistdirector/vital-rehearsal/releases/tag/v1.0.0rc4) is public and marked prerelease. Source tag resolves to b9b39139de7bf5ff48683435a54937ccc32a539a. All five anonymous asset downloads match the approved hashes; the downloaded archive passed the 29-operation fresh-environment workflow. See docs/publication/v1/receipt.json and retained public-first-run evidence. Same host only; no external human or separate-machine claim. Immutable release assets retain preparation-time status snapshots; this receipt records subsequent authorized publication.
+
+The three research drafts and canonical roadmap are public in GitHub. The 220-task/28-wave Tanduna packet and story update are prepared but **NOT SENT**: no authenticated Tanduna maintainer connection is available in this task. The supported sign-in has been requested. The old proposal and any unobserved private drafts will be reconciled before native writes. Native submission, textual review, recorded decision and published readback remain distinct gates.
+
+Qualified interpretation review and external human reproduction remain pending. The native Goal is active and incomplete. Publication approval has already been supplied and must not be requested again for this approved scope. Earlier state sections below are historical snapshots.
+
+---
+
 # Approved prerelease publication — September 8, 2026
 
 Lucas approved publication of the exact 1.0.0rc4 prerelease, accompanying research drafts and prepared plan to GitHub and Tanduna. See docs/publication/v1/authorization.json. The native Goal has resumed. GitHub owner access is verified; publication is in progress. Tanduna currently has no authenticated connection in this task; the supported user sign-in is required. Qualified interpretation review and external human reproduction are still pending. Prepared archives and their hashes remain unchanged. Prior status below records the preparation-time gate and is historical where it differs from this approval.

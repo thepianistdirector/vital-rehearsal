@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-09-08T18:06:03.411180+00:00",
+  "status": "PUBLIC_PRERELEASE_VERIFIED",
+  "release_url": "https://github.com/thepianistdirector/vital-rehearsal/releases/tag/v1.0.0rc4",
+  "release_id": 384949267,
+  "published_at": "2026-09-08T17:59:00Z",
+  "tag": "v1.0.0rc4",
+  "tag_source_commit": "b9b39139de7bf5ff48683435a54937ccc32a539a",
+  "anonymous_assets_verified": 5,
+  "actual_public_package_workflow": {
+    "status": "PASS",
+    "checks": 29,
+    "seconds": 21.206410985032562,
+    "application_sha256": "2d7f67e808e9cd176d753a49054882091184309586230f3b5a4a617f8e2ab1f9"
+  },
+  "evidence": [
+    "public-download-verification.json",
+    "public-first-run/commands.json",
+    "public-first-run/verification.json"
+  ],
+  "scope": "Anonymous public assets and fresh local environment on same host, not external human or separate physical machine",
+  "verifier_metadata_note": "The unchanged local verification harness reports public_release=NOT_PERFORMED to describe its own actions; it performs no publication action. This receipt and anonymous GitHub metadata establish that its input was the published release.",
+  "tanduna": "PREPARED_NOT_SENT; authenticated maintainer session unavailable",
+  "qualified_review": "PENDING",
+  "external_human_reproduction": "PENDING",
+  "overall_goal": "INCOMPLETE"
+}

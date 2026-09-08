@@ -1,0 +1,54 @@
+{
+  "started_at": "2026-09-08T18:00:15.543639+00:00",
+  "authentication": "No Authorization header or GitHub credential supplied; public HTTPS URLs",
+  "downloads": [
+    {
+      "name": "RELEASE_INVENTORY.json",
+      "public_url": "https://github.com/thepianistdirector/vital-rehearsal/releases/download/v1.0.0rc4/RELEASE_INVENTORY.json",
+      "http_status": 200,
+      "bytes": 1038,
+      "sha256": "58fa98e70b643b50654b71381a47012e3718ca5515e58b6f2026b210898e57d3",
+      "seconds": 0.5104930280358531
+    },
+    {
+      "name": "SHA256SUMS",
+      "public_url": "https://github.com/thepianistdirector/vital-rehearsal/releases/download/v1.0.0rc4/SHA256SUMS",
+      "http_status": 200,
+      "bytes": 323,
+      "sha256": "9bae7f67e0872b466ddc6524a10ccc7cb11cd8d81dcad8cfed4a50bba573677f",
+      "seconds": 0.44275157002266496
+    },
+    {
+      "name": "vital-rehearsal-1.0.0rc4-linux-x86_64-py312.tar.gz",
+      "public_url": "https://github.com/thepianistdirector/vital-rehearsal/releases/download/v1.0.0rc4/vital-rehearsal-1.0.0rc4-linux-x86_64-py312.tar.gz",
+      "http_status": 200,
+      "bytes": 96744555,
+      "sha256": "672b386592c7e7f993ce863c1cbb8710a6ba076a9c1c297bb85f790746e68c13",
+      "seconds": 4.243132291012444
+    },
+    {
+      "name": "vital-rehearsal-1.0.0rc4-verification.tar.gz",
+      "public_url": "https://github.com/thepianistdirector/vital-rehearsal/releases/download/v1.0.0rc4/vital-rehearsal-1.0.0rc4-verification.tar.gz",
+      "http_status": 200,
+      "bytes": 14394472,
+      "sha256": "fb24635a71a7e2827aa8fa9f615e3463b5cf187e9783f3c658938e87e5c8cbe7",
+      "seconds": 1.3139338250039145
+    },
+    {
+      "name": "vital-rehearsal-1.0.0rc4.pyz",
+      "public_url": "https://github.com/thepianistdirector/vital-rehearsal/releases/download/v1.0.0rc4/vital-rehearsal-1.0.0rc4.pyz",
+      "http_status": 200,
+      "bytes": 60956,
+      "sha256": "2d7f67e808e9cd176d753a49054882091184309586230f3b5a4a617f8e2ab1f9",
+      "seconds": 0.5704834940261208
+    }
+  ],
+  "release_id": 384949267,
+  "release_url": "https://github.com/thepianistdirector/vital-rehearsal/releases/tag/v1.0.0rc4",
+  "tag": "v1.0.0rc4",
+  "published_at": "2026-09-08T17:59:00Z",
+  "status": "PASS",
+  "extracted_files_verified": 1506,
+  "package_path": "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/public-download-check/vital-rehearsal-1.0.0rc4",
+  "scope": "Anonymous public download and local same-host extraction; not external human reproduction"
+}
