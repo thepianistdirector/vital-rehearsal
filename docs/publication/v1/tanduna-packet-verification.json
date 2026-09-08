@@ -1,0 +1,11 @@
+{
+  "status": "PREPARED_VERIFIED_NOT_SENT",
+  "sourceCommit": "3b00d8e71a0b4f8d577be0c4c6f25a545a8c3faf",
+  "canonicalExportSha256": "ec09e143c4abb95e5733e9880b5e4fac3f60b84f6e36c96be378bd18cc120cad",
+  "tasks": 220,
+  "waves": 28,
+  "repositoryBinding": "UNRESOLVED_UNTIL_AUTHENTICATED_GET",
+  "nativeIds": "UNASSIGNED",
+  "originalAcceptancePreserved": true,
+  "authorizationAlreadyGranted": true
+}
