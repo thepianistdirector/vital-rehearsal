@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vital Rehearsal · research report</title><style>
+    :root{color-scheme:light}body{font:17px/1.6 system-ui,sans-serif;color:#172f36;background:#f3f6f3;margin:0}main{max-width:1040px;margin:auto;padding:32px 24px}header{border-bottom:2px solid #245e62}h1{font-size:clamp(2rem,6vw,3.5rem);line-height:1.1}h2{margin-top:2rem}.label{font-size:13px;letter-spacing:.12em;text-transform:uppercase}.notice{padding:20px;background:#fff1d2;border-left:5px solid #986400;margin:24px 0}section{padding:16px 0}a{color:#125465;margin-right:18px;display:inline-block;padding:5px 0}a:focus-visible,summary:focus-visible{outline:3px solid #a34b00;outline-offset:3px}table{border-collapse:collapse;width:100%;background:white}th,td{text-align:left;padding:12px;border-bottom:1px solid #ccd7d4}.scroll{overflow:auto}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#e3ece7;padding:18px;font-size:13px}.id{overflow-wrap:anywhere}@media print{body{background:white}main{max-width:none}details{display:block}}</style>
+    <main><header><p class="label">Vital Rehearsal / 1.0.0rc1 / research workbench</p><h1>Inspect the evidence.</h1><p>bental-2006-combination</p></header><div class="notice"><strong>NUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS</strong><p>Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. Source derivative and unit inconsistencies remain unresolved; qualified interpretation review pending.</p></div>
+    <p class="id">Experiment seal: 8336de47463b3f0099a3b730c03c3e104346639ae4f8699160f58a73b8c0b98b</p><p>Execution: <strong>COMPLETED</strong> · Qualified interpretation review: pending</p><h2>Source-default solver comparison</h2><p>Shared equations; this comparator is numerical evidence. Each observable retains its own units.</p><div class="scroll"><table><caption>Candidate versus source VODE</caption><thead><tr><th>Observable</th><th>Unit</th><th>Maximum absolute difference</th><th>Final value</th></tr></thead><tbody><tr><th scope="row">P_A</th><td>mmHg</td><td>2.11896e-05</td><td>757.567</td></tr><tr><th scope="row">V_A</th><td>litre</td><td>1.06101e-05</td><td>2.2812</td></tr><tr><th scope="row">f_c</th><td>dimensionless</td><td>2.09596e-07</td><td>0.00013221</td></tr><tr><th scope="row">f_o</th><td>dimensionless</td><td>2.91636e-07</td><td>0.209842</td></tr><tr><th scope="row">p_c</th><td>mmHg</td><td>0.000234833</td><td>0.889462</td></tr><tr><th scope="row">p_o</th><td>mmHg</td><td>0.0015377</td><td>149.105</td></tr><tr><th scope="row">z</th><td>dimensionless (source label; unresolved)</td><td>2.61964e-08</td><td>0.00120462</td></tr></tbody></table></div><h2>Diagnostics and measurements</h2><pre>{
+  &quot;basic_state_bounds&quot;: true,
+  &quot;finite&quot;: true,
+  &quot;physiological_validity&quot;: &quot;NOT_ESTABLISHED&quot;,
+  &quot;qualified_review&quot;: &quot;PENDING&quot;,
+  &quot;source_derivative_max_abs_error_mmHg_per_s&quot;: 7.40652646249997
+}</pre><h2>Reproduce and export</h2><p>Retain this complete folder. Inspect its manifest using the CLI. Rerun study.json into a new store with the retained source.pyz and the documented dependencies. Use your browser’s Print action for a PDF.</p><nav aria-label="Evidence files"><a href="BENTAL_NOTICE.txt">BENTAL_NOTICE.txt</a> <a href="algebraic.csv">algebraic.csv</a> <a href="model-card.json">model-card.json</a> <a href="reference.csv">reference.csv</a> <a href="result.json">result.json</a> <a href="source.pyz">source.pyz</a> <a href="study.json">study.json</a> <a href="trajectory.csv">trajectory.csv</a></nav><details><summary>Immutable experiment settings</summary><pre>{
+  &quot;atol&quot;: 1e-13,
+  &quot;duration_s&quot;: 10.0,
+  &quot;max_step_s&quot;: 0.01,
+  &quot;model&quot;: &quot;bental-2006-combination&quot;,
+  &quot;resistance_scale&quot;: 0.9,
+  &quot;rtol&quot;: 1e-11,
+  &quot;samples&quot;: 2001,
+  &quot;schema&quot;: &quot;vital-research/1&quot;,
+  &quot;seal&quot;: &quot;8336de47463b3f0099a3b730c03c3e104346639ae4f8699160f58a73b8c0b98b&quot;,
+  &quot;solver&quot;: &quot;Radau&quot;,
+  &quot;source_sha256&quot;: &quot;080d7472e2e162a6c76d1a9486601d9007ab11cfb28e964be8195b0d1e93947c&quot;,
+  &quot;time_unit&quot;: &quot;second&quot;,
+  &quot;timeout_s&quot;: 60
+}</pre></details><p>Hashes detect changes relative to the manifest; they do not establish authorship. No patient records or clinical recommendations.</p></main></html>

@@ -1,0 +1,16 @@
+{
+  "bundle": "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/research/review/package-rerun/heldout-idle-ascii/bb3155cf0a83416aa45fd68a563a5ea3",
+  "conclusion": "SYNTHETIC_SCHEDULE_ONLY",
+  "coupling": "NONE",
+  "event_type": "synthetic.service_completed.v1",
+  "execution_state": "COMPLETED",
+  "limitation": "Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.",
+  "metrics": {
+    "jobs": 3,
+    "makespan_s": 11.0,
+    "max_wait_s": 0.0,
+    "mean_wait_s": 0.0
+  },
+  "attempt_id": "bb3155cf0a83416aa45fd68a563a5ea3",
+  "total_wall_seconds": 0.06392551102908328
+}

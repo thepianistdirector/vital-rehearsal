@@ -1,127 +1,54 @@
 # Vital Rehearsal
 
-**An open simulation laboratory for physiology, disease research and safer care-process experiments.**
+A bounded physiology and synthetic care-process research workbench. Inspect a public source model, seal an experiment, run its numerical equations, compare outputs, and export reproducible evidence.
 
-Vital Rehearsal aims to let researchers assemble lawful public models and wholly synthetic scenarios into reproducible virtual studies. The long-term platform spans heart, lung and liver physiology; disease and immune-response models; aggregate vaccine research; synthetic cohorts; and simulations of queues, staffing, transport and resource availability. Every result must expose its model, assumptions, provenance, uncertainty, failures and limits.
+Maintained by Lucas Santana ([thepianistdirector](https://github.com/thepianistdirector)). [Repository](https://github.com/thepianistdirector/vital-rehearsal) · [Tanduna project](https://tanduna.com/projects/vital-rehearsal).
 
-Created and maintained by **Lucas Santana** ([thepianistdirector](https://github.com/thepianistdirector)). [Tanduna project](https://tanduna.com/p/vital-rehearsal) · [Public repository](https://github.com/thepianistdirector/vital-rehearsal)
+**v1.0 prerelease candidate — publication approved; human review pending.** The admitted Ben-Tal 2006 CellML combination exposure is licensed for reuse and executable, with a documented source pressure-derivative inconsistency. It does not equal any single model from the original paper. Results are numerical reproduction and engineering evidence, not physiological validation, clinical advice or patient outcomes. Synthetic scheduling runs independently; no scientific event mapping currently supports coupling it to this model.
 
-> **Architecture foundation completed.** The three Wave 0 tasks are **DONE**: the architecture contract, outcome/dependency roadmap, and executable next-work packet with a standard-library plan validator. The original 24 scientific/build tasks remain **PLANNED**. No simulator, model integration, application, autonomous research runtime or scientific result is implemented. Acceptance and reproduced checks are recorded in [STATUS.md](STATUS.md).
+## Start a study
 
-## The endgame
+Supported: Linux x86_64, CPython 3.12, NumPy 2.2.6, SciPy 1.15.3. The prepared release archive contains offline dependency wheels, the executable and source. See the [external first-run guide](docs/v1/FIRST_RUN.md) for installation, supported resources, report navigation, export and recovery.
 
-A researcher should eventually be able to:
+From this checkout:
 
-1. choose an admitted public model and inspect exactly where it applies;
-2. define a versioned experiment with explicit units, time semantics, conservation rules, comparators, uncertainty and a falsifier;
-3. run isolated physiology and care-process models, then couple only the variables and events supported by both;
-4. compare baseline and candidate studies over paired synthetic inputs without hiding failed or unfavorable runs;
-5. reproduce a retained result on another supported machine;
-6. distinguish source fact, model assumption, numerical result and qualified human interpretation;
-7. let bounded agents propose experiments without giving them control of evaluators, confirmation evidence, budgets or publication.
+```sh
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python vital-rehearsal research models
+.venv/bin/python vital-rehearsal research example --output draft.json
+# Inspect the card and edit supported experiment settings before sealing.
+.venv/bin/python vital-rehearsal research seal draft.json --output study.json
+.venv/bin/python vital-rehearsal research run study.json --output runs/research
+```
 
-The platform can grow into multi-organ and multi-model research, but each domain earns its claims independently. A heart-lung benchmark does not validate hepatic metabolism, immune dynamics, tissue geometry or a care policy. Aggregate vaccination data does not represent an individual's immune response. A reproducible simulation is still a model, not clinical evidence.
+The run prints a bundle path. Open its report.html offline, inspect its CSV/JSON and source, then verify/export it:
 
-## The first research programme
+```sh
+.venv/bin/python vital-rehearsal research inspect BUNDLE
+.venv/bin/python vital-rehearsal research export BUNDLE --output evidence.zip
+```
 
-The first original milestone is [VR-001: select and specify one public cardiopulmonary benchmark](plan/NEXT_WORK.md). It compares two candidate routes:
+Use `research example --model synthetic-fcfs` for synthetic scheduling. `research list` includes failed and unfinalized attempts; `research recover` reruns into a new attempt and preserves the original. Every run retains its exact source archive and immutable study. Hashes detect changes, not authorship or scientific validity.
 
-- a versioned Pulse validation case with inspectable inputs, outputs, limitations and reference evidence;
-- a published CellML/SED-ML cardiopulmonary model with executable files, explicit units, reproducible outputs and clear rights.
+## Evidence and limits
 
-The milestone does not choose a winner in advance. It records the question, context of use, applicable population or reference subject, source observables, units, solver settings, excluded uses and acceptance criteria justified from the selected source and numerical analysis. If neither candidate meets the gate, the result is a documented hold or a narrower benchmark.
+- [Exact model admission and rights](docs/benchmarks/bental-2006/ADMISSION.md), [v1.0 contract](docs/v1/CONTRACT.md), [current state](STATUS.md).
+- Three finite investigations: [source reproduction](research/reproduction/), [solver/parameter robustness](research/robustness/), [synthetic scheduling](research/scheduling/). Drafts require skeptical reproduction and qualified review before any physiological interpretation.
+- [Release materials](docs/v1/), [canonical task ledger](plan/tasks.json), [roadmap](ROADMAP.md).
 
-After that selection and rights review, the first integrated programme is:
+The comparator uses the same model equations with a different numerical algorithm; no independent empirical reference data was obtained. Source-default R±10% cases are a numerical sensitivity neighbourhood, not a patient population or calibrated uncertainty distribution. The model's derivative inconsistency is preserved, measured and visible. Whole-body engines, arbitrary models, validated clinical coupling and broad platform support are longer-term work.
 
-~~~mermaid
-flowchart LR
-  B[Reproduce public heart-lung benchmark] --> S[Verify deterministic care scheduler]
-  S --> C[Pass one typed delay event at a supported communication point]
-  C --> P[Run paired synthetic baseline and delay scenarios]
-  P --> U[Quantify uncertainty and invalid runs]
-  U --> R[Generate a reproducible, limitation-first report]
-~~~
+The original exact-integer software control remains available under `models`, `example`, `validate`, `run`, `inspect` and `list-attempts`. It is software verification only. Its [historical documentation](docs/lineage/2026-09-08-pre-v1/README.md) and evidence remain preserved.
 
-This experiment studies model response and workflow timing. It does not recommend treatment, dosage, triage policy or a surgical technique.
+## Development and contribution
 
-## Architecture
+```sh
+.venv/bin/python -m unittest discover -s tests -v
+python3 tools/validate_plan.py
+.venv/bin/python tools/package_cli.py
+```
 
-A local Python coordinator will validate immutable experiment specifications, enforce budgets and run reviewed numerical adapters as separate subprocesses. A physiology engine owns engine-specific state advancement; a separate discrete-event scheduler owns synthetic queues and resources. A typed coupling controller is the only bridge. It validates communication time, quantity semantics, UCUM units, applicability and conservation before accepting an exchanged state or event.
+See [CONTRIBUTING.md](CONTRIBUTING.md). Useful contributions include qualified review of source semantics, independent first-run reproduction on the supported environment, rights-cleared reference datasets, numerical evaluator checks and accessibility testing. Report exact source/build, sealed study, expected/actual behavior and complete failed evidence; never send patient records.
 
-Results are atomically published bundles with inputs, source/model cards, solver and hardware settings, seeds, raw outputs, diagnostics, conservation residuals, uncertainty and explicit terminal states. Negative and inconclusive outcomes remain results. Nonconvergence, invalid units, unsupported actions and broken conservation are invalid evidence, never favorable scores.
-
-The first implementation stays local and modular: standard-library coordination, JSON contracts, CSV trajectories and filesystem bundles. SQLite, array formats, process pools, GPUs, remote workers, object storage and browser UI each have explicit measured scale triggers. The project does not begin with microservices or speculative infrastructure.
-
-A subprocess and scrubbed environment do not enforce a sandbox. Until OS/container/VM controls prove filesystem, credential, device, network, subprocess and resource isolation, only reviewed built-in adapters and non-protected development fixtures may execute. Untrusted adapters, generated code and protected confirmation artifacts remain blocked.
-
-Read the full [architecture](ARCHITECTURE.md), [experiment contract](EXPERIMENTS.md) and [source/adoption ledger](SOURCES.md).
-
-## Research domains
-
-### Heart and lung
-
-Start with a published lumped cardiopulmonary benchmark, fixed reference inputs and source-defined observables. Heart hemodynamics, cardiac electrophysiology, gas exchange and tissue mechanics remain distinct model classes with distinct evidence.
-
-### Liver
-
-Add hepatic perfusion, metabolism or injury models only through a separately benchmarked adapter. A low-resolution organ compartment cannot support tissue, metabolism or surgical claims it was not designed to answer.
-
-### Disease and therapeutic hypotheses
-
-Reproduce public mechanistic models and retain negative findings. Bioactivity records may support provenance; they do not establish efficacy, dose or clinical benefit.
-
-### Immunity and vaccine research
-
-Keep within-host immune dynamics, aggregate population coverage/transmission and care-capacity questions separate. Use only public aggregate or wholly synthetic inputs. Exclude sequence generation, pathogen engineering, mutation optimization and wet-lab instructions.
-
-### Care-process rehearsal
-
-Model abstract arrivals, queues, service, transport and resources with discrete events and synthetic entities. Report inputs, event ordering, replications, uncertainty and limitations. A care simulation may compare declared scenarios; it cannot prescribe a real workflow.
-
-## Programme map
-
-| Wave | Outcome | Current state |
-| --- | --- | --- |
-| 0 | Architecture and research-programme foundation | 3 tasks **DONE** |
-| 1 | Evidence and first benchmark | 3 tasks **PLANNED** |
-| 2 | Physiology and workflow kernels | 3 tasks **PLANNED** |
-| 3 | First virtual cohort | 3 tasks **PLANNED** |
-| 4 | Uncertainty and falsification | 3 tasks **PLANNED** |
-| 5 | Disease, immunity and organ extensions | 3 tasks **PLANNED** |
-| 6 | Bounded research agents | 3 tasks **PLANNED** |
-| 7 | Research workbench and scale | 3 tasks **PLANNED** |
-| 8 | Independent research release | 3 tasks **PLANNED** |
-
-Wave order expresses evidence and integration dependencies, not dates. Human domain-review time, hardware and paid compute are unallocated. Future work is split into bounded packets after prerequisites pass, and scale decisions use observed run size, throughput and recovery behavior.
-
-See the [outcome roadmap](ROADMAP.md), [27 task contracts](TASKS.md), [machine-readable task projection](plan/tasks.json) and [authoritative current status](STATUS.md).
-
-## Scientific and operating boundaries
-
-Reject real patient records and identifiers, controlled-access clinical datasets, patient-derived synthetic data, unsupported parameter ranges and unreviewed intervention recommendations. No diagnosis, treatment advice, dosing guidance, surgical instructions, pathogen enhancement, infectious sequence design or wet-lab automation. Qualified reviewers must approve clinical or biological interpretation; software tests and agent reports do not substitute for them.
-
-If a reference result cannot be reproduced without undocumented tuning, stop and repair the model, select another benchmark or narrow the claim. If qualified domain review is unavailable, continue only with contracts, code verification and published benchmark reproduction. Never fill a physiology gap with generated assumptions.
-
-## Start contributing
-
-Read [CONTRIBUTING.md](CONTRIBUTING.md), then run:
-
-    python3 tools/validate_plan.py
-
-The validator checks task synchronization, the dependency DAG, Wave 0 status transitions, document navigation; original-task preservation was independently checked against the initial Git revision. It validates the repository plan; it does not run or validate a scientific model.
-
-The next implementation work starts only after the foundation is accepted and the [VR-001 packet](plan/NEXT_WORK.md) is assigned. Referenced engines and datasets are candidates. Do not install, download or spend before the exact dependency, source and permission review.
-
-## Related independent projects
-
-- [Grid Horizons](https://github.com/thepianistdirector/grid-horizons): simulate grids, transformers and energy systems before proposing physical changes.
-- [Earth Rehearsal](https://github.com/thepianistdirector/earth-rehearsal): study water, pollution and climate interventions in reproducible software experiments.
-- [Civic Safelab](https://github.com/thepianistdirector/civic-safelab): test public-safety sensing in synthetic worlds while measuring privacy and false alarms.
-- [Lean Model Lab](https://github.com/thepianistdirector/lean-model-lab): seek reproducible training and inference efficiency gains with explicit quality tradeoffs.
-- [Research Continuum](https://github.com/thepianistdirector/research-continuum): explore reproducible autonomous research with independently checked experiments.
-
-These repositories are independently buildable. Shared experiment formats remain a design intention. Extract a common library only after at least two implementations demonstrate a stable need.
-
-## License
-
-Original repository content is licensed under **AGPL-3.0-only**; see [LICENSE](LICENSE). Third-party data, models, papers and code retain their own terms and are not relicensed here. No third-party dataset, model weight or upstream implementation is bundled in this foundation.
+Application code is [AGPL-3.0](LICENSE). The attributed Ben-Tal CellML model and generated Python retain **CC BY 3.0**, separately documented in [BENTAL_NOTICE.txt](src/vital_rehearsal/BENTAL_NOTICE.txt). NumPy/SciPy and bundled native-library notices accompany dependency wheels. The owner has approved publishing 1.0.0rc4 as an explicitly unreviewed prerelease, these research drafts and the prepared plan. Human-qualified review, external human reproduction and final v1.0 acceptance remain pending. Paper submission and participant outreach are not authorized.

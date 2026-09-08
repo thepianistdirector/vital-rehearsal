@@ -1,0 +1,170 @@
+{
+  "jobs": [
+    {
+      "arrival_s": 0.0,
+      "id": "Z-31",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-30",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-29",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-28",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-27",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-26",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-25",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-24",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-23",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-22",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-21",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-20",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-19",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-18",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-17",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-16",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-15",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-14",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-13",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-12",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-11",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-10",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-09",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-08",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-07",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-06",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-05",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-04",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-03",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-02",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-01",
+      "service_s": 0.001
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "Z-00",
+      "service_s": 0.001
+    }
+  ],
+  "model": "synthetic-fcfs",
+  "schema": "vital-research/1",
+  "servers": 16,
+  "service_delay_s": 0.0,
+  "time_unit": "second",
+  "timeout_s": 60
+}

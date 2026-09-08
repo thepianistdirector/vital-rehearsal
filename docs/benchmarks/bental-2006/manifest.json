@@ -1,0 +1,14 @@
+{
+  "exposure": "b503501533abcf0e70786789f08cb902",
+  "revision": "2e0e7ccc682bbf326829b3d78e3137ebdf8dbca0",
+  "source_url": "https://models.physiomeproject.org/workspace/bental_2006/@@rawfile/2e0e7ccc682bbf326829b3d78e3137ebdf8dbca0/bental_2006.cellml",
+  "license": "CC-BY-3.0",
+  "retrieved": "2026-09-08",
+  "files": {
+    "doc.html": "c1883c1cee8cb42362a865922433fe4b0d53f73dd1bc45778a40ae134c2eaf06",
+    "model.cellml": "a5405dfaccbd127594017586ffeec8b589a102047161ce40fb784bf7ad47e526",
+    "meta.html": "b69a8328bd1dd528dadfaea85e9c96a1b60fa312d715da05b7c689871bf441d7",
+    "code.html": "0a7006e72e6bd293aa7c136301bb5e511a5a15310cb41c61387a42302baf31ac"
+  },
+  "generated_python_sha256": "080d7472e2e162a6c76d1a9486601d9007ab11cfb28e964be8195b0d1e93947c"
+}

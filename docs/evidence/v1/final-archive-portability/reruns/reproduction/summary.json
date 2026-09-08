@@ -1,0 +1,17 @@
+{
+  "pressure_export_max_error": 0.0,
+  "analytic_export_max_error": 0.0,
+  "finite_difference_max_error": 2.803514975724397e-09,
+  "source_derivative_max_error": 7.406520731539602,
+  "source_derivative_rms_error": 6.303168982129376,
+  "signed_error_mean": -6.2500000007105045,
+  "signed_error_min": -7.406520731539602,
+  "signed_error_max": -5.093479266223812,
+  "continuous_signed_error_bounds": [
+    -7.4065264625,
+    -5.0934735375
+  ],
+  "all_500_source_points_fail": true,
+  "all_source_comparisons_pass": true,
+  "all_convergence_pass": true
+}

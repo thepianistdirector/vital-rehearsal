@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-09-07T23:12:29Z",
+  "evidenceStatus": "PUBLIC_READ_VERIFIED",
+  "publicationStatus": "NOT_PUBLISHED",
+  "project": {
+    "slug": "vital-rehearsal",
+    "id": "prj_e6d801111949d9ae4c1ac0d11c6ca463",
+    "name": "Vital Rehearsal",
+    "visibility": "PUBLIC",
+    "kind": "OPEN_SOURCE",
+    "repositoryUrl": "https://github.com/thepianistdirector/vital-rehearsal",
+    "savedRepositoryId": null
+  },
+  "publicCounts": {
+    "tasks": 0,
+    "publishedPlans": 0,
+    "proposals": 1,
+    "tandunaReleases": 0,
+    "githubReleases": 0
+  },
+  "pagination": {
+    "tasks": "Page states 0 tasks and No tasks yet; no next-page link or cursor rendered.",
+    "proposals": "Page states 1 proposal, with one linked record and no next-page link. Full linked record read.",
+    "publishedPlans": "Roadmap states no task plan published; no next-page link.",
+    "githubReleases": "Anonymous releases API returns empty array; no Link pagination header."
+  },
+  "historicalProposal": {
+    "id": "prp_e78d47cc6b905baa3e96fd4c6ad46f52",
+    "title": "Initial research roadmap \u2014 eight waves for Vital Rehearsal",
+    "revision": 1,
+    "status": "DISCUSSION",
+    "approvedOptionKey": null,
+    "voteOpenedAt": null,
+    "totalVotes": 0,
+    "outcome": "NO_VOTES",
+    "plan": null,
+    "options": [
+      {
+        "key": "yes",
+        "id": "opt_9567cd6363a26d21a1e4c2b65d3768b6",
+        "label": "Yes"
+      },
+      {
+        "key": "no",
+        "id": "opt_5866e33d8c629b67e704efa55075ae22",
+        "label": "No"
+      }
+    ],
+    "url": "https://tanduna.com/p/vital-rehearsal/proposals/prp_e78d47cc6b905baa3e96fd4c6ad46f52"
+  },
+  "sourceContract": {
+    "revision": "foundation-2026-09-07",
+    "gitCommit": "9fa99f392c93f6f1e33a2cd85b9348cb68afe39e",
+    "file": "plan/tasks.json",
+    "taskCount": 27,
+    "sourceIds": [
+      "VR-F01",
+      "VR-F02",
+      "VR-F03",
+      "VR-001",
+      "VR-002",
+      "VR-003",
+      "VR-004",
+      "VR-005",
+      "VR-006",
+      "VR-007",
+      "VR-008",
+      "VR-009",
+      "VR-010",
+      "VR-011",
+      "VR-012",
+      "VR-013",
+      "VR-014",
+      "VR-015",
+      "VR-016",
+      "VR-017",
+      "VR-018",
+      "VR-019",
+      "VR-020",
+      "VR-021",
+      "VR-022",
+      "VR-023",
+      "VR-024"
+    ],
+    "sha256": "7814846d68842323eb22efb145f2fd29205b5d31d438a8022f570d9fcf61c3f4",
+    "originalPlatformTaskIds": {
+      "VR-F01": null,
+      "VR-F02": null,
+      "VR-F03": null,
+      "VR-001": null,
+      "VR-002": null,
+      "VR-003": null,
+      "VR-004": null,
+      "VR-005": null,
+      "VR-006": null,
+      "VR-007": null,
+      "VR-008": null,
+      "VR-009": null,
+      "VR-010": null,
+      "VR-011": null,
+      "VR-012": null,
+      "VR-013": null,
+      "VR-014": null,
+      "VR-015": null,
+      "VR-016": null,
+      "VR-017": null,
+      "VR-018": null,
+      "VR-019": null,
+      "VR-020": null,
+      "VR-021": null,
+      "VR-022": null,
+      "VR-023": null,
+      "VR-024": null
+    }
+  },
+  "unverified": [
+    "Authenticated account and current editing authority",
+    "Saved repository ID",
+    "Any private or unpublished draft invisible to anonymous visitor",
+    "Actual reviewer availability and result",
+    "Future publication IDs, task IDs and plan revisions",
+    "Released 0.1 artifact and independent human reproduction"
+  ],
+  "actionsTaken": {
+    "externalWrites": 0,
+    "votesCast": 0,
+    "messagesSent": 0,
+    "authConfigurationChanges": 0,
+    "releasesCreated": 0
+  }
+}

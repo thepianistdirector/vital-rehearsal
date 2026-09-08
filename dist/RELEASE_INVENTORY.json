@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0rc4",
+  "status": "LOCAL_CANDIDATE_NOT_PUBLIC",
+  "artifacts": [
+    {
+      "filename": "vital-rehearsal-1.0.0rc4-linux-x86_64-py312.tar.gz",
+      "sha256": "672b386592c7e7f993ce863c1cbb8710a6ba076a9c1c297bb85f790746e68c13",
+      "bytes": 96744555
+    },
+    {
+      "filename": "vital-rehearsal-1.0.0rc4.pyz",
+      "sha256": "2d7f67e808e9cd176d753a49054882091184309586230f3b5a4a617f8e2ab1f9",
+      "bytes": 60956
+    },
+    {
+      "filename": "vital-rehearsal-1.0.0rc4-verification.tar.gz",
+      "sha256": "fb24635a71a7e2827aa8fa9f615e3463b5cf187e9783f3c658938e87e5c8cbe7",
+      "bytes": 14394472
+    }
+  ],
+  "human_and_public_gates": "PENDING",
+  "final_archive_verification": {
+    "status": "PASS",
+    "version": "1.0.0rc4",
+    "scope": "actual extracted release archive, fresh offline venv, same host; no external human or machine",
+    "checks": 8,
+    "research_run_calls": 58,
+    "source_tests": 65,
+    "elapsed_seconds": 60.86780119501054,
+    "original_distributed_files_unchanged": true
+  }
+}

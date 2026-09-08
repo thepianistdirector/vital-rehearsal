@@ -1,0 +1,3 @@
+# Frozen confirmation protocol
+
+See protocol.json for the authoritative pre-run specification. This study confirms an already disclosed exploratory discrepancy; it does not claim preregistered blind discovery. Four finite 10-second source-default scenarios use the built platform only, one worker at a time. We compare all seven state trajectories to source-default VODE and two tightened algorithms, then independently differentiate the exported pressure function. Numerical thresholds are engineering tolerances chosen before confirmation, not clinical acceptability thresholds. The semantic identity threshold is 1e-6 mmHg/s. We inspect actual XML literal units before asserting dimensional inconsistency. Human interpretation review remains required and unavailable.

@@ -1,0 +1,9 @@
+{
+  "matplotlib": "3.10.3",
+  "sources": {
+    "solver-errors.csv": "4abae3f74c4a3294d2fee75d5b42d49b103e2f226839affd2bcc08f9a7d899de",
+    "convergence.csv": "b646423896b65a269f0fdf37566774da38f0ef8263180ed104bac4a97454e02b",
+    "plot_publication.py": "e81b418d18baa83f02cbebe7273da4539f47e7779913fa0ba53957654157881d"
+  },
+  "change": "post-review rendering only; frozen evidence unchanged"
+}

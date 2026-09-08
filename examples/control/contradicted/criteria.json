@@ -1,0 +1,31 @@
+{
+  "comparison_id": "exact-integer-identity-v1",
+  "conservation": "not-applicable",
+  "interpolation": "forbidden",
+  "missing_output": "invalid",
+  "observables": [
+    {
+      "absolute_tolerance": 0,
+      "basis": "The analytic control has exact integer values; no interpolation or solver error",
+      "maximum": 4,
+      "minimum": 0,
+      "name": "counter",
+      "quantity_kind": "dimensionless_count",
+      "unit": "1"
+    }
+  ],
+  "physiological_reuse": "forbidden; each admitted model requires its own source-justified criteria",
+  "reference_header": [
+    "time[s]",
+    "counter[1]"
+  ],
+  "sample_count": 5,
+  "schema_version": 1,
+  "time_grid": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

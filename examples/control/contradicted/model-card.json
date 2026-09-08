@@ -1,0 +1,30 @@
+{
+  "applicability": "Fixed wholly synthetic software control; no organism or population",
+  "classification": "SOFTWARE_CONTROL_NOT_PHYSIOLOGY",
+  "conservation": "NOT APPLICABLE; no physical conserved quantity is modeled",
+  "execution_boundary": "Trusted built-in code with resource limits; not a sandbox",
+  "human_review": "No qualified physiology review supplied; control is software evidence only",
+  "limits": [
+    "Software contract control only. No physiology model is admitted. These values verify bookkeeping and evaluation, not physiology, clinical validity, treatment, or benefit.",
+    "No patient, cohort, treatment, or user-defined parameter inputs"
+  ],
+  "model_id": "integer-counter-control-v1",
+  "model_version": "1",
+  "question": "Does the runner retain and evaluate the exact integer identity?",
+  "schema_version": 1,
+  "solver": "Integer enumeration, not a numerical integrator",
+  "source": {
+    "definition": "counter(t) = t at t = 0, 1, 2, 3, 4 seconds; counter is dimensionless",
+    "id": "vital-rehearsal:analytic-integer-identity-v1",
+    "kind": "hand-checkable-analytic-identity",
+    "original_code_license": "AGPL-3.0-only",
+    "reference_origin": "Evaluator-owned literal values, independent of producer output",
+    "third_party_model_or_data": false
+  },
+  "supported_variations": [],
+  "uncertainty": {
+    "clinical": "NOT ASSESSED; no clinical claim",
+    "control_arithmetic": "Exact integer values within binary64 exact range",
+    "physiology": "NOT ASSESSED; no physiological model"
+  }
+}

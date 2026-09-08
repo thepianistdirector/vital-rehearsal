@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "scope": "fresh venv, scrubbed environment and isolated Python imports; same host, no container or external human",
+  "version": "1.0.0rc4",
+  "application_sha256": "2d7f67e808e9cd176d753a49054882091184309586230f3b5a4a617f8e2ab1f9",
+  "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+  "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+  "commands": 29,
+  "elapsed_seconds": 28.777042103989515,
+  "model_report": "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/runs/446a05b3b1cd4f4689f5cfa843e683ee/report.html",
+  "queue_report": "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/runs/0904c3a90181498291bad680656d54b3/report.html",
+  "public_release": "NOT_PERFORMED",
+  "human_review": "PENDING"
+}

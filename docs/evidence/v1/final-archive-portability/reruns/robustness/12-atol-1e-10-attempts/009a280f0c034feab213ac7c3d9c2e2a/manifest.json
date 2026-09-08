@@ -1,0 +1,16 @@
+{
+  "BENTAL_NOTICE.txt": "1df1661a49220bd8d0613cf0839ce5667a86d327e12c8cfbc3808b76ed0a1698",
+  "LICENSE": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+  "algebraic.csv": "eb8d1baac58d76e130bd03410ed8006bb49453e32340f667ed0f7c0d018656e7",
+  "model-card.json": "55514752104ed73bc006307940eb7aa9a49d63d5d3b340367b6a787cbce4a2c7",
+  "reference.csv": "a77217a92da1bbc9fe8d1bc942c5114f00784843073f6a43adcee38e6aa6d2c0",
+  "report.html": "8fefd99d0db68f0ecae419fe69ee8d79bf11ee1eb0ab664dd26df764bcdd96e5",
+  "result.json": "56c24e4a5bff751b8022de23ef33a862d7ac3b075d8eb628e3c622210ff854f1",
+  "runtime.json": "03440965118fad8610f9bf3ad8e1cfa1aab2f3a979606afa3ed06a190ea24f28",
+  "source.pyz": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+  "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "study.json": "13f28324059ae561385e4108fedf50454d4724038340e6f78c96ff4b79ba74d4",
+  "trajectory.csv": "cae27fa0023f255cc9eccfe2a34e04af39e945db62fc44c983debdd89dc6a12d",
+  "worker-result.json": "6c575efe89a5cef8db92b70b2d4cd3692af676bc9b3a20e0284cb1125e69e453"
+}

@@ -1,0 +1,13 @@
+{
+  "conclusion": "SYNTHETIC_SCHEDULE_ONLY",
+  "coupling": "NONE",
+  "event_type": "synthetic.service_completed.v1",
+  "execution_state": "COMPLETED",
+  "limitation": "Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.",
+  "metrics": {
+    "jobs": 800,
+    "makespan_s": 8800.000000000002,
+    "max_wait_s": 1526.5088513793926,
+    "mean_wait_s": 766.9152572975004
+  }
+}

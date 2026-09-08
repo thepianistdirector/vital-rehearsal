@@ -1,0 +1,19 @@
+0 control-0.9-Radau 0
+1 control-0.9-BDF 0
+2 control-0.9-DOP853 0
+3 control-1.0-Radau 0
+4 control-1.0-BDF 0
+5 control-1.0-DOP853 0
+6 control-1.1-Radau 0
+7 control-1.1-BDF 0
+8 control-1.1-DOP853 0
+9 baseline 0
+10 atol-0.001 0
+11 atol-1e-06 0
+12 atol-1e-10 0
+13 atol-1e-13 0
+14 source-default 0
+15 source-tight 0
+16 RK45 0
+17 refinement 0
+/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/research/robustness/package-rerun

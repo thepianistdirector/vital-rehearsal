@@ -1,6 +1,6 @@
 # Vital Rehearsal architecture
 
-Status: **architecture foundation accepted; research runtime not implemented**. Owner: Lucas Santana. Foundation date: 2026-09-07. Acceptance evidence: [STATUS.md](STATUS.md).
+Status: **architecture foundation accepted; software-control runner implemented; physiology runtime not admitted**. Owner: Lucas Santana. Foundation date: 2026-09-07. Current local slice: [decision 0001](docs/decisions/0001-launch-and-control-slice.md). Evidence: [STATUS.md](STATUS.md).
 
 ## 1. Purpose, context of use and nonclaims
 
@@ -293,7 +293,7 @@ tools/                  repository and plan validation utilities
 docs/                   benchmark, data, decisions and reviews
 ```
 
-These are planned implementation boundaries. Only the documentation and plan validator exist in this foundation.
+These describe the full planned boundaries. The current source implements only `src/vital_rehearsal/`, a fixed software-control scenario, report/evidence retention, packaging and tests. No scientific adapter, care scheduler or cohort is implemented.
 
 ### Initial process protocol
 
@@ -381,4 +381,10 @@ If domain review is unavailable, continue contract, solver-verification and publ
 
 ## 14. Current claim boundary
 
-This repository now has a reasoned architecture, a dependency graph and an executable plan-consistency validator. It has no physiology engine, workflow simulator, experiment coordinator, benchmark selection, scientific result, clinical validation, user validation or release candidate. Candidate standards and engines in [SOURCES.md](SOURCES.md) are decision inputs, not adopted dependencies. The next original milestone is the bounded VR-001 benchmark-selection packet in [plan/NEXT_WORK.md](plan/NEXT_WORK.md).
+This repository has a reasoned architecture, a dependency graph, an executable plan-consistency validator and an independent software-control CLI. Its producer, evaluator and atomic bundle writer exercise strict inputs, per-observable comparison, nonconvergence/failure retention and recovery without a physiological model. Exact source/build fingerprints bind the frozen input and evaluator records. Decimal comparison prevents input underflow or rounding from producing false agreement. Regular-file descriptor reads reject symlinks, devices and FIFOs before parsing.
+
+There is no admitted physiology engine, care-process simulator, selected executable scientific benchmark, clinical/domain validation, independent human reproduction or public 0.1 release. Candidate standards and engines in [SOURCES.md](SOURCES.md) remain decision inputs. Original task acceptance is preserved; the independent slice is authorized by [decision 0001](docs/decisions/0001-launch-and-control-slice.md), not by rewriting the original graph.
+
+## September 8 v1.0 bounded implementation
+
+The current executable adds `research` commands while retaining legacy controls. Built-ins are the exact unchanged Ben-Tal combination exposure and original synthetic FCFS scheduler. The adapter translates no new physiology: it invokes the retained source equations with pinned SciPy algorithms. VODE reference comparison shares equations; independent semantic checks and solver-envelope analysis are separate studies. Source-derived event semantics do not support clinical coupling, so no model connection exists. Schema, resource, recovery, rights and supported-environment contracts are in docs/v1/CONTRACT.md and FIRST_RUN.md. Historical broader gates remain preserved.

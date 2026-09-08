@@ -1,0 +1,103 @@
+--- rc1/vital_rehearsal/research_model.py
++++ rc4/vital_rehearsal/research_model.py
+@@ -6,9 +6,9 @@
+ MODEL = 'bental-2006-combination'
+ LIMIT = ('Numerical reproduction of an unmodified historical CellML combination exposure. '
+          'Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. '
+-         'Source derivative and unit inconsistencies remain unresolved; qualified interpretation review pending.')
++         'A source pressure-derivative inconsistency is retained; normalized unit interpretation and qualified review remain pending.')
+ NAMES = ['V_A', 'P_A', 'f_o', 'f_c', 'p_o', 'p_c', 'z']
+-UNITS = ['litre', 'mmHg', 'dimensionless', 'dimensionless', 'mmHg', 'mmHg', 'dimensionless (source label; unresolved)']
++UNITS = ['litre', 'mmHg', 'dimensionless', 'dimensionless', 'mmHg', 'mmHg', 'dimensionless (source normalization)']
+ 
+ def source_hash():
+     return hashlib.sha256(resources.files('vital_rehearsal').joinpath('bental_source.py').read_bytes()).hexdigest()
+--- rc1/vital_rehearsal/research.py
++++ rc4/vital_rehearsal/research.py
+@@ -16,7 +16,7 @@
+ import uuid
+ import zipfile
+ from . import __version__
+-from .contracts import canonical_json, read_json, ContractError
++from .contracts import canonical_json, read_json, read_regular, ContractError
+ from .research_model import card, MODEL, source_hash
+ 
+ SCHEMA='vital-research/1'
+@@ -58,7 +58,9 @@
+     return obj
+ 
+ def manifest(directory):
+-    return {p.name:sha(p.read_bytes()) for p in sorted(directory.iterdir()) if p.is_file() and p.name!='manifest.json'}
++    entries=list(directory.iterdir())
++    if any(p.is_symlink() or not p.is_file() for p in entries):raise ContractError('bundle must contain regular files only')
++    return {p.name:sha(read_regular(p,32*1024*1024)) for p in sorted(entries) if p.name!='manifest.json'}
+ def inspect(directory):
+     expected=read_json(directory/'manifest.json')
+     if expected!=manifest(directory):raise ContractError('bundle integrity mismatch')
+@@ -70,20 +72,24 @@
+     esc=lambda x:html.escape(str(x))
+     table=''
+     if 'comparison' in result:
+-        table='<h2>Source-default solver comparison</h2><p>Shared equations; this comparator is numerical evidence. Each observable retains its own units.</p><div class="scroll"><table><caption>Candidate versus source VODE</caption><thead><tr><th>Observable</th><th>Unit</th><th>Maximum absolute difference</th><th>Final value</th></tr></thead><tbody>'
++        table='<h2>Source-default solver comparison</h2><p>Shared equations; this comparator is numerical evidence. Each observable retains its own units. On a narrow screen, scroll the table horizontally.</p><div class="scroll" tabindex="0" role="region" aria-label="Observable comparison table"><table><caption>Candidate versus source VODE</caption><thead><tr><th scope="col">Observable</th><th scope="col">Unit</th><th scope="col">Maximum absolute difference</th><th scope="col">Final value</th></tr></thead><tbody>'
+         for n,v in result['comparison'].items():table+=f'<tr><th scope="row">{esc(n)}</th><td>{esc(v["unit"])}</td><td>{v["max_absolute_difference"]:.6g}</td><td>{v["final"]:.6g}</td></tr>'
+         table+='</tbody></table></div>'
++    conclusion_label={'NUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS':'Numerical result · source warnings','SYNTHETIC_SCHEDULE_ONLY':'Synthetic schedule · no physiology coupling','NO_SCIENTIFIC_RESULT':'Incomplete attempt · no scientific result'}.get(result['conclusion'],result['conclusion'])
+     links=' '.join(f'<a href="{p.name}">{esc(p.name)}</a>' for p in sorted(directory.iterdir()) if p.name in ['trajectory.csv','reference.csv','algebraic.csv','schedule.csv','study.json','result.json','source.pyz','model-card.json','BENTAL_NOTICE.txt'])
+     doc=f'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vital Rehearsal · research report</title><style>
+-    :root{{color-scheme:light}}body{{font:17px/1.6 system-ui,sans-serif;color:#172f36;background:#f3f6f3;margin:0}}main{{max-width:1040px;margin:auto;padding:32px 24px}}header{{border-bottom:2px solid #245e62}}h1{{font-size:clamp(2rem,6vw,3.5rem);line-height:1.1}}h2{{margin-top:2rem}}.label{{font-size:13px;letter-spacing:.12em;text-transform:uppercase}}.notice{{padding:20px;background:#fff1d2;border-left:5px solid #986400;margin:24px 0}}section{{padding:16px 0}}a{{color:#125465;margin-right:18px;display:inline-block;padding:5px 0}}a:focus-visible,summary:focus-visible{{outline:3px solid #a34b00;outline-offset:3px}}table{{border-collapse:collapse;width:100%;background:white}}th,td{{text-align:left;padding:12px;border-bottom:1px solid #ccd7d4}}.scroll{{overflow:auto}}pre{{white-space:pre-wrap;overflow-wrap:anywhere;background:#e3ece7;padding:18px;font-size:13px}}.id{{overflow-wrap:anywhere}}@media print{{body{{background:white}}main{{max-width:none}}details{{display:block}}}}</style>
+-    <main><header><p class="label">Vital Rehearsal / {esc(__version__)} / research workbench</p><h1>Inspect the evidence.</h1><p>{esc(spec['model'])}</p></header><div class="notice"><strong>{esc(result['conclusion'])}</strong><p>{esc(result.get('limitation','Incomplete attempt; no scientific conclusion.'))}</p></div>
+-    <p class="id">Experiment seal: {esc(spec['seal'])}</p><p>Execution: <strong>{esc(result['execution_state'])}</strong> · Qualified interpretation review: pending</p>{table}<h2>Diagnostics and measurements</h2><pre>{esc(json.dumps(result.get('diagnostics',result.get('metrics',result)),indent=2))}</pre><h2>Reproduce and export</h2><p>Retain this complete folder. Inspect its manifest using the CLI. Rerun study.json into a new store with the retained source.pyz and the documented dependencies. Use your browser’s Print action for a PDF.</p><nav aria-label="Evidence files">{links}</nav><details><summary>Immutable experiment settings</summary><pre>{esc(json.dumps(spec,indent=2))}</pre></details><p>Hashes detect changes relative to the manifest; they do not establish authorship. No patient records or clinical recommendations.</p></main></html>'''
++    :root{{color-scheme:light}}body{{font:17px/1.6 system-ui,sans-serif;color:#172f36;background:#f3f6f3;margin:0}}main{{max-width:1040px;margin:auto;padding:32px 24px}}header{{border-bottom:2px solid #245e62}}h1{{font-size:clamp(2rem,6vw,3.5rem);line-height:1.1}}h2{{margin-top:2rem}}.label{{font-size:13px;letter-spacing:.12em;text-transform:uppercase}}.notice{{overflow-wrap:anywhere;padding:20px;background:#fff1d2;border-left:5px solid #986400;margin:24px 0}}section{{padding:16px 0}}a{{color:#125465;margin-right:18px;display:inline-block;padding:5px 0}}a:focus-visible,summary:focus-visible,.scroll:focus-visible{{outline:3px solid #a34b00;outline-offset:3px}}table{{border-collapse:collapse;width:100%;background:white}}th,td{{text-align:left;padding:12px;border-bottom:1px solid #ccd7d4}}.scroll{{overflow:auto}}pre{{white-space:pre-wrap;overflow-wrap:anywhere;background:#e3ece7;padding:18px;font-size:13px}}.id{{overflow-wrap:anywhere}}.skip{{position:absolute;left:24px;top:-80px;background:white;padding:8px}}.skip:focus{{top:0}}@media print{{body{{background:white}}main{{max-width:none}}details{{display:block}}}}</style>
++    <a class="skip" href="#evidence">Skip to evidence</a><main><header><p class="label">Vital Rehearsal / {esc(__version__)} / research workbench</p><h1>Inspect the evidence.</h1><p>{esc(spec['model'])}</p></header><div class="notice"><strong>{esc(conclusion_label)}</strong><p>{esc(result.get('limitation','Incomplete attempt; no scientific conclusion.'))}</p></div>
++    <p class="id">Experiment seal: {esc(spec['seal'])}</p><p>Execution: <strong>{esc(result['execution_state'])}</strong> · Qualified interpretation review: pending</p>{table}<h2 id="evidence" tabindex="-1">Diagnostics and measurements</h2><pre>{esc(json.dumps(result.get('diagnostics',result.get('metrics',result)),indent=2))}</pre><h2>Reproduce and export</h2><p>Retain this complete folder. Inspect its manifest using the CLI. Rerun study.json into a new store with the retained source.pyz and the documented dependencies. Use your browser’s Print action for a PDF.</p><nav aria-label="Evidence files">{links}</nav><details><summary>Full result and measured costs</summary><pre>{esc(json.dumps(result,indent=2))}</pre></details><details><summary>Immutable experiment settings</summary><pre>{esc(json.dumps(spec,indent=2))}</pre></details><p>Hashes detect changes relative to the manifest; they do not establish authorship. No patient records or clinical recommendations.</p></main></html>'''
+     (directory/'report.html').write_text(doc)
+ 
+ def worker(directory):
+     spec=read_json(directory/'study.json');validate(spec)
+     import resource
++    resource.setrlimit(resource.RLIMIT_CORE,(0,0))
++    resource.setrlimit(resource.RLIMIT_AS,(2*1024**3,2*1024**3))
+     resource.setrlimit(resource.RLIMIT_CPU,(120,120))
++    signal.alarm(math.ceil(spec['timeout_s'])+2)
+     resource.setrlimit(resource.RLIMIT_FSIZE,(32*1024*1024,32*1024*1024))
+     if spec['model']==MODEL:
+         from .research_model import solve
+@@ -98,7 +104,7 @@
+     output.mkdir(parents=True,exist_ok=True)
+     directory=output/uuid.uuid4().hex;directory.mkdir()
+     write(directory/'study.json',spec)
+-    write(directory/'model-card.json',card() if spec['model']==MODEL else {'model':'synthetic-fcfs','license':'AGPL-3.0-or-later','order':'arrival then ASCII id; lowest server id wins ties','coupling':'NONE'})
++    write(directory/'model-card.json',card() if spec['model']==MODEL else {'model':'synthetic-fcfs','license':'AGPL-3.0-or-later','order':'jobs: arrival then ASCII id; server: earliest prior finish time then server id','coupling':'NONE'})
+     payload=archive_bytes();(directory/'source.pyz').write_bytes(payload)
+     for name in ['LICENSE','BENTAL_NOTICE.txt']:(directory/name).write_bytes(resources.files('vital_rehearsal').joinpath(name).read_bytes())
+     runtime={'version':__version__,'python':sys.version,'platform':platform.platform(),'source_archive_sha256':sha(payload),'started_unix':time.time(),'isolation':'second process, same host; artifact access is a workflow convention'}
+@@ -111,7 +117,7 @@
+     result={'execution_state':'FAILED','conclusion':'NO_SCIENTIFIC_RESULT'}
+     previous=signal.signal(signal.SIGTERM,lambda *_:(_ for _ in ()).throw(KeyboardInterrupt()))
+     try:
+-        env=os.environ.copy();env.update(OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',MKL_NUM_THREADS='1',PYTHONHASHSEED='0');env.pop('PYTHONPATH',None)
++        env={'PATH':os.defpath,'LANG':'C.UTF-8','LC_ALL':'C.UTF-8','OPENBLAS_NUM_THREADS':'1','OMP_NUM_THREADS':'1','MKL_NUM_THREADS':'1','PYTHONHASHSEED':'0'}
+         with (directory/'stdout.log').open('xb') as out,(directory/'stderr.log').open('xb') as err:
+             process=subprocess.Popen([sys.executable,'-I',str((directory/'source.pyz').resolve()),'research','_worker',str(directory.resolve())],stdout=out,stderr=err,env=env)
+             try:code=process.wait(timeout=spec['timeout_s'])
+@@ -140,6 +146,7 @@
+         p=subs.add_parser(c);p.add_argument('bundle',type=Path)
+         if c=='export':p.add_argument('--output',type=Path,required=True)
+     p=subs.add_parser('list');p.add_argument('--output',type=Path,required=True)
++    p=subs.add_parser('recover');p.add_argument('bundle',type=Path);p.add_argument('--output',type=Path,required=True)
+     args=parser.parse_args(argv)
+     try:
+         if args.command=='models':result={'models':[card(),{'id':'synthetic-fcfs','coupling':'NONE'}]}
+@@ -150,6 +157,11 @@
+         elif args.command=='_worker':return worker(args.bundle)
+         elif args.command=='run':
+             directory,result=run(read_json(args.study),args.output);result={'bundle':str(directory),**result}
++            print(json.dumps(result,indent=2,allow_nan=False));return 0 if result['execution_state']=='COMPLETED' else 1
++        elif args.command=='recover':
++            spec=read_json(args.bundle/'study.json');validate(spec)
++            directory,result=run(spec,args.output)
++            result={'bundle':str(directory),'original_preserved':str(args.bundle),**result}
+             print(json.dumps(result,indent=2,allow_nan=False));return 0 if result['execution_state']=='COMPLETED' else 1
+         elif args.command=='inspect':result={'integrity':'VERIFIED','authenticity':'NOT_ESTABLISHED','result':inspect(args.bundle)}
+         elif args.command=='list':result={'attempts':[{'directory':str(p),'state':read_json(p/'result.json')['execution_state'] if (p/'result.json').exists() else 'INTERRUPTED_UNFINALIZED'} for p in sorted(args.output.iterdir()) if p.is_dir()]}

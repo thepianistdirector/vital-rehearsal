@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://models.physiomeproject.org/exposure/b503501533abcf0e70786789f08cb902/bental_2006.cellml/view",
+    "retrieved_utc": "2026-09-08T17:19:27.348217+00:00",
+    "browser_prior_attempt": "view and cmeta returned HTTP 403 through web tool",
+    "status": 200,
+    "resolved_url": "https://models.physiomeproject.org/exposure/b503501533abcf0e70786789f08cb902/bental_2006.cellml/view",
+    "file": "view.html",
+    "sha256": "c1883c1cee8cb42362a865922433fe4b0d53f73dd1bc45778a40ae134c2eaf06",
+    "bytes": 24241
+  },
+  {
+    "url": "https://models.physiomeproject.org/exposure/b503501533abcf0e70786789f08cb902/bental_2006.cellml/cmeta",
+    "retrieved_utc": "2026-09-08T17:19:28.784100+00:00",
+    "browser_prior_attempt": "view and cmeta returned HTTP 403 through web tool",
+    "status": 200,
+    "resolved_url": "https://models.physiomeproject.org/exposure/b503501533abcf0e70786789f08cb902/bental_2006.cellml/cmeta",
+    "file": "metadata.html",
+    "sha256": "b69a8328bd1dd528dadfaea85e9c96a1b60fa312d715da05b7c689871bf441d7",
+    "bytes": 18389
+  },
+  {
+    "url": "https://models.physiomeproject.org/exposure/b503501533abcf0e70786789f08cb902/bental_2006.cellml",
+    "retrieved_utc": "2026-09-08T17:19:29.799303+00:00",
+    "browser_prior_attempt": "view and cmeta returned HTTP 403 through web tool",
+    "status": 200,
+    "resolved_url": "https://models.physiomeproject.org/workspace/bental_2006/@@rawfile/2e0e7ccc682bbf326829b3d78e3137ebdf8dbca0/bental_2006.cellml",
+    "file": "model.cellml",
+    "sha256": "a5405dfaccbd127594017586ffeec8b589a102047161ce40fb784bf7ad47e526",
+    "bytes": 62201
+  },
+  {
+    "url": "https://models.physiomeproject.org/exposure/b503501533abcf0e70786789f08cb902/bental_2006.cellml/documentation",
+    "retrieved_utc": "2026-09-08T17:19:31.237779+00:00",
+    "browser_prior_attempt": "view and cmeta returned HTTP 403 through web tool",
+    "error": "HTTP Error 404: Not Found"
+  }
+]

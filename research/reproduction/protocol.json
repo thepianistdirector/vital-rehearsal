@@ -1,0 +1,28 @@
+{
+  "id": "reproduction-20260908-v1",
+  "status": "frozen before confirmation runs",
+  "question": "Can the exact unchanged CellML combination exposure be numerically reproduced while failing an independently derived pressure derivative identity?",
+  "prior_information": "Root exploratory baseline disclosed derivative discrepancy and source VODE versus Radau agreement; this is prospective confirmation, not blind discovery.",
+  "model": "gpt-6-astra",
+  "runtime_model_evidence": "leaf turn_context 2026-09-08T17:16:20.428Z, turn 01a08205-3944-7ff1-9562-8c9ec6500e2d",
+  "source_exposure": "b503501533abcf0e70786789f08cb902",
+  "source_revision": "2e0e7ccc682bbf326829b3d78e3137ebdf8dbca0",
+  "scenarios": [
+    {"name":"radau", "solver":"Radau", "rtol":1e-8,"atol":1e-10,"max_step_s":0.05},
+    {"name":"source", "solver":"source-vode", "rtol":1e-6,"atol":1e-6,"max_step_s":1},
+    {"name":"radau-tight", "solver":"Radau", "rtol":1e-10,"atol":1e-12,"max_step_s":0.01},
+    {"name":"bdf-tight", "solver":"BDF", "rtol":1e-10,"atol":1e-12,"max_step_s":0.01}
+  ],
+  "fixed": {"duration_s":10,"samples":500,"resistance_scale":1,"timeout_s":60},
+  "absolute_thresholds_vs_source": {"V_A":0.0001,"P_A":0.002,"f_o":0.00001,"f_c":0.00001,"p_o":0.005,"p_c":0.005,"z":0.000001},
+  "tight_solver_threshold_fraction":0.1,
+  "semantic_thresholds": {"independent_formula_vs_platform_mmHg_s":1e-10,"centered_difference_vs_independent_mmHg_s":1e-6,"source_derivative_identity_mmHg_s":1e-6},
+  "semantic_grid": "500 exported points on [0,10], centered difference h=1e-4 s on analytic pressure function; signed error formula and analytic continuous bounds",
+  "units_check": "Inspect XML unit-bearing literals, E, z and derivative; do not infer dimensional failure from generated numeric code alone.",
+  "comparator": "Source-default VODE BDF atol=rtol=1e-6 max_step=1; shares model equations. Also Radau refinement and tight BDF different algorithm.",
+  "randomness":"none; deterministic fixed cases",
+  "budget":"4 planned platform run calls; maximum 12 including failures; one sequential worker; no paid services/public writes",
+  "stopping":"Stop after four cases and derived audit; failures retained, no threshold tuning, no additional scenarios without protocol amendment.",
+  "uncertainty":"No empirical uncertainty estimate, no physiological interpretation, no paper-figure correspondence, finite grid comparison is not formal global error bound.",
+  "rights":"Exact exposure CC BY 3.0 with attribution; original synthetic plots only; no article images; qualified human review pending"
+}

@@ -1,0 +1,10 @@
+{
+  "run_calls": 8,
+  "cli_calls": 16,
+  "original_bundles": 50,
+  "all_checks": "PASS",
+  "max_derivative_identity_error": 7.406520731539602,
+  "max_fd_error": 2.803514975724397e-09,
+  "minimum_effect_ratio": 13494193.392676687,
+  "wall_s": 5.8690704019973055
+}

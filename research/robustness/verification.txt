@@ -1,0 +1,1 @@
+Verified frozen protocol and study hashes; exactly 18 run calls; every retained campaign file matches sha256.json; 18 COMPLETED attempts. No confirmation retries. CLI example and inspect successful.

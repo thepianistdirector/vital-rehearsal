@@ -1,0 +1,350 @@
+[
+  {
+    "name": "radau",
+    "bundle": "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/research/reproduction/package-rerun/bundles/f7b446a4378448fe8a07cd6ed2451815",
+    "result": {
+      "bundle": "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/research/reproduction/package-rerun/bundles/f7b446a4378448fe8a07cd6ed2451815",
+      "comparison": {
+        "P_A": {
+          "final": 757.297494547673,
+          "max_absolute_difference": 1.6598056504335545e-05,
+          "maximum": 760.0,
+          "minimum": 757.2756642566978,
+          "rms_difference": 5.244608674454775e-06,
+          "unit": "mmHg"
+        },
+        "V_A": {
+          "final": 2.284388431364722,
+          "max_absolute_difference": 9.926252564795846e-06,
+          "maximum": 2.7166329693256883,
+          "minimum": 1.0,
+          "rms_difference": 3.695471250022446e-06,
+          "unit": "litre"
+        },
+        "f_c": {
+          "final": 0.00013511551790721047,
+          "max_absolute_difference": 2.5451352134511773e-07,
+          "maximum": 0.05263,
+          "minimum": 0.00013511551790721047,
+          "rms_difference": 1.1157581886746077e-07,
+          "unit": "dimensionless"
+        },
+        "f_o": {
+          "final": 0.20983854338597857,
+          "max_absolute_difference": 3.540399103052483e-07,
+          "maximum": 0.20983854338597857,
+          "minimum": 0.1368,
+          "rms_difference": 1.5537340880549553e-07,
+          "unit": "dimensionless"
+        },
+        "p_c": {
+          "final": 0.9010903499229878,
+          "max_absolute_difference": 0.0002073988157462736,
+          "maximum": 46.0,
+          "minimum": 0.9010903499229878,
+          "rms_difference": 4.328038969752049e-05,
+          "unit": "mmHg"
+        },
+        "p_o": {
+          "final": 149.04629088415146,
+          "max_absolute_difference": 0.0013916512251057611,
+          "maximum": 149.04629088415146,
+          "minimum": 40.0,
+          "rms_difference": 0.0001840826197247516,
+          "unit": "mmHg"
+        },
+        "z": {
+          "final": 0.0012196803557260963,
+          "max_absolute_difference": 4.1622137059854625e-08,
+          "maximum": 0.006504167595566995,
+          "minimum": 4.4219e-07,
+          "rms_difference": 1.4635791853758158e-08,
+          "unit": "dimensionless (source label; unresolved)"
+        }
+      },
+      "conclusion": "NUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS",
+      "cost": {
+        "nfev": 2382,
+        "rows": 500,
+        "wall_seconds": 0.1458262070082128
+      },
+      "diagnostics": {
+        "basic_state_bounds": true,
+        "finite": true,
+        "physiological_validity": "NOT_ESTABLISHED",
+        "qualified_review": "PENDING",
+        "source_derivative_max_abs_error_mmHg_per_s": 7.406520731539602
+      },
+      "execution_state": "COMPLETED",
+      "limitation": "Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. Source derivative and unit inconsistencies remain unresolved; qualified interpretation review pending.",
+      "reference_cost": {
+        "nfev": null,
+        "rows": 500,
+        "wall_seconds": 0.08195016800891608
+      },
+      "attempt_id": "f7b446a4378448fe8a07cd6ed2451815",
+      "total_wall_seconds": 0.4648706379812211
+    }
+  },
+  {
+    "name": "source",
+    "bundle": "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/research/reproduction/package-rerun/bundles/2bedf2504db843a8a4a339d62ee253e7",
+    "result": {
+      "bundle": "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/research/reproduction/package-rerun/bundles/2bedf2504db843a8a4a339d62ee253e7",
+      "comparison": {
+        "P_A": {
+          "final": 757.2974947019059,
+          "max_absolute_difference": 0.0,
+          "maximum": 760.0,
+          "minimum": 757.2756664725271,
+          "rms_difference": 0.0,
+          "unit": "mmHg"
+        },
+        "V_A": {
+          "final": 2.2843901289211104,
+          "max_absolute_difference": 0.0,
+          "maximum": 2.716629936486058,
+          "minimum": 1.0,
+          "rms_difference": 0.0,
+          "unit": "litre"
+        },
+        "f_c": {
+          "final": 0.0001351053674541267,
+          "max_absolute_difference": 0.0,
+          "maximum": 0.05263,
+          "minimum": 0.0001351053674541267,
+          "rms_difference": 0.0,
+          "unit": "dimensionless"
+        },
+        "f_o": {
+          "final": 0.20983855773051494,
+          "max_absolute_difference": 0.0,
+          "maximum": 0.20983855773051494,
+          "minimum": 0.1368,
+          "rms_difference": 0.0,
+          "unit": "dimensionless"
+        },
+        "p_c": {
+          "final": 0.9010771730655637,
+          "max_absolute_difference": 0.0,
+          "maximum": 46.0,
+          "minimum": 0.9010771730655637,
+          "rms_difference": 0.0,
+          "unit": "mmHg"
+        },
+        "p_o": {
+          "final": 149.0462996874947,
+          "max_absolute_difference": 0.0,
+          "maximum": 149.0462996874947,
+          "minimum": 40.0,
+          "rms_difference": 0.0,
+          "unit": "mmHg"
+        },
+        "z": {
+          "final": 0.0012196675556185776,
+          "max_absolute_difference": 0.0,
+          "maximum": 0.0065041961641959314,
+          "minimum": 4.4219e-07,
+          "rms_difference": 0.0,
+          "unit": "dimensionless (source label; unresolved)"
+        }
+      },
+      "conclusion": "NUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS",
+      "cost": {
+        "nfev": null,
+        "rows": 500,
+        "wall_seconds": 0.0792367790127173
+      },
+      "diagnostics": {
+        "basic_state_bounds": true,
+        "finite": true,
+        "physiological_validity": "NOT_ESTABLISHED",
+        "qualified_review": "PENDING",
+        "source_derivative_max_abs_error_mmHg_per_s": 7.406520731539602
+      },
+      "execution_state": "COMPLETED",
+      "limitation": "Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. Source derivative and unit inconsistencies remain unresolved; qualified interpretation review pending.",
+      "reference_cost": {
+        "nfev": null,
+        "rows": 500,
+        "wall_seconds": 0.08434417296666652
+      },
+      "attempt_id": "2bedf2504db843a8a4a339d62ee253e7",
+      "total_wall_seconds": 0.4146954600000754
+    }
+  },
+  {
+    "name": "radau-tight",
+    "bundle": "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/research/reproduction/package-rerun/bundles/b3cb24e9e8884c398f90afa4a64b6cfc",
+    "result": {
+      "bundle": "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/research/reproduction/package-rerun/bundles/b3cb24e9e8884c398f90afa4a64b6cfc",
+      "comparison": {
+        "P_A": {
+          "final": 757.2974945477566,
+          "max_absolute_difference": 1.660527652802557e-05,
+          "maximum": 760.0,
+          "minimum": 757.2756642601714,
+          "rms_difference": 5.2446697697533815e-06,
+          "unit": "mmHg"
+        },
+        "V_A": {
+          "final": 2.2843884314419873,
+          "max_absolute_difference": 9.926011140137803e-06,
+          "maximum": 2.716632965786075,
+          "minimum": 1.0,
+          "rms_difference": 3.695480775912639e-06,
+          "unit": "litre"
+        },
+        "f_c": {
+          "final": 0.0001351155178466376,
+          "max_absolute_difference": 2.545271113648523e-07,
+          "maximum": 0.05263,
+          "minimum": 0.0001351155178466376,
+          "rms_difference": 1.1157621927409054e-07,
+          "unit": "dimensionless"
+        },
+        "f_o": {
+          "final": 0.20983854338606267,
+          "max_absolute_difference": 3.5405881490535585e-07,
+          "maximum": 0.20983854338606267,
+          "minimum": 0.1368,
+          "rms_difference": 1.5537396206692777e-07,
+          "unit": "dimensionless"
+        },
+        "p_c": {
+          "final": 0.9010903498904759,
+          "max_absolute_difference": 0.00020737323183794842,
+          "maximum": 46.0,
+          "minimum": 0.9010903498904759,
+          "rms_difference": 4.328009882766435e-05,
+          "unit": "mmHg"
+        },
+        "p_o": {
+          "final": 149.0462908842222,
+          "max_absolute_difference": 0.0013915530949475396,
+          "maximum": 149.0462908842222,
+          "minimum": 40.0,
+          "rms_difference": 0.0001840849280064175,
+          "unit": "mmHg"
+        },
+        "z": {
+          "final": 0.001219680355713874,
+          "max_absolute_difference": 4.162220528479421e-08,
+          "maximum": 0.006504167600666521,
+          "minimum": 4.4219e-07,
+          "rms_difference": 1.4635854798602197e-08,
+          "unit": "dimensionless (source label; unresolved)"
+        }
+      },
+      "conclusion": "NUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS",
+      "cost": {
+        "nfev": 9526,
+        "rows": 500,
+        "wall_seconds": 0.5047286479966715
+      },
+      "diagnostics": {
+        "basic_state_bounds": true,
+        "finite": true,
+        "physiological_validity": "NOT_ESTABLISHED",
+        "qualified_review": "PENDING",
+        "source_derivative_max_abs_error_mmHg_per_s": 7.406520731539602
+      },
+      "execution_state": "COMPLETED",
+      "limitation": "Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. Source derivative and unit inconsistencies remain unresolved; qualified interpretation review pending.",
+      "reference_cost": {
+        "nfev": null,
+        "rows": 500,
+        "wall_seconds": 0.07866079796804115
+      },
+      "attempt_id": "b3cb24e9e8884c398f90afa4a64b6cfc",
+      "total_wall_seconds": 0.8153423619805835
+    }
+  },
+  {
+    "name": "bdf-tight",
+    "bundle": "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/research/reproduction/package-rerun/bundles/6f71d4e6f5dd4a5fbf1d003737f4234a",
+    "result": {
+      "bundle": "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/research/reproduction/package-rerun/bundles/6f71d4e6f5dd4a5fbf1d003737f4234a",
+      "comparison": {
+        "P_A": {
+          "final": 757.2974945477617,
+          "max_absolute_difference": 1.6605400446678686e-05,
+          "maximum": 760.0,
+          "minimum": 757.2756642601715,
+          "rms_difference": 5.244690551724278e-06,
+          "unit": "mmHg"
+        },
+        "V_A": {
+          "final": 2.284388431446665,
+          "max_absolute_difference": 9.926013368577458e-06,
+          "maximum": 2.7166329657756303,
+          "minimum": 1.0,
+          "rms_difference": 3.695481130568753e-06,
+          "unit": "litre"
+        },
+        "f_c": {
+          "final": 0.000135115517789279,
+          "max_absolute_difference": 2.545210481610938e-07,
+          "maximum": 0.05263,
+          "minimum": 0.000135115517789279,
+          "rms_difference": 1.1157335985155148e-07,
+          "unit": "dimensionless"
+        },
+        "f_o": {
+          "final": 0.2098385433861345,
+          "max_absolute_difference": 3.540503457910571e-07,
+          "maximum": 0.2098385433861345,
+          "minimum": 0.1368,
+          "rms_difference": 1.5536997611139853e-07,
+          "unit": "dimensionless"
+        },
+        "p_c": {
+          "final": 0.9010903495833193,
+          "max_absolute_difference": 0.00020733665971661708,
+          "maximum": 46.0,
+          "minimum": 0.9010903495833193,
+          "rms_difference": 4.327814087572202e-05,
+          "unit": "mmHg"
+        },
+        "p_o": {
+          "final": 149.04629088427475,
+          "max_absolute_difference": 0.0013914626908615446,
+          "maximum": 149.04629088427475,
+          "minimum": 40.0,
+          "rms_difference": 0.00018408230284042658,
+          "unit": "mmHg"
+        },
+        "z": {
+          "final": 0.0012196803553050813,
+          "max_absolute_difference": 4.1623312711444593e-08,
+          "maximum": 0.0065041675992489065,
+          "minimum": 4.4219e-07,
+          "rms_difference": 1.4636130010947361e-08,
+          "unit": "dimensionless (source label; unresolved)"
+        }
+      },
+      "conclusion": "NUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS",
+      "cost": {
+        "nfev": 2650,
+        "rows": 500,
+        "wall_seconds": 0.17744980700081214
+      },
+      "diagnostics": {
+        "basic_state_bounds": true,
+        "finite": true,
+        "physiological_validity": "NOT_ESTABLISHED",
+        "qualified_review": "PENDING",
+        "source_derivative_max_abs_error_mmHg_per_s": 7.406520731539602
+      },
+      "execution_state": "COMPLETED",
+      "limitation": "Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. Source derivative and unit inconsistencies remain unresolved; qualified interpretation review pending.",
+      "reference_cost": {
+        "nfev": null,
+        "rows": 500,
+        "wall_seconds": 0.07781691697891802
+      },
+      "attempt_id": "6f71d4e6f5dd4a5fbf1d003737f4234a",
+      "total_wall_seconds": 0.514807922008913
+    }
+  }
+]

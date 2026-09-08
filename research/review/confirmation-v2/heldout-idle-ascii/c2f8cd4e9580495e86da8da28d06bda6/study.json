@@ -1,0 +1,26 @@
+{
+  "jobs": [
+    {
+      "arrival_s": 0.0,
+      "id": "a",
+      "service_s": 1.0
+    },
+    {
+      "arrival_s": 0.0,
+      "id": "A",
+      "service_s": 2.0
+    },
+    {
+      "arrival_s": 10.0,
+      "id": "later",
+      "service_s": 1.0
+    }
+  ],
+  "model": "synthetic-fcfs",
+  "schema": "vital-research/1",
+  "seal": "de7d7ab6bd3a3085dc216ece6185fa8f0bac2472ff701dcde51e56f2706bfde1",
+  "servers": 2,
+  "service_delay_s": 0.0,
+  "time_unit": "second",
+  "timeout_s": 60
+}

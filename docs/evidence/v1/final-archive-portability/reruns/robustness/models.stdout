@@ -1,0 +1,38 @@
+{
+  "models": [
+    {
+      "id": "bental-2006-combination",
+      "admission": "BOUNDED_NUMERICAL_REPRODUCTION_ONLY",
+      "limitation": "Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. Source derivative and unit inconsistencies remain unresolved; qualified interpretation review pending.",
+      "exposure": "b503501533abcf0e70786789f08cb902",
+      "revision": "2e0e7ccc682bbf326829b3d78e3137ebdf8dbca0",
+      "source_sha256": "080d7472e2e162a6c76d1a9486601d9007ab11cfb28e964be8195b0d1e93947c",
+      "license": "CC-BY-3.0",
+      "source_url": "https://models.physiomeproject.org/exposure/b503501533abcf0e70786789f08cb902/bental_2006.cellml/view",
+      "states": {
+        "V_A": "litre",
+        "P_A": "mmHg",
+        "f_o": "dimensionless",
+        "f_c": "dimensionless",
+        "p_o": "mmHg",
+        "p_c": "mmHg",
+        "z": "dimensionless (source label; unresolved)"
+      },
+      "time_unit": "second",
+      "reference": "PMR generated-code solver: scipy.integrate.ode VODE BDF, atol=rtol=1e-6, max_step=1, 500 samples 0..10 s. Same equations; no independent empirical reference.",
+      "supported_domain": "0..10 seconds; source initial state; R scale 0.9..1.1 is a numerical perturbation neighbourhood, not physiological uncertainty.",
+      "coupling": "NONE: no reviewed care event or clinical delay semantics",
+      "solver_methods": [
+        "Radau",
+        "BDF",
+        "RK45",
+        "DOP853",
+        "source-vode"
+      ]
+    },
+    {
+      "id": "synthetic-fcfs",
+      "coupling": "NONE"
+    }
+  ]
+}

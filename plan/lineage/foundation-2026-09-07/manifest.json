@@ -1,0 +1,41 @@
+{
+  "sourceCommit": "9fa99f392c93f6f1e33a2cd85b9348cb68afe39e",
+  "files": {
+    "plan/lineage/foundation-2026-09-07/plan__tasks.json": {
+      "sourcePath": "plan/tasks.json",
+      "sha256": "7814846d68842323eb22efb145f2fd29205b5d31d438a8022f570d9fcf61c3f4"
+    },
+    "plan/lineage/foundation-2026-09-07/ROADMAP.md": {
+      "sourcePath": "ROADMAP.md",
+      "sha256": "3defb1825930b2ea2f74d6daee2638b8b72cdd322c1ec2f3ef5c66a017068381"
+    },
+    "plan/lineage/foundation-2026-09-07/TASKS.md": {
+      "sourcePath": "TASKS.md",
+      "sha256": "b5129499dcf85dc0e04a0a41c910001ed3f22ebf023480c1f841e0d2a7daab82"
+    },
+    "plan/lineage/foundation-2026-09-07/STATUS.md": {
+      "sourcePath": "STATUS.md",
+      "sha256": "a4da861c6135d8689d51b036581520bcadb3c36536f6964241b351f672fa24be"
+    },
+    "plan/lineage/foundation-2026-09-07/ARCHITECTURE.md": {
+      "sourcePath": "ARCHITECTURE.md",
+      "sha256": "608aaa9c383963f49e79ac5e8ddc16a6bb3ed860bfef1278f52192f43658b3c1"
+    },
+    "plan/lineage/foundation-2026-09-07/EXPERIMENTS.md": {
+      "sourcePath": "EXPERIMENTS.md",
+      "sha256": "5fad0d412a8289fb9ec13d68f7724770d9434faf16098a3c3980ae10e1857706"
+    },
+    "plan/lineage/foundation-2026-09-07/SOURCES.md": {
+      "sourcePath": "SOURCES.md",
+      "sha256": "fe5aabb5ebb5bfa27e66d8fbc47a5738b50e90444acbcab9f3710c735f3e1994"
+    },
+    "plan/lineage/foundation-2026-09-07/plan__NEXT_WORK.md": {
+      "sourcePath": "plan/NEXT_WORK.md",
+      "sha256": "fbdc0d52cca3b6d7c448e97525a4defa50c68942c8f37c936fabc59344bb2774"
+    },
+    "plan/lineage/foundation-2026-09-07/tools__validate_plan.py": {
+      "sourcePath": "tools/validate_plan.py",
+      "sha256": "8863ae4fedf3caefcd08199e1c1127127e3b5be8ebe8f1fcda8e2b8ac2372f02"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "jobs": [
+    {
+      "arrival_s": 0.0,
+      "id": "\u00f1",
+      "service_s": 1.0
+    }
+  ],
+  "model": "synthetic-fcfs",
+  "schema": "vital-research/1",
+  "servers": 1,
+  "service_delay_s": 0.0,
+  "time_unit": "second",
+  "timeout_s": 60
+}

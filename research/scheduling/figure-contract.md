@@ -1,0 +1,3 @@
+# Figure contract
+
+Static manuscript figure, six paired scenario categories and two seeds (12 records); question is change in mean waiting under a one-second service extension. Horizontal grouped bar chart, zero baseline, all records retained; neutral title, units seconds, 800-job denominator. Matplotlib standalone SVG and PNG; one blue root with solid/open fills plus explicit seed legend, readable monochrome. Full paired-effects table remains the source; no stochastic confidence bands because seeds are finite cases and burst workloads duplicate. 11×6.4 inch output, inspect PNG for clipping and labels. Supplementary rendering only; no new platform executions and no change to frozen protocol or analysis code.

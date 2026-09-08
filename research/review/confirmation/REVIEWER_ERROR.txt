@@ -1,0 +1,1 @@
+Initial reviewer attempt stopped before any CLI run: independently encoded seal using compact JSON instead of documented pretty canonical JSON. Reviewer script corrected; not a product or study failure. Original plan retained. New run uses confirmation-v2.

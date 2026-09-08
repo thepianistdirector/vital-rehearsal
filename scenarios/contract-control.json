@@ -1,0 +1,38 @@
+{
+  "applicability": "fixed-software-control-only",
+  "comparison_id": "exact-integer-identity-v1",
+  "conditions": {
+    "interval": {
+      "quantity_kind": "elapsed_time",
+      "unit": "s",
+      "value": 1
+    },
+    "start": {
+      "quantity_kind": "elapsed_time",
+      "unit": "s",
+      "value": 0
+    },
+    "stop": {
+      "quantity_kind": "elapsed_time",
+      "unit": "s",
+      "value": 4
+    }
+  },
+  "input_kind": "wholly-synthetic-software-control",
+  "model_id": "integer-counter-control-v1",
+  "model_version": "1",
+  "observables": [
+    {
+      "name": "counter",
+      "quantity_kind": "dimensionless_count",
+      "unit": "1"
+    }
+  ],
+  "purpose": "software-verification",
+  "schema_version": 1,
+  "solver": {
+    "method": "integer-enumeration",
+    "version": "1"
+  },
+  "source_id": "vital-rehearsal:analytic-integer-identity-v1"
+}

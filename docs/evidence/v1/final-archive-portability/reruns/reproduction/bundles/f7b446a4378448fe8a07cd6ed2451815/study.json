@@ -1,0 +1,15 @@
+{
+  "atol": 1e-10,
+  "duration_s": 10,
+  "max_step_s": 0.05,
+  "model": "bental-2006-combination",
+  "resistance_scale": 1,
+  "rtol": 1e-08,
+  "samples": 500,
+  "schema": "vital-research/1",
+  "seal": "84e29e69af1d466232b34d442d90059de4f63450344165162d5f556794b4ec3f",
+  "solver": "Radau",
+  "source_sha256": "080d7472e2e162a6c76d1a9486601d9007ab11cfb28e964be8195b0d1e93947c",
+  "time_unit": "second",
+  "timeout_s": 60
+}

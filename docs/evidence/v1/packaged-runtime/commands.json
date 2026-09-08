@@ -1,0 +1,479 @@
+[
+  {
+    "label": "create-clean-venv",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "-m",
+      "venv",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 1.401884148013778,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "label": "offline-install",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--no-index",
+      "--find-links",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/wheels",
+      "--require-hashes",
+      "-r",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/requirements-lock.txt"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 4.363154113991186,
+    "stdout": "Looking in links: /home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/wheels\nProcessing /home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/wheels/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r /home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/requirements-lock.txt (line 1))\nProcessing /home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/wheels/scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r /home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/requirements-lock.txt (line 2))\nInstalling collected packages: numpy, scipy\nSuccessfully installed numpy-2.2.6 scipy-1.15.3\n",
+    "stderr": ""
+  },
+  {
+    "label": "version",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "--version"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.03595489094732329,
+    "stdout": "1.0.0rc4\n",
+    "stderr": ""
+  },
+  {
+    "label": "models",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "models"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.055425269005354494,
+    "stdout": "{\n  \"models\": [\n    {\n      \"id\": \"bental-2006-combination\",\n      \"admission\": \"BOUNDED_NUMERICAL_REPRODUCTION_ONLY\",\n      \"limitation\": \"Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. A source pressure-derivative inconsistency is retained; normalized unit interpretation and qualified review remain pending.\",\n      \"exposure\": \"b503501533abcf0e70786789f08cb902\",\n      \"revision\": \"2e0e7ccc682bbf326829b3d78e3137ebdf8dbca0\",\n      \"source_sha256\": \"080d7472e2e162a6c76d1a9486601d9007ab11cfb28e964be8195b0d1e93947c\",\n      \"license\": \"CC-BY-3.0\",\n      \"source_url\": \"https://models.physiomeproject.org/exposure/b503501533abcf0e70786789f08cb902/bental_2006.cellml/view\",\n      \"states\": {\n        \"V_A\": \"litre\",\n        \"P_A\": \"mmHg\",\n        \"f_o\": \"dimensionless\",\n        \"f_c\": \"dimensionless\",\n        \"p_o\": \"mmHg\",\n        \"p_c\": \"mmHg\",\n        \"z\": \"dimensionless (source normalization)\"\n      },\n      \"time_unit\": \"second\",\n      \"reference\": \"PMR generated-code solver: scipy.integrate.ode VODE BDF, atol=rtol=1e-6, max_step=1, 500 samples 0..10 s. Same equations; no independent empirical reference.\",\n      \"supported_domain\": \"0..10 seconds; source initial state; R scale 0.9..1.1 is a numerical perturbation neighbourhood, not physiological uncertainty.\",\n      \"coupling\": \"NONE: no reviewed care event or clinical delay semantics\",\n      \"solver_methods\": [\n        \"Radau\",\n        \"BDF\",\n        \"RK45\",\n        \"DOP853\",\n        \"source-vode\"\n      ]\n    },\n    {\n      \"id\": \"synthetic-fcfs\",\n      \"coupling\": \"NONE\"\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "example",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "example",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/draft.json"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.0556369120022282,
+    "stdout": "{\n  \"written\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/draft.json\",\n  \"next\": \"edit then seal\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "seal",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/study.json"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.07103841903153807,
+    "stdout": "{\n  \"seal\": \"c1889c5e4edd4d23b83fdf5999516bc87a2054c5fc9325e730b3ff1960c77ec3\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "validate",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "validate",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/study.json"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.04895588097861037,
+    "stdout": "{\n  \"state\": \"VALID\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "model-run",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/study.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/runs"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 1.0694622399751097,
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/runs/446a05b3b1cd4f4689f5cfa843e683ee\",\n  \"comparison\": {\n    \"P_A\": {\n      \"final\": 757.297494547673,\n      \"max_absolute_difference\": 1.6598056504335545e-05,\n      \"maximum\": 760.0,\n      \"minimum\": 757.2756642566978,\n      \"rms_difference\": 5.244608674454775e-06,\n      \"unit\": \"mmHg\"\n    },\n    \"V_A\": {\n      \"final\": 2.284388431364722,\n      \"max_absolute_difference\": 9.926252564795846e-06,\n      \"maximum\": 2.7166329693256883,\n      \"minimum\": 1.0,\n      \"rms_difference\": 3.695471250022446e-06,\n      \"unit\": \"litre\"\n    },\n    \"f_c\": {\n      \"final\": 0.00013511551790721047,\n      \"max_absolute_difference\": 2.5451352134511773e-07,\n      \"maximum\": 0.05263,\n      \"minimum\": 0.00013511551790721047,\n      \"rms_difference\": 1.1157581886746077e-07,\n      \"unit\": \"dimensionless\"\n    },\n    \"f_o\": {\n      \"final\": 0.20983854338597857,\n      \"max_absolute_difference\": 3.540399103052483e-07,\n      \"maximum\": 0.20983854338597857,\n      \"minimum\": 0.1368,\n      \"rms_difference\": 1.5537340880549553e-07,\n      \"unit\": \"dimensionless\"\n    },\n    \"p_c\": {\n      \"final\": 0.9010903499229878,\n      \"max_absolute_difference\": 0.0002073988157462736,\n      \"maximum\": 46.0,\n      \"minimum\": 0.9010903499229878,\n      \"rms_difference\": 4.328038969752049e-05,\n      \"unit\": \"mmHg\"\n    },\n    \"p_o\": {\n      \"final\": 149.04629088415146,\n      \"max_absolute_difference\": 0.0013916512251057611,\n      \"maximum\": 149.04629088415146,\n      \"minimum\": 40.0,\n      \"rms_difference\": 0.0001840826197247516,\n      \"unit\": \"mmHg\"\n    },\n    \"z\": {\n      \"final\": 0.0012196803557260963,\n      \"max_absolute_difference\": 4.1622137059854625e-08,\n      \"maximum\": 0.006504167595566995,\n      \"minimum\": 4.4219e-07,\n      \"rms_difference\": 1.4635791853758158e-08,\n      \"unit\": \"dimensionless (source normalization)\"\n    }\n  },\n  \"conclusion\": \"NUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS\",\n  \"cost\": {\n    \"nfev\": 2382,\n    \"rows\": 500,\n    \"wall_seconds\": 0.13282701798016205\n  },\n  \"diagnostics\": {\n    \"basic_state_bounds\": true,\n    \"finite\": true,\n    \"physiological_validity\": \"NOT_ESTABLISHED\",\n    \"qualified_review\": \"PENDING\",\n    \"source_derivative_max_abs_error_mmHg_per_s\": 7.406520731539602\n  },\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. A source pressure-derivative inconsistency is retained; normalized unit interpretation and qualified review remain pending.\",\n  \"reference_cost\": {\n    \"nfev\": null,\n    \"rows\": 500,\n    \"wall_seconds\": 0.07358834403567016\n  },\n  \"attempt_id\": \"446a05b3b1cd4f4689f5cfa843e683ee\",\n  \"total_wall_seconds\": 0.869219793996308\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "inspect",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/runs/446a05b3b1cd4f4689f5cfa843e683ee"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.1713962329667993,
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"446a05b3b1cd4f4689f5cfa843e683ee\",\n    \"comparison\": {\n      \"P_A\": {\n        \"final\": 757.297494547673,\n        \"max_absolute_difference\": 1.6598056504335545e-05,\n        \"maximum\": 760.0,\n        \"minimum\": 757.2756642566978,\n        \"rms_difference\": 5.244608674454775e-06,\n        \"unit\": \"mmHg\"\n      },\n      \"V_A\": {\n        \"final\": 2.284388431364722,\n        \"max_absolute_difference\": 9.926252564795846e-06,\n        \"maximum\": 2.7166329693256883,\n        \"minimum\": 1.0,\n        \"rms_difference\": 3.695471250022446e-06,\n        \"unit\": \"litre\"\n      },\n      \"f_c\": {\n        \"final\": 0.00013511551790721047,\n        \"max_absolute_difference\": 2.5451352134511773e-07,\n        \"maximum\": 0.05263,\n        \"minimum\": 0.00013511551790721047,\n        \"rms_difference\": 1.1157581886746077e-07,\n        \"unit\": \"dimensionless\"\n      },\n      \"f_o\": {\n        \"final\": 0.20983854338597857,\n        \"max_absolute_difference\": 3.540399103052483e-07,\n        \"maximum\": 0.20983854338597857,\n        \"minimum\": 0.1368,\n        \"rms_difference\": 1.5537340880549553e-07,\n        \"unit\": \"dimensionless\"\n      },\n      \"p_c\": {\n        \"final\": 0.9010903499229878,\n        \"max_absolute_difference\": 0.0002073988157462736,\n        \"maximum\": 46.0,\n        \"minimum\": 0.9010903499229878,\n        \"rms_difference\": 4.328038969752049e-05,\n        \"unit\": \"mmHg\"\n      },\n      \"p_o\": {\n        \"final\": 149.04629088415146,\n        \"max_absolute_difference\": 0.0013916512251057611,\n        \"maximum\": 149.04629088415146,\n        \"minimum\": 40.0,\n        \"rms_difference\": 0.0001840826197247516,\n        \"unit\": \"mmHg\"\n      },\n      \"z\": {\n        \"final\": 0.0012196803557260963,\n        \"max_absolute_difference\": 4.1622137059854625e-08,\n        \"maximum\": 0.006504167595566995,\n        \"minimum\": 4.4219e-07,\n        \"rms_difference\": 1.4635791853758158e-08,\n        \"unit\": \"dimensionless (source normalization)\"\n      }\n    },\n    \"conclusion\": \"NUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS\",\n    \"cost\": {\n      \"nfev\": 2382,\n      \"rows\": 500,\n      \"wall_seconds\": 0.13282701798016205\n    },\n    \"diagnostics\": {\n      \"basic_state_bounds\": true,\n      \"finite\": true,\n      \"physiological_validity\": \"NOT_ESTABLISHED\",\n      \"qualified_review\": \"PENDING\",\n      \"source_derivative_max_abs_error_mmHg_per_s\": 7.406520731539602\n    },\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. A source pressure-derivative inconsistency is retained; normalized unit interpretation and qualified review remain pending.\",\n    \"reference_cost\": {\n      \"nfev\": null,\n      \"rows\": 500,\n      \"wall_seconds\": 0.07358834403567016\n    },\n    \"total_wall_seconds\": 0.869219793996308\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "export",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "export",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/runs/446a05b3b1cd4f4689f5cfa843e683ee",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/export.zip"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.18483460700372234,
+    "stdout": "{\n  \"export\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/export.zip\",\n  \"sha256\": \"f8aa70c47141f1ff4ea56aca0ac2f1fa99647c8947ca9cbc66fa42d9538f9ed9\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "export-inspect",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/exported"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.16703608899842948,
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"446a05b3b1cd4f4689f5cfa843e683ee\",\n    \"comparison\": {\n      \"P_A\": {\n        \"final\": 757.297494547673,\n        \"max_absolute_difference\": 1.6598056504335545e-05,\n        \"maximum\": 760.0,\n        \"minimum\": 757.2756642566978,\n        \"rms_difference\": 5.244608674454775e-06,\n        \"unit\": \"mmHg\"\n      },\n      \"V_A\": {\n        \"final\": 2.284388431364722,\n        \"max_absolute_difference\": 9.926252564795846e-06,\n        \"maximum\": 2.7166329693256883,\n        \"minimum\": 1.0,\n        \"rms_difference\": 3.695471250022446e-06,\n        \"unit\": \"litre\"\n      },\n      \"f_c\": {\n        \"final\": 0.00013511551790721047,\n        \"max_absolute_difference\": 2.5451352134511773e-07,\n        \"maximum\": 0.05263,\n        \"minimum\": 0.00013511551790721047,\n        \"rms_difference\": 1.1157581886746077e-07,\n        \"unit\": \"dimensionless\"\n      },\n      \"f_o\": {\n        \"final\": 0.20983854338597857,\n        \"max_absolute_difference\": 3.540399103052483e-07,\n        \"maximum\": 0.20983854338597857,\n        \"minimum\": 0.1368,\n        \"rms_difference\": 1.5537340880549553e-07,\n        \"unit\": \"dimensionless\"\n      },\n      \"p_c\": {\n        \"final\": 0.9010903499229878,\n        \"max_absolute_difference\": 0.0002073988157462736,\n        \"maximum\": 46.0,\n        \"minimum\": 0.9010903499229878,\n        \"rms_difference\": 4.328038969752049e-05,\n        \"unit\": \"mmHg\"\n      },\n      \"p_o\": {\n        \"final\": 149.04629088415146,\n        \"max_absolute_difference\": 0.0013916512251057611,\n        \"maximum\": 149.04629088415146,\n        \"minimum\": 40.0,\n        \"rms_difference\": 0.0001840826197247516,\n        \"unit\": \"mmHg\"\n      },\n      \"z\": {\n        \"final\": 0.0012196803557260963,\n        \"max_absolute_difference\": 4.1622137059854625e-08,\n        \"maximum\": 0.006504167595566995,\n        \"minimum\": 4.4219e-07,\n        \"rms_difference\": 1.4635791853758158e-08,\n        \"unit\": \"dimensionless (source normalization)\"\n      }\n    },\n    \"conclusion\": \"NUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS\",\n    \"cost\": {\n      \"nfev\": 2382,\n      \"rows\": 500,\n      \"wall_seconds\": 0.13282701798016205\n    },\n    \"diagnostics\": {\n      \"basic_state_bounds\": true,\n      \"finite\": true,\n      \"physiological_validity\": \"NOT_ESTABLISHED\",\n      \"qualified_review\": \"PENDING\",\n      \"source_derivative_max_abs_error_mmHg_per_s\": 7.406520731539602\n    },\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. A source pressure-derivative inconsistency is retained; normalized unit interpretation and qualified review remain pending.\",\n    \"reference_cost\": {\n      \"nfev\": null,\n      \"rows\": 500,\n      \"wall_seconds\": 0.07358834403567016\n    },\n    \"total_wall_seconds\": 0.869219793996308\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "queue-example",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "example",
+      "--model",
+      "synthetic-fcfs",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/queue-draft.json"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.2704554999945685,
+    "stdout": "{\n  \"written\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/queue-draft.json\",\n  \"next\": \"edit then seal\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "queue-seal",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/queue-draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/queue.json"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.0574296279810369,
+    "stdout": "{\n  \"seal\": \"c7e739d18ecb95c142b403f5fe74e1193c8a5353a9a451ae951b392dd705ccfa\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "queue-run",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/queue.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/runs"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.24324658198747784,
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/runs/0904c3a90181498291bad680656d54b3\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 12,\n    \"makespan_s\": 18.0,\n    \"max_wait_s\": 5.5,\n    \"mean_wait_s\": 2.75\n  },\n  \"attempt_id\": \"0904c3a90181498291bad680656d54b3\",\n  \"total_wall_seconds\": 0.11443199997302145\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "tampered-seal",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/tampered.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/rejected-store"
+    ],
+    "returncode": 2,
+    "expected": 2,
+    "elapsed_s": 0.07541533297626302,
+    "stdout": "{\"state\": \"REJECTED_OR_FAILED\", \"reason\": \"missing or changed immutable seal; seal a new experiment\"}\n",
+    "stderr": ""
+  },
+  {
+    "label": "timeout-seal",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/timeout-draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/timeout.json"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.06613328302046284,
+    "stdout": "{\n  \"seal\": \"2209e982e47ffdff92b8caafa870b86c3918c51f0184bfdc3b02707372ba1917\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "timeout",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/timeout.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/runs"
+    ],
+    "returncode": 1,
+    "expected": 1,
+    "elapsed_s": 0.1157825940172188,
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/runs/8dea366ea56e473ea29ca4115f6026ef\",\n  \"execution_state\": \"TIMED_OUT\",\n  \"conclusion\": \"NO_SCIENTIFIC_RESULT\",\n  \"attempt_id\": \"8dea366ea56e473ea29ca4115f6026ef\",\n  \"total_wall_seconds\": 0.0111708749900572\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "timeout-inspect",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/runs/8dea366ea56e473ea29ca4115f6026ef"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.054768575995694846,
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"8dea366ea56e473ea29ca4115f6026ef\",\n    \"conclusion\": \"NO_SCIENTIFIC_RESULT\",\n    \"execution_state\": \"TIMED_OUT\",\n    \"total_wall_seconds\": 0.0111708749900572\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "numerical-failure-seal",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/numerical-failure-draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/numerical-failure.json"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.07454051496461034,
+    "stdout": "{\n  \"seal\": \"b72e5241c05a9de8e4bebf4d0772af409890affb3effea2cd548709461a4dc2c\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "numerical-failure",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/numerical-failure.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/runs"
+    ],
+    "returncode": 1,
+    "expected": 1,
+    "elapsed_s": 0.46738227596506476,
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/runs/812d36e182a046138e6b13b3976cbbcc\",\n  \"execution_state\": \"FAILED\",\n  \"conclusion\": \"NO_SCIENTIFIC_RESULT\",\n  \"worker_exit_code\": 2,\n  \"attempt_id\": \"812d36e182a046138e6b13b3976cbbcc\",\n  \"total_wall_seconds\": 0.3643198100035079\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "interrupt-seal",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/interrupt-draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/interrupt.json"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.0535781109938398,
+    "stdout": "{\n  \"seal\": \"993e33293c28135fd7c8b807112ff73f8609309e87304407a6fdd45dfc0441f9\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "graceful-interrupt",
+    "returncode": 1,
+    "retained_bundle": "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/graceful/44286cd984f647bd817fe94b7b147957",
+    "signal": 15
+  },
+  {
+    "label": "graceful-list",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "list",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/graceful"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.06330899795284495,
+    "stdout": "{\n  \"attempts\": [\n    {\n      \"directory\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/graceful/44286cd984f647bd817fe94b7b147957\",\n      \"state\": \"CANCELLED\"\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "graceful-recover",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "recover",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/graceful/44286cd984f647bd817fe94b7b147957",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/recovered"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 6.250942605023738,
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/recovered/f821812997f74952bac3d0d913d968ee\",\n  \"original_preserved\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/graceful/44286cd984f647bd817fe94b7b147957\",\n  \"comparison\": {\n    \"P_A\": {\n      \"final\": 757.2974945477558,\n      \"max_absolute_difference\": 1.6605272207925736e-05,\n      \"maximum\": 760.0,\n      \"minimum\": 757.2756642601672,\n      \"rms_difference\": 5.2446690092839785e-06,\n      \"unit\": \"mmHg\"\n    },\n    \"V_A\": {\n      \"final\": 2.2843884314420104,\n      \"max_absolute_difference\": 9.926011198757578e-06,\n      \"maximum\": 2.7166329657801054,\n      \"minimum\": 1.0,\n      \"rms_difference\": 3.695480873580228e-06,\n      \"unit\": \"litre\"\n    },\n    \"f_c\": {\n      \"final\": 0.00013511551784658072,\n      \"max_absolute_difference\": 2.545270675839012e-07,\n      \"maximum\": 0.05263,\n      \"minimum\": 0.00013511551784658072,\n      \"rms_difference\": 1.1157620752228654e-07,\n      \"unit\": \"dimensionless\"\n    },\n    \"f_o\": {\n      \"final\": 0.20983854338606261,\n      \"max_absolute_difference\": 3.5405875412064525e-07,\n      \"maximum\": 0.20983854338606261,\n      \"minimum\": 0.1368,\n      \"rms_difference\": 1.5537394568729604e-07,\n      \"unit\": \"dimensionless\"\n    },\n    \"p_c\": {\n      \"final\": 0.9010903498906022,\n      \"max_absolute_difference\": 0.0002073700961808811,\n      \"maximum\": 46.0,\n      \"minimum\": 0.9010903498906022,\n      \"rms_difference\": 4.3280069240001644e-05,\n      \"unit\": \"mmHg\"\n    },\n    \"p_o\": {\n      \"final\": 149.04629088422192,\n      \"max_absolute_difference\": 0.001391551712899286,\n      \"maximum\": 149.04629088422192,\n      \"minimum\": 40.0,\n      \"rms_difference\": 0.00018408487915499308,\n      \"unit\": \"mmHg\"\n    },\n    \"z\": {\n      \"final\": 0.0012196803557140883,\n      \"max_absolute_difference\": 4.162219927657945e-08,\n      \"maximum\": 0.006504167600675944,\n      \"minimum\": 4.4219e-07,\n      \"rms_difference\": 1.4635852776044387e-08,\n      \"unit\": \"dimensionless (source normalization)\"\n    }\n  },\n  \"conclusion\": \"NUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS\",\n  \"cost\": {\n    \"nfev\": 70009,\n    \"rows\": 500,\n    \"wall_seconds\": 5.676755761029199\n  },\n  \"diagnostics\": {\n    \"basic_state_bounds\": true,\n    \"finite\": true,\n    \"physiological_validity\": \"NOT_ESTABLISHED\",\n    \"qualified_review\": \"PENDING\",\n    \"source_derivative_max_abs_error_mmHg_per_s\": 7.406520731539602\n  },\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. A source pressure-derivative inconsistency is retained; normalized unit interpretation and qualified review remain pending.\",\n  \"reference_cost\": {\n    \"nfev\": null,\n    \"rows\": 500,\n    \"wall_seconds\": 0.12516367802163586\n  },\n  \"attempt_id\": \"f821812997f74952bac3d0d913d968ee\",\n  \"total_wall_seconds\": 6.123393827001564\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "hard-interrupt",
+    "returncode": -9,
+    "retained_bundle": "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/hard/9c90bef123474c04860311d4ecab4f6b",
+    "signal": 9
+  },
+  {
+    "label": "hard-list",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "list",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/hard"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.1871216319850646,
+    "stdout": "{\n  \"attempts\": [\n    {\n      \"directory\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/hard/9c90bef123474c04860311d4ecab4f6b\",\n      \"state\": \"INTERRUPTED_UNFINALIZED\"\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "hard-recover",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "recover",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/hard/9c90bef123474c04860311d4ecab4f6b",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/recovered"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 5.5777682139887474,
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/recovered/40619d8de86549ff80fbf9650d53b91e\",\n  \"original_preserved\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/hard/9c90bef123474c04860311d4ecab4f6b\",\n  \"comparison\": {\n    \"P_A\": {\n      \"final\": 757.2974945477558,\n      \"max_absolute_difference\": 1.6605272207925736e-05,\n      \"maximum\": 760.0,\n      \"minimum\": 757.2756642601672,\n      \"rms_difference\": 5.2446690092839785e-06,\n      \"unit\": \"mmHg\"\n    },\n    \"V_A\": {\n      \"final\": 2.2843884314420104,\n      \"max_absolute_difference\": 9.926011198757578e-06,\n      \"maximum\": 2.7166329657801054,\n      \"minimum\": 1.0,\n      \"rms_difference\": 3.695480873580228e-06,\n      \"unit\": \"litre\"\n    },\n    \"f_c\": {\n      \"final\": 0.00013511551784658072,\n      \"max_absolute_difference\": 2.545270675839012e-07,\n      \"maximum\": 0.05263,\n      \"minimum\": 0.00013511551784658072,\n      \"rms_difference\": 1.1157620752228654e-07,\n      \"unit\": \"dimensionless\"\n    },\n    \"f_o\": {\n      \"final\": 0.20983854338606261,\n      \"max_absolute_difference\": 3.5405875412064525e-07,\n      \"maximum\": 0.20983854338606261,\n      \"minimum\": 0.1368,\n      \"rms_difference\": 1.5537394568729604e-07,\n      \"unit\": \"dimensionless\"\n    },\n    \"p_c\": {\n      \"final\": 0.9010903498906022,\n      \"max_absolute_difference\": 0.0002073700961808811,\n      \"maximum\": 46.0,\n      \"minimum\": 0.9010903498906022,\n      \"rms_difference\": 4.3280069240001644e-05,\n      \"unit\": \"mmHg\"\n    },\n    \"p_o\": {\n      \"final\": 149.04629088422192,\n      \"max_absolute_difference\": 0.001391551712899286,\n      \"maximum\": 149.04629088422192,\n      \"minimum\": 40.0,\n      \"rms_difference\": 0.00018408487915499308,\n      \"unit\": \"mmHg\"\n    },\n    \"z\": {\n      \"final\": 0.0012196803557140883,\n      \"max_absolute_difference\": 4.162219927657945e-08,\n      \"maximum\": 0.006504167600675944,\n      \"minimum\": 4.4219e-07,\n      \"rms_difference\": 1.4635852776044387e-08,\n      \"unit\": \"dimensionless (source normalization)\"\n    }\n  },\n  \"conclusion\": \"NUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS\",\n  \"cost\": {\n    \"nfev\": 70009,\n    \"rows\": 500,\n    \"wall_seconds\": 4.872335123014636\n  },\n  \"diagnostics\": {\n    \"basic_state_bounds\": true,\n    \"finite\": true,\n    \"physiological_validity\": \"NOT_ESTABLISHED\",\n    \"qualified_review\": \"PENDING\",\n    \"source_derivative_max_abs_error_mmHg_per_s\": 7.406520731539602\n  },\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. A source pressure-derivative inconsistency is retained; normalized unit interpretation and qualified review remain pending.\",\n  \"reference_cost\": {\n    \"nfev\": null,\n    \"rows\": 500,\n    \"wall_seconds\": 0.09190882195252925\n  },\n  \"attempt_id\": \"40619d8de86549ff80fbf9650d53b91e\",\n  \"total_wall_seconds\": 5.3263666270067915\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "original-source-rerun",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/runs/446a05b3b1cd4f4689f5cfa843e683ee/source.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/runs/446a05b3b1cd4f4689f5cfa843e683ee/study.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/source-rerun"
+    ],
+    "returncode": 0,
+    "expected": 0,
+    "elapsed_s": 0.7839630990056321,
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/source-rerun/7c415c6f9d1c4435a0cf3cd1e7dc0240\",\n  \"comparison\": {\n    \"P_A\": {\n      \"final\": 757.297494547673,\n      \"max_absolute_difference\": 1.6598056504335545e-05,\n      \"maximum\": 760.0,\n      \"minimum\": 757.2756642566978,\n      \"rms_difference\": 5.244608674454775e-06,\n      \"unit\": \"mmHg\"\n    },\n    \"V_A\": {\n      \"final\": 2.284388431364722,\n      \"max_absolute_difference\": 9.926252564795846e-06,\n      \"maximum\": 2.7166329693256883,\n      \"minimum\": 1.0,\n      \"rms_difference\": 3.695471250022446e-06,\n      \"unit\": \"litre\"\n    },\n    \"f_c\": {\n      \"final\": 0.00013511551790721047,\n      \"max_absolute_difference\": 2.5451352134511773e-07,\n      \"maximum\": 0.05263,\n      \"minimum\": 0.00013511551790721047,\n      \"rms_difference\": 1.1157581886746077e-07,\n      \"unit\": \"dimensionless\"\n    },\n    \"f_o\": {\n      \"final\": 0.20983854338597857,\n      \"max_absolute_difference\": 3.540399103052483e-07,\n      \"maximum\": 0.20983854338597857,\n      \"minimum\": 0.1368,\n      \"rms_difference\": 1.5537340880549553e-07,\n      \"unit\": \"dimensionless\"\n    },\n    \"p_c\": {\n      \"final\": 0.9010903499229878,\n      \"max_absolute_difference\": 0.0002073988157462736,\n      \"maximum\": 46.0,\n      \"minimum\": 0.9010903499229878,\n      \"rms_difference\": 4.328038969752049e-05,\n      \"unit\": \"mmHg\"\n    },\n    \"p_o\": {\n      \"final\": 149.04629088415146,\n      \"max_absolute_difference\": 0.0013916512251057611,\n      \"maximum\": 149.04629088415146,\n      \"minimum\": 40.0,\n      \"rms_difference\": 0.0001840826197247516,\n      \"unit\": \"mmHg\"\n    },\n    \"z\": {\n      \"final\": 0.0012196803557260963,\n      \"max_absolute_difference\": 4.1622137059854625e-08,\n      \"maximum\": 0.006504167595566995,\n      \"minimum\": 4.4219e-07,\n      \"rms_difference\": 1.4635791853758158e-08,\n      \"unit\": \"dimensionless (source normalization)\"\n    }\n  },\n  \"conclusion\": \"NUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS\",\n  \"cost\": {\n    \"nfev\": 2382,\n    \"rows\": 500,\n    \"wall_seconds\": 0.1986054300214164\n  },\n  \"diagnostics\": {\n    \"basic_state_bounds\": true,\n    \"finite\": true,\n    \"physiological_validity\": \"NOT_ESTABLISHED\",\n    \"qualified_review\": \"PENDING\",\n    \"source_derivative_max_abs_error_mmHg_per_s\": 7.406520731539602\n  },\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. A source pressure-derivative inconsistency is retained; normalized unit interpretation and qualified review remain pending.\",\n  \"reference_cost\": {\n    \"nfev\": null,\n    \"rows\": 500,\n    \"wall_seconds\": 0.11837015900528058\n  },\n  \"attempt_id\": \"7c415c6f9d1c4435a0cf3cd1e7dc0240\",\n  \"total_wall_seconds\": 0.6675901169655845\n}\n",
+    "stderr": ""
+  },
+  {
+    "label": "tampered-output",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/clean-venv/bin/python",
+      "-I",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/release-test-rc4/vital-rehearsal.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/clean-rc4/corrupt"
+    ],
+    "returncode": 2,
+    "expected": 2,
+    "elapsed_s": 0.06142629397800192,
+    "stdout": "{\"state\": \"REJECTED_OR_FAILED\", \"reason\": \"bundle integrity mismatch\"}\n",
+    "stderr": ""
+  }
+]

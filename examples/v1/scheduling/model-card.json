@@ -1,0 +1,6 @@
+{
+  "coupling": "NONE",
+  "license": "AGPL-3.0-or-later",
+  "model": "synthetic-fcfs",
+  "order": "jobs: arrival then ASCII id; server: earliest prior finish time then server id"
+}

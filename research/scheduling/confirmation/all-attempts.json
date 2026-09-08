@@ -1,0 +1,1529 @@
+[
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "example",
+      "--model",
+      "synthetic-fcfs",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/draft.json"
+    ],
+    "expected_returncode": 0,
+    "index": 1,
+    "label": "example",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"written\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/draft.json\",\n  \"next\": \"edit then seal\"\n}\n",
+    "wall_seconds": 0.11018653097562492
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/low-1701-d0.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/low-1701-d0.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 2,
+    "label": "low-1701-d0 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"47e3d745f4afee5e3fe339cc859bc604cccd129ef508caddb3f609937c759ce4\"\n}\n",
+    "wall_seconds": 0.1310333000146784
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/low-1701-d0.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 3,
+    "label": "low-1701-d0 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/eb9b8f379b764cc8a446679440d85bb4\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 15988.854784984234,\n    \"max_wait_s\": 0.0,\n    \"mean_wait_s\": 0.0\n  },\n  \"attempt_id\": \"eb9b8f379b764cc8a446679440d85bb4\",\n  \"total_wall_seconds\": 0.08023251604754478\n}\n",
+    "wall_seconds": 0.6748577899998054
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/eb9b8f379b764cc8a446679440d85bb4"
+    ],
+    "expected_returncode": 0,
+    "index": 4,
+    "label": "low-1701-d0 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"eb9b8f379b764cc8a446679440d85bb4\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 15988.854784984234,\n      \"max_wait_s\": 0.0,\n      \"mean_wait_s\": 0.0\n    },\n    \"total_wall_seconds\": 0.08023251604754478\n  }\n}\n",
+    "wall_seconds": 0.21821082895621657
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/low-1701-d1.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/low-1701-d1.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 5,
+    "label": "low-1701-d1 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"332de019cac422bd0df20724fd211fd97f590b7e7edb24d67f8c203138a75a71\"\n}\n",
+    "wall_seconds": 0.08816399500938132
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/low-1701-d1.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 6,
+    "label": "low-1701-d1 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/9d20579dcd4d4fb082945058d885b425\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 15989.854784984234,\n    \"max_wait_s\": 0.0,\n    \"mean_wait_s\": 0.0\n  },\n  \"attempt_id\": \"9d20579dcd4d4fb082945058d885b425\",\n  \"total_wall_seconds\": 0.07359362399438396\n}\n",
+    "wall_seconds": 0.23018970800330862
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/9d20579dcd4d4fb082945058d885b425"
+    ],
+    "expected_returncode": 0,
+    "index": 7,
+    "label": "low-1701-d1 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"9d20579dcd4d4fb082945058d885b425\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 15989.854784984234,\n      \"max_wait_s\": 0.0,\n      \"mean_wait_s\": 0.0\n    },\n    \"total_wall_seconds\": 0.07359362399438396\n  }\n}\n",
+    "wall_seconds": 0.07298744603758678
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/low-2903-d0.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/low-2903-d0.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 8,
+    "label": "low-2903-d0 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"7f4eea34bc7d4dbcb2cf8b60efa8fbc5bf75382b56ef756ff42e5c27b8bf8a86\"\n}\n",
+    "wall_seconds": 0.06660821696277708
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/low-2903-d0.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 9,
+    "label": "low-2903-d0 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/f7c052e63fda484da7ec4e696adf4bc9\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 15991.410388333843,\n    \"max_wait_s\": 0.0,\n    \"mean_wait_s\": 0.0\n  },\n  \"attempt_id\": \"f7c052e63fda484da7ec4e696adf4bc9\",\n  \"total_wall_seconds\": 0.11407717998372391\n}\n",
+    "wall_seconds": 0.2534014569828287
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/f7c052e63fda484da7ec4e696adf4bc9"
+    ],
+    "expected_returncode": 0,
+    "index": 10,
+    "label": "low-2903-d0 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"f7c052e63fda484da7ec4e696adf4bc9\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 15991.410388333843,\n      \"max_wait_s\": 0.0,\n      \"mean_wait_s\": 0.0\n    },\n    \"total_wall_seconds\": 0.11407717998372391\n  }\n}\n",
+    "wall_seconds": 0.051335869007743895
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/low-2903-d1.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/low-2903-d1.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 11,
+    "label": "low-2903-d1 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"a304cacab914f297d12f33921b1cf910170e5bfef61ae985cdddbd16bf15787d\"\n}\n",
+    "wall_seconds": 0.057143546000588685
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/low-2903-d1.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 12,
+    "label": "low-2903-d1 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/331df824a7b84464a8af0ceb1a4644a7\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 15992.410388333843,\n    \"max_wait_s\": 0.0,\n    \"mean_wait_s\": 0.0\n  },\n  \"attempt_id\": \"331df824a7b84464a8af0ceb1a4644a7\",\n  \"total_wall_seconds\": 0.08108681603334844\n}\n",
+    "wall_seconds": 0.2636976350331679
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/331df824a7b84464a8af0ceb1a4644a7"
+    ],
+    "expected_returncode": 0,
+    "index": 13,
+    "label": "low-2903-d1 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"331df824a7b84464a8af0ceb1a4644a7\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 15992.410388333843,\n      \"max_wait_s\": 0.0,\n      \"mean_wait_s\": 0.0\n    },\n    \"total_wall_seconds\": 0.08108681603334844\n  }\n}\n",
+    "wall_seconds": 0.07567054801620543
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/near-1701-d0.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/near-1701-d0.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 14,
+    "label": "near-1701-d0 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"12b6b5f545be449b2b783e6a696a6bade91975d55de6cc00c32dcfc65bef35a8\"\n}\n",
+    "wall_seconds": 0.13286421704106033
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/near-1701-d0.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 15,
+    "label": "near-1701-d0 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/1f40dfe78da641f08fcf4fe78e44880d\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 8419.82919957301,\n    \"max_wait_s\": 10.487374593979894,\n    \"mean_wait_s\": 1.6396465729819494\n  },\n  \"attempt_id\": \"1f40dfe78da641f08fcf4fe78e44880d\",\n  \"total_wall_seconds\": 0.111103538016323\n}\n",
+    "wall_seconds": 0.4819732450414449
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/1f40dfe78da641f08fcf4fe78e44880d"
+    ],
+    "expected_returncode": 0,
+    "index": 16,
+    "label": "near-1701-d0 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"1f40dfe78da641f08fcf4fe78e44880d\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 8419.82919957301,\n      \"max_wait_s\": 10.487374593979894,\n      \"mean_wait_s\": 1.6396465729819494\n    },\n    \"total_wall_seconds\": 0.111103538016323\n  }\n}\n",
+    "wall_seconds": 0.05259666498750448
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/near-1701-d1.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/near-1701-d1.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 17,
+    "label": "near-1701-d1 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"8b30063190c31b992d585b917deb393392d20f1bb71a654043ef0e112a167f3e\"\n}\n",
+    "wall_seconds": 0.06619007798144594
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/near-1701-d1.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 18,
+    "label": "near-1701-d1 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/56c7f5614b264a1d9288878ccdb08489\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 8800.000000000002,\n    \"max_wait_s\": 379.7168905215822,\n    \"mean_wait_s\": 192.9007208604919\n  },\n  \"attempt_id\": \"56c7f5614b264a1d9288878ccdb08489\",\n  \"total_wall_seconds\": 0.07501094095641747\n}\n",
+    "wall_seconds": 0.32476049300748855
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/56c7f5614b264a1d9288878ccdb08489"
+    ],
+    "expected_returncode": 0,
+    "index": 19,
+    "label": "near-1701-d1 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"56c7f5614b264a1d9288878ccdb08489\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 8800.000000000002,\n      \"max_wait_s\": 379.7168905215822,\n      \"mean_wait_s\": 192.9007208604919\n    },\n    \"total_wall_seconds\": 0.07501094095641747\n  }\n}\n",
+    "wall_seconds": 0.16568780096713454
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/near-2903-d0.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/near-2903-d0.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 20,
+    "label": "near-2903-d0 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"b79c1266dea68c85bea4698923c6a1582fd36a68c1312f75c5f208c6f53e0771\"\n}\n",
+    "wall_seconds": 0.4784138520481065
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/near-2903-d0.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 21,
+    "label": "near-2903-d0 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/f54d6ee337f648ad981e220929f657b7\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 8421.936704123309,\n    \"max_wait_s\": 11.531334731407696,\n    \"mean_wait_s\": 1.4488003128424296\n  },\n  \"attempt_id\": \"f54d6ee337f648ad981e220929f657b7\",\n  \"total_wall_seconds\": 0.0640624999650754\n}\n",
+    "wall_seconds": 0.23282896901946515
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/f54d6ee337f648ad981e220929f657b7"
+    ],
+    "expected_returncode": 0,
+    "index": 22,
+    "label": "near-2903-d0 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"f54d6ee337f648ad981e220929f657b7\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 8421.936704123309,\n      \"max_wait_s\": 11.531334731407696,\n      \"mean_wait_s\": 1.4488003128424296\n    },\n    \"total_wall_seconds\": 0.0640624999650754\n  }\n}\n",
+    "wall_seconds": 0.05658751097507775
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/near-2903-d1.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/near-2903-d1.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 23,
+    "label": "near-2903-d1 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"3f57044f755d0087eea2a024f989987005fdd78530a32ac4efd61575a5f4b00e\"\n}\n",
+    "wall_seconds": 0.0574161330005154
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/near-2903-d1.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 24,
+    "label": "near-2903-d1 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/63b5e61333cc49aba8f694de05985196\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 8800.000000000005,\n    \"max_wait_s\": 378.6940960870088,\n    \"mean_wait_s\": 173.99227350475613\n  },\n  \"attempt_id\": \"63b5e61333cc49aba8f694de05985196\",\n  \"total_wall_seconds\": 0.08516644698102027\n}\n",
+    "wall_seconds": 0.2007118389592506
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/63b5e61333cc49aba8f694de05985196"
+    ],
+    "expected_returncode": 0,
+    "index": 25,
+    "label": "near-2903-d1 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"63b5e61333cc49aba8f694de05985196\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 8800.000000000005,\n      \"max_wait_s\": 378.6940960870088,\n      \"mean_wait_s\": 173.99227350475613\n    },\n    \"total_wall_seconds\": 0.08516644698102027\n  }\n}\n",
+    "wall_seconds": 0.1661512430291623
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/over-1701-d0.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/over-1701-d0.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 26,
+    "label": "over-1701-d0 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"972d78a5d6d1302fe389277a4bc7afaf1c2374eb8ec55a782cff8e8af93effb5\"\n}\n",
+    "wall_seconds": 0.14234075899003074
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/over-1701-d0.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 27,
+    "label": "over-1701-d0 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/04982c9b26664a4b8780e99cc6be5993\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 8000.000000000001,\n    \"max_wait_s\": 727.5088513793926,\n    \"mean_wait_s\": 367.41525729749884\n  },\n  \"attempt_id\": \"04982c9b26664a4b8780e99cc6be5993\",\n  \"total_wall_seconds\": 0.081387585029006\n}\n",
+    "wall_seconds": 0.31048343901056796
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/04982c9b26664a4b8780e99cc6be5993"
+    ],
+    "expected_returncode": 0,
+    "index": 28,
+    "label": "over-1701-d0 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"04982c9b26664a4b8780e99cc6be5993\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 8000.000000000001,\n      \"max_wait_s\": 727.5088513793926,\n      \"mean_wait_s\": 367.41525729749884\n    },\n    \"total_wall_seconds\": 0.081387585029006\n  }\n}\n",
+    "wall_seconds": 0.0723391899955459
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/over-1701-d1.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/over-1701-d1.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 29,
+    "label": "over-1701-d1 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"83f0164c5974321ee06a798d8f7658add43b95c96fb0cb6c5df20bd0ee251198\"\n}\n",
+    "wall_seconds": 0.08409928099717945
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/over-1701-d1.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 30,
+    "label": "over-1701-d1 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/77b2f2d342064c4dbd911dc04108fa11\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 8800.000000000002,\n    \"max_wait_s\": 1526.5088513793926,\n    \"mean_wait_s\": 766.9152572975004\n  },\n  \"attempt_id\": \"77b2f2d342064c4dbd911dc04108fa11\",\n  \"total_wall_seconds\": 0.0820132700027898\n}\n",
+    "wall_seconds": 0.28457629395416006
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/77b2f2d342064c4dbd911dc04108fa11"
+    ],
+    "expected_returncode": 0,
+    "index": 31,
+    "label": "over-1701-d1 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"77b2f2d342064c4dbd911dc04108fa11\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 8800.000000000002,\n      \"max_wait_s\": 1526.5088513793926,\n      \"mean_wait_s\": 766.9152572975004\n    },\n    \"total_wall_seconds\": 0.0820132700027898\n  }\n}\n",
+    "wall_seconds": 0.113972955965437
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/over-2903-d0.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/over-2903-d0.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 32,
+    "label": "over-2903-d0 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"4bde3cc3165a8fb134a6bdd32c216c97357e7db10696f939423723ef81be8cee\"\n}\n",
+    "wall_seconds": 0.06817996100289747
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/over-2903-d0.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 33,
+    "label": "over-2903-d0 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/425496536ff547d09a0c291da4424066\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 8000.000000000002,\n    \"max_wait_s\": 724.9532480297921,\n    \"mean_wait_s\": 348.32990058826\n  },\n  \"attempt_id\": \"425496536ff547d09a0c291da4424066\",\n  \"total_wall_seconds\": 0.11475801700726151\n}\n",
+    "wall_seconds": 0.352458359033335
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/425496536ff547d09a0c291da4424066"
+    ],
+    "expected_returncode": 0,
+    "index": 34,
+    "label": "over-2903-d0 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"425496536ff547d09a0c291da4424066\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 8000.000000000002,\n      \"max_wait_s\": 724.9532480297921,\n      \"mean_wait_s\": 348.32990058826\n    },\n    \"total_wall_seconds\": 0.11475801700726151\n  }\n}\n",
+    "wall_seconds": 0.06848207302391529
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/over-2903-d1.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/over-2903-d1.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 35,
+    "label": "over-2903-d1 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"f3f96d08c276dc0ba2b46e958c9c70e7d9c0ad794a2fc0cb3ba966b9ef8b13f7\"\n}\n",
+    "wall_seconds": 0.06338326499098912
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/over-2903-d1.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 36,
+    "label": "over-2903-d1 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/563f3ccd6c4e4cc19337d3b6b230cf66\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 8800.000000000005,\n    \"max_wait_s\": 1523.9532480297948,\n    \"mean_wait_s\": 747.8299005882591\n  },\n  \"attempt_id\": \"563f3ccd6c4e4cc19337d3b6b230cf66\",\n  \"total_wall_seconds\": 0.06404708098853007\n}\n",
+    "wall_seconds": 0.256825617980212
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/563f3ccd6c4e4cc19337d3b6b230cf66"
+    ],
+    "expected_returncode": 0,
+    "index": 37,
+    "label": "over-2903-d1 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"563f3ccd6c4e4cc19337d3b6b230cf66\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 8800.000000000005,\n      \"max_wait_s\": 1523.9532480297948,\n      \"mean_wait_s\": 747.8299005882591\n    },\n    \"total_wall_seconds\": 0.06404708098853007\n  }\n}\n",
+    "wall_seconds": 0.04695941600948572
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/multi-1701-d0.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/multi-1701-d0.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 38,
+    "label": "multi-1701-d0 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"fd9bf24b09756d6cd575a819111c4156ec1f2dfafa27a286f63efb206a956f6e\"\n}\n",
+    "wall_seconds": 0.2674607469816692
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/multi-1701-d0.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 39,
+    "label": "multi-1701-d0 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/83ae3330cd454a36b6f71fdc97e3d2ad\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 2112.4136455095936,\n    \"max_wait_s\": 3.976763463509542,\n    \"mean_wait_s\": 0.6401323353256025\n  },\n  \"attempt_id\": \"83ae3330cd454a36b6f71fdc97e3d2ad\",\n  \"total_wall_seconds\": 0.1655558650381863\n}\n",
+    "wall_seconds": 0.5947537730098702
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/83ae3330cd454a36b6f71fdc97e3d2ad"
+    ],
+    "expected_returncode": 0,
+    "index": 40,
+    "label": "multi-1701-d0 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"83ae3330cd454a36b6f71fdc97e3d2ad\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 2112.4136455095936,\n      \"max_wait_s\": 3.976763463509542,\n      \"mean_wait_s\": 0.6401323353256025\n    },\n    \"total_wall_seconds\": 0.1655558650381863\n  }\n}\n",
+    "wall_seconds": 0.21986156096681952
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/multi-1701-d1.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/multi-1701-d1.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 41,
+    "label": "multi-1701-d1 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"e2b34ff5c7381188187ddd22f59b79e27a5d261fba02022f46c7b476e660919b\"\n}\n",
+    "wall_seconds": 0.14438319997861981
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/multi-1701-d1.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 42,
+    "label": "multi-1701-d1 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/ed816499585143b8b98c1583afe919ae\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 2207.5053851624216,\n    \"max_wait_s\": 95.67480444805642,\n    \"mean_wait_s\": 47.82265054165789\n  },\n  \"attempt_id\": \"ed816499585143b8b98c1583afe919ae\",\n  \"total_wall_seconds\": 0.2702405789750628\n}\n",
+    "wall_seconds": 0.637671047996264
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/ed816499585143b8b98c1583afe919ae"
+    ],
+    "expected_returncode": 0,
+    "index": 43,
+    "label": "multi-1701-d1 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"ed816499585143b8b98c1583afe919ae\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 2207.5053851624216,\n      \"max_wait_s\": 95.67480444805642,\n      \"mean_wait_s\": 47.82265054165789\n    },\n    \"total_wall_seconds\": 0.2702405789750628\n  }\n}\n",
+    "wall_seconds": 0.14041906403144822
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/multi-2903-d0.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/multi-2903-d0.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 44,
+    "label": "multi-2903-d0 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"1dd0ca8e631b3979fb300817dd4fb0a7ab8b03aef2ed5101aa16544183ee0862\"\n}\n",
+    "wall_seconds": 0.1795544020133093
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/multi-2903-d0.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 45,
+    "label": "multi-2903-d0 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/d7bd3a37bb8b4acc8939ef8eb0effe86\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 2114.041967281206,\n    \"max_wait_s\": 4.151016224136583,\n    \"mean_wait_s\": 0.5384744309385121\n  },\n  \"attempt_id\": \"d7bd3a37bb8b4acc8939ef8eb0effe86\",\n  \"total_wall_seconds\": 0.08694489602930844\n}\n",
+    "wall_seconds": 0.51652543497039
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/d7bd3a37bb8b4acc8939ef8eb0effe86"
+    ],
+    "expected_returncode": 0,
+    "index": 46,
+    "label": "multi-2903-d0 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"d7bd3a37bb8b4acc8939ef8eb0effe86\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 2114.041967281206,\n      \"max_wait_s\": 4.151016224136583,\n      \"mean_wait_s\": 0.5384744309385121\n    },\n    \"total_wall_seconds\": 0.08694489602930844\n  }\n}\n",
+    "wall_seconds": 0.09997717500664294
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/multi-2903-d1.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/multi-2903-d1.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 47,
+    "label": "multi-2903-d1 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"92e7a20470182c5bd44dafe8bb09c2415fdfd09971a801dba6ee2359821b87a1\"\n}\n",
+    "wall_seconds": 0.05701927398331463
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/multi-2903-d1.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 48,
+    "label": "multi-2903-d1 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/32ff449bdfce4482859455cbedbe60da\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 2209.531796273937,\n    \"max_wait_s\": 95.58186730470015,\n    \"mean_wait_s\": 42.904879235053684\n  },\n  \"attempt_id\": \"32ff449bdfce4482859455cbedbe60da\",\n  \"total_wall_seconds\": 0.11647496098885313\n}\n",
+    "wall_seconds": 0.2988872019923292
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/32ff449bdfce4482859455cbedbe60da"
+    ],
+    "expected_returncode": 0,
+    "index": 49,
+    "label": "multi-2903-d1 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"32ff449bdfce4482859455cbedbe60da\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 2209.531796273937,\n      \"max_wait_s\": 95.58186730470015,\n      \"mean_wait_s\": 42.904879235053684\n    },\n    \"total_wall_seconds\": 0.11647496098885313\n  }\n}\n",
+    "wall_seconds": 0.1034007950220257
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/burst-1701-d0.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/burst-1701-d0.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 50,
+    "label": "burst-1701-d0 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"c33a93ad2b7c0aad43f078512d198faae47eb17e1995d1de389adea05a8a9a9b\"\n}\n",
+    "wall_seconds": 0.07333273795666173
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/burst-1701-d0.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 51,
+    "label": "burst-1701-d0 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/fd78f7c00000406da10060e1fef3f4ab\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 2814.2857142857147,\n    \"max_wait_s\": 90.00000000000006,\n    \"mean_wait_s\": 44.99999999999999\n  },\n  \"attempt_id\": \"fd78f7c00000406da10060e1fef3f4ab\",\n  \"total_wall_seconds\": 0.12177646602503955\n}\n",
+    "wall_seconds": 0.2766183860367164
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/fd78f7c00000406da10060e1fef3f4ab"
+    ],
+    "expected_returncode": 0,
+    "index": 52,
+    "label": "burst-1701-d0 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"fd78f7c00000406da10060e1fef3f4ab\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 2814.2857142857147,\n      \"max_wait_s\": 90.00000000000006,\n      \"mean_wait_s\": 44.99999999999999\n    },\n    \"total_wall_seconds\": 0.12177646602503955\n  }\n}\n",
+    "wall_seconds": 0.06125022599007934
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/burst-1701-d1.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/burst-1701-d1.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 53,
+    "label": "burst-1701-d1 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"b6c53f98191e7542793568031a3e4c2dced33df2146a62038447ca6252f4c47c\"\n}\n",
+    "wall_seconds": 0.05736296402756125
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/burst-1701-d1.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 54,
+    "label": "burst-1701-d1 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/7e7aa9696a594d60b003d5a08f6b010e\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 2824.2857142857147,\n    \"max_wait_s\": 99.00000000000006,\n    \"mean_wait_s\": 49.49999999999999\n  },\n  \"attempt_id\": \"7e7aa9696a594d60b003d5a08f6b010e\",\n  \"total_wall_seconds\": 0.06435756798600778\n}\n",
+    "wall_seconds": 0.36853571503888816
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/7e7aa9696a594d60b003d5a08f6b010e"
+    ],
+    "expected_returncode": 0,
+    "index": 55,
+    "label": "burst-1701-d1 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"7e7aa9696a594d60b003d5a08f6b010e\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 2824.2857142857147,\n      \"max_wait_s\": 99.00000000000006,\n      \"mean_wait_s\": 49.49999999999999\n    },\n    \"total_wall_seconds\": 0.06435756798600778\n  }\n}\n",
+    "wall_seconds": 0.1767428910243325
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/burst-2903-d0.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/burst-2903-d0.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 56,
+    "label": "burst-2903-d0 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"8fcdfad45c5f4d33f5794cc32b6461225d21c56ba9853f8bad9444dbb4b8a979\"\n}\n",
+    "wall_seconds": 0.1772621069685556
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/burst-2903-d0.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 57,
+    "label": "burst-2903-d0 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/58b5b3bdda4f4defb307de132a6af743\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 2814.2857142857147,\n    \"max_wait_s\": 90.00000000000006,\n    \"mean_wait_s\": 44.99999999999999\n  },\n  \"attempt_id\": \"58b5b3bdda4f4defb307de132a6af743\",\n  \"total_wall_seconds\": 0.1158603280200623\n}\n",
+    "wall_seconds": 0.491687179019209
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/58b5b3bdda4f4defb307de132a6af743"
+    ],
+    "expected_returncode": 0,
+    "index": 58,
+    "label": "burst-2903-d0 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"58b5b3bdda4f4defb307de132a6af743\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 2814.2857142857147,\n      \"max_wait_s\": 90.00000000000006,\n      \"mean_wait_s\": 44.99999999999999\n    },\n    \"total_wall_seconds\": 0.1158603280200623\n  }\n}\n",
+    "wall_seconds": 0.20525070501025766
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/burst-2903-d1.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/burst-2903-d1.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 59,
+    "label": "burst-2903-d1 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"73e2200bd21bf0204a6ece7ea929ee03cd9f82811971c81df8bf68c203b8864c\"\n}\n",
+    "wall_seconds": 0.12167550798039883
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/burst-2903-d1.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 60,
+    "label": "burst-2903-d1 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/e3207fe35005488c9b8bb495259a34d3\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 2824.2857142857147,\n    \"max_wait_s\": 99.00000000000006,\n    \"mean_wait_s\": 49.49999999999999\n  },\n  \"attempt_id\": \"e3207fe35005488c9b8bb495259a34d3\",\n  \"total_wall_seconds\": 0.09561865497380495\n}\n",
+    "wall_seconds": 0.33232862496515736
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/e3207fe35005488c9b8bb495259a34d3"
+    ],
+    "expected_returncode": 0,
+    "index": 61,
+    "label": "burst-2903-d1 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"e3207fe35005488c9b8bb495259a34d3\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 2824.2857142857147,\n      \"max_wait_s\": 99.00000000000006,\n      \"mean_wait_s\": 49.49999999999999\n    },\n    \"total_wall_seconds\": 0.09561865497380495\n  }\n}\n",
+    "wall_seconds": 0.1006202109856531
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/hetero-1701-d0.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/hetero-1701-d0.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 62,
+    "label": "hetero-1701-d0 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"f4940d15f09b7eb1ecc85d73aba0f06e57f2a63e0d961381fa879ea8cab5fcf7\"\n}\n",
+    "wall_seconds": 0.36814809404313564
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/hetero-1701-d0.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 63,
+    "label": "hetero-1701-d0 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/d5eea5a11da948a3b4ed19a4b5c73f93\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 2855.571428571429,\n    \"max_wait_s\": 43.0,\n    \"mean_wait_s\": 4.352500000000001\n  },\n  \"attempt_id\": \"d5eea5a11da948a3b4ed19a4b5c73f93\",\n  \"total_wall_seconds\": 0.12639234401285648\n}\n",
+    "wall_seconds": 0.3335517910309136
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/d5eea5a11da948a3b4ed19a4b5c73f93"
+    ],
+    "expected_returncode": 0,
+    "index": 64,
+    "label": "hetero-1701-d0 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"d5eea5a11da948a3b4ed19a4b5c73f93\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 2855.571428571429,\n      \"max_wait_s\": 43.0,\n      \"mean_wait_s\": 4.352500000000001\n    },\n    \"total_wall_seconds\": 0.12639234401285648\n  }\n}\n",
+    "wall_seconds": 0.047864339023362845
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/hetero-1701-d1.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/hetero-1701-d1.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 65,
+    "label": "hetero-1701-d1 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"083906d080543493d844129dacf28da6544480b6d4ec6cba504109c896ffc734\"\n}\n",
+    "wall_seconds": 0.16976667998824269
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/hetero-1701-d1.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 66,
+    "label": "hetero-1701-d1 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/360d3092f5bd42178faac22e5a48dc1b\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 2870.2857142857147,\n    \"max_wait_s\": 53.85714285714312,\n    \"mean_wait_s\": 6.560178571428571\n  },\n  \"attempt_id\": \"360d3092f5bd42178faac22e5a48dc1b\",\n  \"total_wall_seconds\": 0.22238372394349426\n}\n",
+    "wall_seconds": 0.6172626040061004
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/360d3092f5bd42178faac22e5a48dc1b"
+    ],
+    "expected_returncode": 0,
+    "index": 67,
+    "label": "hetero-1701-d1 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"360d3092f5bd42178faac22e5a48dc1b\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 2870.2857142857147,\n      \"max_wait_s\": 53.85714285714312,\n      \"mean_wait_s\": 6.560178571428571\n    },\n    \"total_wall_seconds\": 0.22238372394349426\n  }\n}\n",
+    "wall_seconds": 0.24795946199446917
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/hetero-2903-d0.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/hetero-2903-d0.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 68,
+    "label": "hetero-2903-d0 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"3c2446360601847b3a8d7e087e197eec3a2d190d1f3a1264daf42173cb1e31ca\"\n}\n",
+    "wall_seconds": 0.24179093400016427
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/hetero-2903-d0.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 69,
+    "label": "hetero-2903-d0 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/2f4d86b303c443d4878d988dd08d3794\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 2881.2857142857147,\n    \"max_wait_s\": 55.85714285714286,\n    \"mean_wait_s\": 3.54428571428571\n  },\n  \"attempt_id\": \"2f4d86b303c443d4878d988dd08d3794\",\n  \"total_wall_seconds\": 0.12408156599849463\n}\n",
+    "wall_seconds": 0.38221698300912976
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/2f4d86b303c443d4878d988dd08d3794"
+    ],
+    "expected_returncode": 0,
+    "index": 70,
+    "label": "hetero-2903-d0 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"2f4d86b303c443d4878d988dd08d3794\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 2881.2857142857147,\n      \"max_wait_s\": 55.85714285714286,\n      \"mean_wait_s\": 3.54428571428571\n    },\n    \"total_wall_seconds\": 0.12408156599849463\n  }\n}\n",
+    "wall_seconds": 0.1405545650050044
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/hetero-2903-d1.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/hetero-2903-d1.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 71,
+    "label": "hetero-2903-d1 seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"0e913d5cbb7f8208fcbe8b2e1e76a7b102144f983bd1d530a9e96fee6ec11076\"\n}\n",
+    "wall_seconds": 0.13709561002906412
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/hetero-2903-d1.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 72,
+    "label": "hetero-2903-d1 run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/867346bfa089492ea18cd2185128daa6\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 2882.2857142857147,\n    \"max_wait_s\": 64.85714285714286,\n    \"mean_wait_s\": 5.347678571428568\n  },\n  \"attempt_id\": \"867346bfa089492ea18cd2185128daa6\",\n  \"total_wall_seconds\": 0.4671260089962743\n}\n",
+    "wall_seconds": 0.8092140129883774
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/867346bfa089492ea18cd2185128daa6"
+    ],
+    "expected_returncode": 0,
+    "index": 73,
+    "label": "hetero-2903-d1 inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"867346bfa089492ea18cd2185128daa6\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 2882.2857142857147,\n      \"max_wait_s\": 64.85714285714286,\n      \"mean_wait_s\": 5.347678571428568\n    },\n    \"total_wall_seconds\": 0.4671260089962743\n  }\n}\n",
+    "wall_seconds": 0.1713365819887258
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/heldout-permutation.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/heldout-permutation.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 74,
+    "label": "heldout-permutation seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"13df221b930b6f6105786c40db0e9673ef53bb006a9291889c04a0409c94f370\"\n}\n",
+    "wall_seconds": 0.37001549801789224
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/heldout-permutation.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 75,
+    "label": "heldout-permutation run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/c1c1fa71f3b54f9a8f0dcb6335fe32c3\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 800,\n    \"makespan_s\": 15988.854784984234,\n    \"max_wait_s\": 0.0,\n    \"mean_wait_s\": 0.0\n  },\n  \"attempt_id\": \"c1c1fa71f3b54f9a8f0dcb6335fe32c3\",\n  \"total_wall_seconds\": 0.22031871101353317\n}\n",
+    "wall_seconds": 0.6193853939766996
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/c1c1fa71f3b54f9a8f0dcb6335fe32c3"
+    ],
+    "expected_returncode": 0,
+    "index": 76,
+    "label": "heldout-permutation inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"c1c1fa71f3b54f9a8f0dcb6335fe32c3\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 800,\n      \"makespan_s\": 15988.854784984234,\n      \"max_wait_s\": 0.0,\n      \"mean_wait_s\": 0.0\n    },\n    \"total_wall_seconds\": 0.22031871101353317\n  }\n}\n",
+    "wall_seconds": 0.05457260203547776
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/heldout-sixteen-ties.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/heldout-sixteen-ties.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 77,
+    "label": "heldout-sixteen-ties seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"960a3b5b6e4da3c97895e5efebe4286bd4f34b9831355ef77d1c1709777b1c96\"\n}\n",
+    "wall_seconds": 0.2603192999958992
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/heldout-sixteen-ties.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 78,
+    "label": "heldout-sixteen-ties run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/d8b6ec29ac1f44158269cf3327a89ce5\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 32,\n    \"makespan_s\": 0.002,\n    \"max_wait_s\": 0.001,\n    \"mean_wait_s\": 0.0005\n  },\n  \"attempt_id\": \"d8b6ec29ac1f44158269cf3327a89ce5\",\n  \"total_wall_seconds\": 0.11921616201288998\n}\n",
+    "wall_seconds": 0.2791856130352244
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/d8b6ec29ac1f44158269cf3327a89ce5"
+    ],
+    "expected_returncode": 0,
+    "index": 79,
+    "label": "heldout-sixteen-ties inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"d8b6ec29ac1f44158269cf3327a89ce5\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 32,\n      \"makespan_s\": 0.002,\n      \"max_wait_s\": 0.001,\n      \"mean_wait_s\": 0.0005\n    },\n    \"total_wall_seconds\": 0.11921616201288998\n  }\n}\n",
+    "wall_seconds": 0.06501814798684791
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/heldout-boundaries.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/heldout-boundaries.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 80,
+    "label": "heldout-boundaries seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"b855925505886292f97deafc78644f1bb4295c786ab099b2c0d6fadc7ec82757\"\n}\n",
+    "wall_seconds": 0.06963698100298643
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/heldout-boundaries.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 81,
+    "label": "heldout-boundaries run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/672cae4583ed418aa3a34c9828316902\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 3,\n    \"makespan_s\": 1000100.001,\n    \"max_wait_s\": 100.001,\n    \"mean_wait_s\": 33.333666666666666\n  },\n  \"attempt_id\": \"672cae4583ed418aa3a34c9828316902\",\n  \"total_wall_seconds\": 0.07683057599933818\n}\n",
+    "wall_seconds": 0.21757335297297686
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/672cae4583ed418aa3a34c9828316902"
+    ],
+    "expected_returncode": 0,
+    "index": 82,
+    "label": "heldout-boundaries inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"672cae4583ed418aa3a34c9828316902\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 3,\n      \"makespan_s\": 1000100.001,\n      \"max_wait_s\": 100.001,\n      \"mean_wait_s\": 33.333666666666666\n    },\n    \"total_wall_seconds\": 0.07683057599933818\n  }\n}\n",
+    "wall_seconds": 0.06904855702305213
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/heldout-idle-ascii.draft.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/heldout-idle-ascii.sealed.json"
+    ],
+    "expected_returncode": 0,
+    "index": 83,
+    "label": "heldout-idle-ascii seal",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"seal\": \"de7d7ab6bd3a3085dc216ece6185fa8f0bac2472ff701dcde51e56f2706bfde1\"\n}\n",
+    "wall_seconds": 0.057738792966119945
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/heldout-idle-ascii.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts"
+    ],
+    "expected_returncode": 0,
+    "index": 84,
+    "label": "heldout-idle-ascii run",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"bundle\": \"/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/2f0985d285404edb8494a3446c9b7464\",\n  \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n  \"coupling\": \"NONE\",\n  \"event_type\": \"synthetic.service_completed.v1\",\n  \"execution_state\": \"COMPLETED\",\n  \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n  \"metrics\": {\n    \"jobs\": 3,\n    \"makespan_s\": 11.0,\n    \"max_wait_s\": 0.0,\n    \"mean_wait_s\": 0.0\n  },\n  \"attempt_id\": \"2f0985d285404edb8494a3446c9b7464\",\n  \"total_wall_seconds\": 0.1258521900163032\n}\n",
+    "wall_seconds": 0.2791051029926166
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/attempts/2f0985d285404edb8494a3446c9b7464"
+    ],
+    "expected_returncode": 0,
+    "index": 85,
+    "label": "heldout-idle-ascii inspect",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"integrity\": \"VERIFIED\",\n  \"authenticity\": \"NOT_ESTABLISHED\",\n  \"result\": {\n    \"attempt_id\": \"2f0985d285404edb8494a3446c9b7464\",\n    \"conclusion\": \"SYNTHETIC_SCHEDULE_ONLY\",\n    \"coupling\": \"NONE\",\n    \"event_type\": \"synthetic.service_completed.v1\",\n    \"execution_state\": \"COMPLETED\",\n    \"limitation\": \"Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.\",\n    \"metrics\": {\n      \"jobs\": 3,\n      \"makespan_s\": 11.0,\n      \"max_wait_s\": 0.0,\n      \"mean_wait_s\": 0.0\n    },\n    \"total_wall_seconds\": 0.1258521900163032\n  }\n}\n",
+    "wall_seconds": 0.0671006019692868
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/duplicate.invalid.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/duplicate.must-not-exist.json"
+    ],
+    "expected_returncode": 2,
+    "index": 86,
+    "label": "duplicate rejection",
+    "returncode": 2,
+    "stderr": "",
+    "stdout": "{\"state\": \"REJECTED_OR_FAILED\", \"reason\": \"job id invalid or duplicate\"}\n",
+    "wall_seconds": 0.0626587369479239
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "seal",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/nonascii.invalid.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/nonascii.must-not-exist.json"
+    ],
+    "expected_returncode": 2,
+    "index": 87,
+    "label": "nonascii rejection",
+    "returncode": 2,
+    "stderr": "",
+    "stdout": "{\"state\": \"REJECTED_OR_FAILED\", \"reason\": \"job id invalid or duplicate\"}\n",
+    "wall_seconds": 0.07103276898851618
+  },
+  {
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc1-investigation.pyz",
+      "research",
+      "validate",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/tampered.json"
+    ],
+    "expected_returncode": 2,
+    "index": 88,
+    "label": "seal tamper rejection",
+    "returncode": 2,
+    "stderr": "",
+    "stdout": "{\"state\": \"REJECTED_OR_FAILED\", \"reason\": \"missing or changed immutable seal; seal a new experiment\"}\n",
+    "wall_seconds": 0.0766860680305399
+  }
+]

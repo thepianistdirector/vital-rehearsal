@@ -1,0 +1,22 @@
+[
+  {
+    "study": "robustness",
+    "file": "protocol.md",
+    "sha256": "147231bafa01f350b8fe26e4ca84bd7d4ee46babc158a9ed114edd776f75e334"
+  },
+  {
+    "study": "robustness",
+    "file": "study.py",
+    "sha256": "0cf4de4cb05f8b1789d1ac966c0af9a19ede2a1014ed802f9c95a33371ad00d3"
+  },
+  {
+    "study": "scheduling",
+    "file": "protocol.md",
+    "sha256": "7e424ee1fab8190f60b2e858b9287089dbf9b97e42f8669305f847990d4292be"
+  },
+  {
+    "study": "scheduling",
+    "file": "study.py",
+    "sha256": "30e3c170e86052b0f968d7d655418849137766e0f537a79e6b4f744fc099df73"
+  }
+]

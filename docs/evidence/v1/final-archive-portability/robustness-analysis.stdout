@@ -1,0 +1,275 @@
+{
+  "convergence": [
+    {
+      "state": "V_A",
+      "unit": "litre",
+      "threshold": 1e-06,
+      "width_R09": 1.5453727186809374e-10,
+      "width_R10": 1.1800072030609954e-10,
+      "width_R11": 9.006528856048135e-11,
+      "refinement": 7.068567953183447e-12,
+      "passes": true
+    },
+    {
+      "state": "P_A",
+      "unit": "mmHg",
+      "threshold": 0.0001,
+      "width_R09": 2.9615421226480976e-10,
+      "width_R10": 2.5136159820249304e-10,
+      "width_R11": 2.105480234604329e-10,
+      "refinement": 1.8189894035458565e-11,
+      "passes": true
+    },
+    {
+      "state": "f_o",
+      "unit": "dimensionless",
+      "threshold": 1e-07,
+      "width_R09": 7.856909567394155e-12,
+      "width_R10": 8.21398504768922e-12,
+      "width_R11": 8.279932295351955e-12,
+      "refinement": 8.784639682346551e-14,
+      "passes": true
+    },
+    {
+      "state": "f_c",
+      "unit": "dimensionless",
+      "threshold": 1e-07,
+      "width_R09": 5.617877690822226e-12,
+      "width_R10": 5.878443565254798e-12,
+      "width_R11": 5.9262178497832e-12,
+      "refinement": 6.373720995433985e-14,
+      "passes": true
+    },
+    {
+      "state": "p_o",
+      "unit": "mmHg",
+      "threshold": 0.0001,
+      "width_R09": 1.5127127994674083e-08,
+      "width_R10": 1.5198381220216106e-08,
+      "width_R11": 1.6247497569565894e-08,
+      "refinement": 6.338041202980094e-11,
+      "passes": true
+    },
+    {
+      "state": "p_c",
+      "unit": "mmHg",
+      "threshold": 0.0001,
+      "width_R09": 6.937078467217361e-09,
+      "width_R10": 6.947356467890131e-09,
+      "width_R11": 6.952703301976726e-09,
+      "refinement": 1.9447554677753942e-11,
+      "passes": true
+    },
+    {
+      "state": "z",
+      "unit": "source-labelled dimensionless; unresolved",
+      "threshold": 1e-08,
+      "width_R09": 7.469623877764953e-13,
+      "width_R10": 7.867890366997088e-13,
+      "width_R11": 7.98367448540116e-13,
+      "refinement": 1.4649739754624136e-14,
+      "passes": true
+    }
+  ],
+  "effects": [
+    {
+      "resistance_scale": 0.9,
+      "state": "V_A",
+      "unit": "litre",
+      "max_absolute_change": 0.05248070827222806,
+      "final_signed_change": -0.0031890965833527574,
+      "sum_control_widths": 2.725379921741933e-10,
+      "effect_to_envelope_ratio": 192562907.84840336,
+      "numerically_separated": true
+    },
+    {
+      "resistance_scale": 0.9,
+      "state": "P_A",
+      "unit": "mmHg",
+      "max_absolute_change": 0.26952305330451054,
+      "final_signed_change": 0.26952091942018797,
+      "sum_control_widths": 5.475158104673028e-10,
+      "effect_to_envelope_ratio": 492265333.9900332,
+      "numerically_separated": true
+    },
+    {
+      "resistance_scale": 0.9,
+      "state": "f_o",
+      "unit": "dimensionless",
+      "max_absolute_change": 0.0006131893308158332,
+      "final_signed_change": 3.6834265560170554e-06,
+      "sum_control_widths": 1.6070894615083375e-11,
+      "effect_to_envelope_ratio": 38155270.47513104,
+      "numerically_separated": true
+    },
+    {
+      "resistance_scale": 0.9,
+      "state": "f_c",
+      "unit": "dimensionless",
+      "max_absolute_change": 0.0004361036677177077,
+      "final_signed_change": -2.90581962018654e-06,
+      "sum_control_widths": 1.1496321256077024e-11,
+      "effect_to_envelope_ratio": 37934192.86079716,
+      "numerically_separated": true
+    },
+    {
+      "resistance_scale": 0.9,
+      "state": "p_o",
+      "unit": "mmHg",
+      "max_absolute_change": 0.465554819062433,
+      "final_signed_change": 0.05919812600774321,
+      "sum_control_widths": 3.032550921489019e-08,
+      "effect_to_envelope_ratio": 15351920.91131779,
+      "numerically_separated": true
+    },
+    {
+      "resistance_scale": 0.9,
+      "state": "p_c",
+      "unit": "mmHg",
+      "max_absolute_change": 0.19547059279537038,
+      "final_signed_change": -0.011628124555387753,
+      "sum_control_widths": 1.3884434935107492e-08,
+      "effect_to_envelope_ratio": 14078397.407525253,
+      "numerically_separated": true
+    },
+    {
+      "resistance_scale": 0.9,
+      "state": "z",
+      "unit": "source-labelled dimensionless; unresolved",
+      "max_absolute_change": 6.354941084766013e-05,
+      "final_signed_change": -1.5059451652093539e-05,
+      "sum_control_widths": 1.533751424476204e-12,
+      "effect_to_envelope_ratio": 41433970.22067189,
+      "numerically_separated": true
+    },
+    {
+      "resistance_scale": 1.1,
+      "state": "V_A",
+      "unit": "litre",
+      "max_absolute_change": 0.047764966590000846,
+      "final_signed_change": 0.0037766884545300528,
+      "sum_control_widths": 2.080660088665809e-10,
+      "effect_to_envelope_ratio": 229566409.47839487,
+      "numerically_separated": true
+    },
+    {
+      "resistance_scale": 1.1,
+      "state": "P_A",
+      "unit": "mmHg",
+      "max_absolute_change": 0.2684906258717774,
+      "final_signed_change": -0.26847194781532835,
+      "sum_control_widths": 4.6190962166292593e-10,
+      "effect_to_envelope_ratio": 581262249.7560916,
+      "numerically_separated": true
+    },
+    {
+      "resistance_scale": 1.1,
+      "state": "f_o",
+      "unit": "dimensionless",
+      "max_absolute_change": 0.0005854922465911572,
+      "final_signed_change": -3.73288425117857e-06,
+      "sum_control_widths": 1.6493917343041176e-11,
+      "effect_to_envelope_ratio": 35497464.57521674,
+      "numerically_separated": true
+    },
+    {
+      "resistance_scale": 1.1,
+      "state": "f_c",
+      "unit": "dimensionless",
+      "max_absolute_change": 0.00041636527751708063,
+      "final_signed_change": 2.9398354902989408e-06,
+      "sum_control_widths": 1.1804661415037998e-11,
+      "effect_to_envelope_ratio": 35271259.62178563,
+      "numerically_separated": true
+    },
+    {
+      "resistance_scale": 1.1,
+      "state": "p_o",
+      "unit": "mmHg",
+      "max_absolute_change": 0.44442291752578456,
+      "final_signed_change": -0.059004997065102316,
+      "sum_control_widths": 3.1445878789782e-08,
+      "effect_to_envelope_ratio": 14132946.339225698,
+      "numerically_separated": true
+    },
+    {
+      "resistance_scale": 1.1,
+      "state": "p_c",
+      "unit": "mmHg",
+      "max_absolute_change": 0.18757009470434838,
+      "final_signed_change": 0.011614612352574327,
+      "sum_control_widths": 1.3900059769866857e-08,
+      "effect_to_envelope_ratio": 13494193.392676687,
+      "numerically_separated": true
+    },
+    {
+      "resistance_scale": 1.1,
+      "state": "z",
+      "unit": "source-labelled dimensionless; unresolved",
+      "max_absolute_change": 6.245799714498824e-05,
+      "final_signed_change": 1.5021819753210236e-05,
+      "sum_control_widths": 1.5851564852398248e-12,
+      "effect_to_envelope_ratio": 39401786.33880346,
+      "numerically_separated": true
+    }
+  ],
+  "z": [
+    {
+      "run": "baseline",
+      "rtol": 1e-08,
+      "atol": 1e-10,
+      "atol_over_rtol_z0": 22614.713132363915,
+      "max_absolute_z_error": 1.0686882802313225e-11,
+      "max_relative_z_error": 4.8676489185445215e-09
+    },
+    {
+      "run": "atol-0.001",
+      "rtol": 1e-08,
+      "atol": 0.001,
+      "atol_over_rtol_z0": 226147131323.63916,
+      "max_absolute_z_error": 8.688166704476363e-08,
+      "max_relative_z_error": 2.1023351439534763e-05
+    },
+    {
+      "run": "atol-1e-06",
+      "rtol": 1e-08,
+      "atol": 1e-06,
+      "atol_over_rtol_z0": 226147131.32363912,
+      "max_absolute_z_error": 3.5003288201967964e-10,
+      "max_relative_z_error": 5.8720320777711356e-08
+    },
+    {
+      "run": "atol-1e-10",
+      "rtol": 1e-08,
+      "atol": 1e-10,
+      "atol_over_rtol_z0": 22614.713132363915,
+      "max_absolute_z_error": 1.5088649080174932e-11,
+      "max_relative_z_error": 4.8676489185445215e-09
+    },
+    {
+      "run": "atol-1e-13",
+      "rtol": 1e-08,
+      "atol": 1e-13,
+      "atol_over_rtol_z0": 22.614713132363914,
+      "max_absolute_z_error": 7.155887861431953e-12,
+      "max_relative_z_error": 1.7856942328416565e-09
+    },
+    {
+      "run": "source-default",
+      "rtol": 1e-06,
+      "atol": 1e-06,
+      "atol_over_rtol_z0": 2261471.3132363916,
+      "max_absolute_z_error": 3.880195077656662e-08,
+      "max_relative_z_error": 3.740220278017013e-05
+    },
+    {
+      "run": "source-tight",
+      "rtol": 1e-11,
+      "atol": 1e-13,
+      "atol_over_rtol_z0": 22614.71313236392,
+      "max_absolute_z_error": 5.712609205121844e-13,
+      "max_relative_z_error": 3.8274039125483495e-10
+    }
+  ],
+  "cost_s": 14.287187772104517
+}

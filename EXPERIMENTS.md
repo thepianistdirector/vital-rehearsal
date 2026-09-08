@@ -1,6 +1,12 @@
 # Vital Rehearsal experiment and evaluation contract
 
-Status: accepted architecture-foundation requirements; no experiment has run in this repository.
+Status: accepted architecture-foundation requirements; the local software-control experiment exercises infrastructure only. No physiological experiment has run in this repository.
+
+## Current independent control
+
+The fixed integer-identity control in `scenarios/contract-control.json` has no physiological meaning. Its evaluator owns literal reference values and a zero-error rule justified only by exact integer arithmetic. Numerical CSV values are compared as bounded exact decimals; no implicit interpolation or rounding is permitted. The producer cannot supply a replacement criterion. JSON source, model card, reference, criteria, software identity and invocation are frozen before execution and retained in each attempt.
+
+Explicit faults exercise contradictory output, wrong units, incomplete/nonfinite/out-of-domain output, injected nonconvergence, crashes, timeout and interruption. Their records distinguish execution state from conclusion and retain failures. This proves control behavior only; it does not satisfy the source-grounded physiological, cohort, conservation, uncertainty or human-review requirements below. The clinical interpretation and independent researcher gates remain pending; Lucas reported that no reviewer/reproducer is available for now.
 
 ## Research question
 
@@ -44,3 +50,7 @@ The hypothesis producer cannot change the scoring code, holdout, quality constra
 If the reference curve cannot be reproduced without undocumented tuning, stop optimization and repair the model or narrow the claim. If qualified domain review is unavailable, continue infrastructure and published benchmark reproduction only. Never bridge a gap with LLM-generated physiology.
 
 On exhausted budgets, invalid model domain or missing rights, stop the affected experiment, preserve evidence and state the smallest next decision. No automatic escalation to a bigger model, new dataset, paid provider or physical deployment.
+
+## Executed finite v1.0 campaign, September 8
+
+Three frozen platform studies retained 4, 18 and 28 runs; a separate reviewer performed eight additional packaged reruns and recomputed the original measurements. See docs/v1/FINDINGS.md and research/review/review.md. Original protocols, unsuccessful retrievals, expected input rejections, reviewer preparation error and root runtime failures remain preserved. Confirmation used rc1; selected rc4 outputs matched exactly. No public preregistration, human qualification, empirical validation or hostile-evaluator isolation is claimed.

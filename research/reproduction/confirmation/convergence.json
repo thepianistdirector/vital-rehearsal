@@ -1,0 +1,44 @@
+[
+  {
+    "observable": "V_A",
+    "radau_refinement": 6.741833757928362e-09,
+    "tight_cross_algorithm": 2.0369439468481687e-10,
+    "threshold": 1e-05
+  },
+  {
+    "observable": "P_A",
+    "radau_refinement": 1.6753574527683668e-08,
+    "tight_cross_algorithm": 4.3075942812720314e-10,
+    "threshold": 0.0002
+  },
+  {
+    "observable": "f_o",
+    "radau_refinement": 6.65484056749932e-11,
+    "tight_cross_algorithm": 1.7978590838296782e-11,
+    "threshold": 1.0000000000000002e-06
+  },
+  {
+    "observable": "f_c",
+    "radau_refinement": 4.741609188618767e-11,
+    "tight_cross_algorithm": 1.2929504689118687e-11,
+    "threshold": 1.0000000000000002e-06
+  },
+  {
+    "observable": "p_o",
+    "radau_refinement": 2.032344355029636e-07,
+    "tight_cross_algorithm": 9.04040859950328e-08,
+    "threshold": 0.0005
+  },
+  {
+    "observable": "p_c",
+    "radau_refinement": 8.990532762709336e-08,
+    "tight_cross_algorithm": 4.633404770970628e-08,
+    "threshold": 0.0005
+  },
+  {
+    "observable": "z",
+    "radau_refinement": 1.0928332024040532e-11,
+    "tight_cross_algorithm": 1.6759675244837346e-12,
+    "threshold": 1e-07
+  }
+]

@@ -1,0 +1,210 @@
+[
+  {
+    "label": "repro-frozen-run",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/reproduction/platform.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/reproduction/confirmation/radau-sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/review/confirmation-v2/repro-frozen"
+    ],
+    "returncode": 0,
+    "wall_s": 0.7580633779871278
+  },
+  {
+    "label": "repro-frozen-inspect",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/reproduction/platform.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/review/confirmation-v2/repro-frozen/2a180eae65ee43b884d17eb19e19eff0"
+    ],
+    "returncode": 0,
+    "wall_s": 0.057780381001066417
+  },
+  {
+    "label": "repro-rc4-run",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc4.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/reproduction/confirmation/radau-sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/review/confirmation-v2/repro-rc4"
+    ],
+    "returncode": 0,
+    "wall_s": 0.8235786310397089
+  },
+  {
+    "label": "repro-rc4-inspect",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc4.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/review/confirmation-v2/repro-rc4/a4bc7e2600e1451fbc3e2434307508fc"
+    ],
+    "returncode": 0,
+    "wall_s": 0.04618148895679042
+  },
+  {
+    "label": "robust-0-run",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc4.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/robustness/confirmation-20260908/00-control-0.9-Radau.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/review/confirmation-v2/robust-0"
+    ],
+    "returncode": 0,
+    "wall_s": 1.565614146005828
+  },
+  {
+    "label": "robust-0-inspect",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc4.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/review/confirmation-v2/robust-0/d745a426aeeb498cbe306a91b7f331b1"
+    ],
+    "returncode": 0,
+    "wall_s": 0.06367521901847795
+  },
+  {
+    "label": "robust-3-run",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc4.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/robustness/confirmation-20260908/03-control-1.0-Radau.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/review/confirmation-v2/robust-3"
+    ],
+    "returncode": 0,
+    "wall_s": 1.962158094975166
+  },
+  {
+    "label": "robust-3-inspect",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc4.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/review/confirmation-v2/robust-3/eaac07ccea1044998db25fee6597df0c"
+    ],
+    "returncode": 0,
+    "wall_s": 0.16962399502517655
+  },
+  {
+    "label": "robust-6-run",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc4.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/robustness/confirmation-20260908/06-control-1.1-Radau.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/review/confirmation-v2/robust-6"
+    ],
+    "returncode": 0,
+    "wall_s": 2.5521329949842766
+  },
+  {
+    "label": "robust-6-inspect",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc4.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/review/confirmation-v2/robust-6/42a5b6df00c045b9b8a1509861b30559"
+    ],
+    "returncode": 0,
+    "wall_s": 0.04871029400965199
+  },
+  {
+    "label": "near-1701-d0-run",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc4.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/near-1701-d0.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/review/confirmation-v2/near-1701-d0"
+    ],
+    "returncode": 0,
+    "wall_s": 0.2821253939764574
+  },
+  {
+    "label": "near-1701-d0-inspect",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc4.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/review/confirmation-v2/near-1701-d0/237942fa92f1474bad3627dae0fc86d8"
+    ],
+    "returncode": 0,
+    "wall_s": 0.05386732897022739
+  },
+  {
+    "label": "near-1701-d1-run",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc4.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/near-1701-d1.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/review/confirmation-v2/near-1701-d1"
+    ],
+    "returncode": 0,
+    "wall_s": 0.2918812249554321
+  },
+  {
+    "label": "near-1701-d1-inspect",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc4.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/review/confirmation-v2/near-1701-d1/bc7a851539154169a07a4d882b1bd953"
+    ],
+    "returncode": 0,
+    "wall_s": 0.0654411239665933
+  },
+  {
+    "label": "heldout-idle-ascii-run",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc4.pyz",
+      "research",
+      "run",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/scheduling/confirmation/heldout-idle-ascii.sealed.json",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/review/confirmation-v2/heldout-idle-ascii"
+    ],
+    "returncode": 0,
+    "wall_s": 0.21958283096319064
+  },
+  {
+    "label": "heldout-idle-ascii-inspect",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/dist/vital-rehearsal-1.0.0rc4.pyz",
+      "research",
+      "inspect",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/review/confirmation-v2/heldout-idle-ascii/c2f8cd4e9580495e86da8da28d06bda6"
+    ],
+    "returncode": 0,
+    "wall_s": 0.05686129099922255
+  }
+]

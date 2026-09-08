@@ -1,0 +1,24 @@
+[
+  {
+    "neutral": "B",
+    "source_bundle": "185b7e9ca2474b8aa3b772aa0cbab8dd",
+    "source_screenshot": "docs/evidence/visual-control-original-matched/report-phone-matched.png",
+    "dimensions": [
+      390,
+      1500
+    ],
+    "format": "PNG",
+    "text_or_exif_metadata": false
+  },
+  {
+    "neutral": "A",
+    "source_bundle": "7eacec80808c4ce599b1a8d1a74f06b0",
+    "source_screenshot": "docs/evidence/visual-control-v3/report-phone-matched.png",
+    "dimensions": [
+      390,
+      1500
+    ],
+    "format": "PNG",
+    "text_or_exif_metadata": false
+  }
+]

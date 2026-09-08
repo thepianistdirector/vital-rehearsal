@@ -1,0 +1,1 @@
+{"schema_version": 1, "model_id": "integer-counter-control-v1", "solver": "integer-enumeration", "solver_version": "1", "state": "COMPLETED", "samples": 5, "fault": "none"}

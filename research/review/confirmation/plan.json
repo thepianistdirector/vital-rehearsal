@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6-astra",
+  "runtime_evidence": "reviewer turn_context 2026-09-08 session 01a0820e-778a-7b11-a349-1f3f594f1473",
+  "old": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+  "new": "2d7f67e808e9cd176d753a49054882091184309586230f3b5a4a617f8e2ab1f9",
+  "planned_runs": 8,
+  "maximum_runs": 10,
+  "script_sha256": "5a09d962fcabfdf028115f49cbc6c07391399cc5a807832918e89a0cc2099e9a",
+  "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+  "started_unix": 1788888708.7617881
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Vital Rehearsal — software control evidence</title>
+<style>
+:root{color-scheme:light;--ink:#162b32;--muted:#435c64;--line:#c8d5d4;--paper:#f4f7f4;--accent:#075d56}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 system-ui,sans-serif}
+main{max-width:960px;margin:auto;padding:32px 24px 64px}header{border-bottom:2px solid var(--ink);padding-bottom:24px}
+.eyebrow{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--accent)}
+h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.1;letter-spacing:-.035em;margin:.6em 0}
+h2{font-size:1.3rem;margin-top:2em}p{max-width:72ch}.limit{padding:16px 20px;border-left:4px solid var(--accent);background:#e6eeea}
+.states{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}.state{border:1px solid var(--line);padding:16px;background:white}
+.state strong{display:block;overflow-wrap:anywhere}.label{font-size:.85rem;color:var(--muted)}
+.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:.9rem}caption{text-align:left;font-weight:650;padding:12px 0}
+th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}th{background:#e6eeea}
+th:last-child,td:last-child{white-space:nowrap;overflow-wrap:normal}
+a{color:#075d56;text-underline-offset:3px}a:focus-visible,.table-wrap:focus-visible{outline:3px solid #9c4b00;outline-offset:4px}
+code{overflow-wrap:anywhere;font-size:.88em}.meta{color:var(--muted);font-size:.86rem;overflow-wrap:anywhere}
+.skip{position:absolute;left:12px;top:-100px;background:white;padding:12px}.skip:focus{top:12px}
+@media(max-width:560px){main{padding:20px 16px 48px}.states{grid-template-columns:1fr}th,td{padding:9px}}
+@media print{body{background:white}main{max-width:none;padding:0}a{color:inherit}}
+</style></head><body><a class="skip" href="#evidence">Skip to evidence</a><main>
+<header><div class="eyebrow">Vital Rehearsal · local evidence</div><h1>A control you can inspect.</h1>
+<p class="limit"><strong>Software verification only.</strong> Software contract control only. No physiology model is admitted. These values verify bookkeeping and evaluation, not physiology, clinical validity, treatment, or benefit.</p>
+<p class="meta">Build 0.1.0.dev1 · Attempt <code>831a56eafa654984aadce0122216d6c6</code><br>
+Study identity <code>a0724fedd3ca658a6fa8fb03e4573af6112b2cb7f2409cd22e2cd3405c4a0673</code></p></header>
+<section id="evidence" aria-labelledby="outcome-title"><h2 id="outcome-title">Execution and interpretation</h2>
+<div class="states"><div class="state"><span class="label">Execution state</span><strong>COMPLETED</strong></div>
+<div class="state"><span class="label">Control conclusion</span><strong>CONTROL_AGREEMENT</strong></div></div>
+<p>Built-in software control executed; physiological reproduction remains unavailable</p><p>A completed process can still contradict its reference. Invalid or absent output receives no agreement score.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Observable comparison, scroll horizontally if needed"><table>
+<caption>Per-observable comparison — fixed integer control</caption><thead><tr>
+<th scope="col">Observable (unit)</th><th scope="col">Max error / limit</th><th scope="col">Result</th>
+</tr></thead><tbody><tr><td>counter (1)<br><span class="label">5 samples</span></td><td>0 / 0</td><td>MATCH</td></tr></tbody></table></div></section>
+<section><h2>Failures and limits</h2><ul><li>No comparison failure detected in this software control.</li></ul>
+<p>The expected dimensionless counter is 0, 1, 2, 3, 4 at elapsed seconds 0, 1, 2, 3, 4. These integer values need no numerical solver or physiological assumptions. Conservation is not applicable. Physiological uncertainty and clinical validity are not assessed.</p>
+<p>Control fault injection: <strong>none</strong>. A fault-injection result is retained test evidence.</p>
+<p>No qualified domain review, independent human reproduction or public 0.1 release is established by this bundle. Only trusted built-in code runs; process separation and resource limits are not a sandbox.</p></section>
+<section><h2>Inspect the evidence</h2><ul><li><a href="study.json">Frozen study</a></li><li><a href="model-card.json">Scope and source card</a></li><li><a href="reference.csv">Independent reference CSV</a></li><li><a href="criteria.json">Predeclared comparison</a></li><li><a href="result.json">Full result JSON</a></li><li><a href="manifest.json">Bundle integrity manifest</a></li><li><a href="runner.pyz">Matching original-source runner</a></li><li><a href="trajectory.csv">Raw adapter trajectory CSV</a></li><li><a href="diagnostics.json">Adapter diagnostics</a></li></ul><p>All links are relative files in this bundle and work offline. Verify the manifest with the same packaged runner before relying on file integrity. Integrity is not authenticity or scientific validation.</p></section>
+<section><h2>Repeat or recover</h2><p>From this bundle, use <code>python3 runner.pyz run study.json --output ../reruns</code> under the declared CPython 3.12 Linux environment. The matching original-source runner and its license are retained here. To repeat an injected failure, add <code>--control-fault none</code>. Every run creates a new attempt and preserves this bundle.</p>
+<p>After interruption, use <code>python3 runner.pyz list-attempts --output ../reruns</code>. Partial directories are explicitly incomplete and must not be treated as finished evidence. Re-running the same frozen study creates a separate attempt. Inspection never automatically executes code embedded in an untrusted bundle.</p></section>
+</main></body></html>

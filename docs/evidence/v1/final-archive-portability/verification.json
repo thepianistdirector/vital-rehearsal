@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "version": "1.0.0rc4",
+  "scope": "actual extracted release archive, fresh offline venv, same host; no external human or machine",
+  "checks": 8,
+  "research_run_calls": 58,
+  "source_tests": 65,
+  "elapsed_seconds": 60.86780119501054,
+  "original_distributed_files_unchanged": true
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "study": "reproduction",
+    "commands": 18,
+    "runs": 4,
+    "nonzero_returncodes": 0,
+    "unexpected_failures": 0
+  },
+  {
+    "study": "robustness",
+    "commands": 37,
+    "runs": 18,
+    "nonzero_returncodes": 0,
+    "unexpected_failures": 0
+  },
+  {
+    "study": "scheduling",
+    "commands": 88,
+    "runs": 28,
+    "nonzero_returncodes": 3,
+    "unexpected_failures": 0
+  }
+]

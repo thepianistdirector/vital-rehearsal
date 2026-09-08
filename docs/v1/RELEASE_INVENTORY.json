@@ -1,0 +1,25 @@
+{
+  "status": "LOCAL_CANDIDATE_NOT_PUBLIC",
+  "version": "1.0.0rc4",
+  "application": {
+    "filename": "vital-rehearsal-1.0.0rc4.pyz",
+    "sha256": "2d7f67e808e9cd176d753a49054882091184309586230f3b5a4a617f8e2ab1f9"
+  },
+  "prepared_archive": "vital-rehearsal-1.0.0rc4-linux-x86_64-py312.tar.gz",
+  "archive_checksums": "Supplied alongside the archive in SHA256SUMS and RELEASE_INVENTORY.json; the archive cannot contain its own hash.",
+  "research_packages": [
+    "research/reproduction/publication-manuscript.md",
+    "research/robustness/publication-manuscript.md",
+    "research/scheduling/publication-manuscript.md"
+  ],
+  "frozen_investigation_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+  "review": "research/review/review.md",
+  "destinations_pending_approval": [
+    "https://github.com/thepianistdirector/vital-rehearsal",
+    "https://tanduna.com/projects/vital-rehearsal"
+  ],
+  "qualified_review": "PENDING",
+  "external_human_reproduction": "PENDING",
+  "public_release": "NOT_PERFORMED",
+  "native_goal": "ACTIVE"
+}

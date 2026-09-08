@@ -1,0 +1,80 @@
+{
+  "comparison": {
+    "P_A": {
+      "final": 757.2974947020064,
+      "max_absolute_difference": 0.0,
+      "maximum": 760.0,
+      "minimum": 757.2756586535041,
+      "rms_difference": 0.0,
+      "unit": "mmHg"
+    },
+    "V_A": {
+      "final": 2.2843901289743207,
+      "max_absolute_difference": 0.0,
+      "maximum": 2.716638570275397,
+      "minimum": 1.0,
+      "rms_difference": 0.0,
+      "unit": "litre"
+    },
+    "f_c": {
+      "final": 0.00013510705360474898,
+      "max_absolute_difference": 0.0,
+      "maximum": 0.05263,
+      "minimum": 0.00013510705360474898,
+      "rms_difference": 0.0,
+      "unit": "dimensionless"
+    },
+    "f_o": {
+      "final": 0.20983855541868937,
+      "max_absolute_difference": 0.0,
+      "maximum": 0.20983855541868937,
+      "minimum": 0.1367998175333621,
+      "rms_difference": 0.0,
+      "unit": "dimensionless"
+    },
+    "p_c": {
+      "final": 0.901080896465979,
+      "max_absolute_difference": 0.0,
+      "maximum": 46.0,
+      "minimum": 0.901080896465979,
+      "rms_difference": 0.0,
+      "unit": "mmHg"
+    },
+    "p_o": {
+      "final": 149.04631027003884,
+      "max_absolute_difference": 0.0,
+      "maximum": 149.04631027003884,
+      "minimum": 40.0,
+      "rms_difference": 0.0,
+      "unit": "mmHg"
+    },
+    "z": {
+      "final": 0.0012196719005809393,
+      "max_absolute_difference": 0.0,
+      "maximum": 0.00650422427513945,
+      "minimum": 4.4219e-07,
+      "rms_difference": 0.0,
+      "unit": "dimensionless (source label; unresolved)"
+    }
+  },
+  "conclusion": "NUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS",
+  "cost": {
+    "nfev": null,
+    "rows": 2001,
+    "wall_seconds": 0.09722177794901654
+  },
+  "diagnostics": {
+    "basic_state_bounds": true,
+    "finite": true,
+    "physiological_validity": "NOT_ESTABLISHED",
+    "qualified_review": "PENDING",
+    "source_derivative_max_abs_error_mmHg_per_s": 7.40652646249997
+  },
+  "execution_state": "COMPLETED",
+  "limitation": "Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. Source derivative and unit inconsistencies remain unresolved; qualified interpretation review pending.",
+  "reference_cost": {
+    "nfev": null,
+    "rows": 2001,
+    "wall_seconds": 0.10109353199368343
+  }
+}

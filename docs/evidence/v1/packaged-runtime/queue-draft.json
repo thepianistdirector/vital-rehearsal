@@ -1,0 +1,70 @@
+{
+  "jobs": [
+    {
+      "arrival_s": 0.0,
+      "id": "job-0000",
+      "service_s": 1.5
+    },
+    {
+      "arrival_s": 1.0,
+      "id": "job-0001",
+      "service_s": 1.5
+    },
+    {
+      "arrival_s": 2.0,
+      "id": "job-0002",
+      "service_s": 1.5
+    },
+    {
+      "arrival_s": 3.0,
+      "id": "job-0003",
+      "service_s": 1.5
+    },
+    {
+      "arrival_s": 4.0,
+      "id": "job-0004",
+      "service_s": 1.5
+    },
+    {
+      "arrival_s": 5.0,
+      "id": "job-0005",
+      "service_s": 1.5
+    },
+    {
+      "arrival_s": 6.0,
+      "id": "job-0006",
+      "service_s": 1.5
+    },
+    {
+      "arrival_s": 7.0,
+      "id": "job-0007",
+      "service_s": 1.5
+    },
+    {
+      "arrival_s": 8.0,
+      "id": "job-0008",
+      "service_s": 1.5
+    },
+    {
+      "arrival_s": 9.0,
+      "id": "job-0009",
+      "service_s": 1.5
+    },
+    {
+      "arrival_s": 10.0,
+      "id": "job-0010",
+      "service_s": 1.5
+    },
+    {
+      "arrival_s": 11.0,
+      "id": "job-0011",
+      "service_s": 1.5
+    }
+  ],
+  "model": "synthetic-fcfs",
+  "schema": "vital-research/1",
+  "servers": 1,
+  "service_delay_s": 0.0,
+  "time_unit": "second",
+  "timeout_s": 60
+}

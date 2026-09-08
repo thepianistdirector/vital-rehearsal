@@ -1,0 +1,44 @@
+case,observable,max_absolute_delta,byte_identical
+repro-frozen,time_s,0.0,True
+repro-frozen,V_A,0.0,True
+repro-frozen,P_A,0.0,True
+repro-frozen,f_o,0.0,True
+repro-frozen,f_c,0.0,True
+repro-frozen,p_o,0.0,True
+repro-frozen,p_c,0.0,True
+repro-frozen,z,0.0,True
+repro-rc4,time_s,0.0,True
+repro-rc4,V_A,0.0,True
+repro-rc4,P_A,0.0,True
+repro-rc4,f_o,0.0,True
+repro-rc4,f_c,0.0,True
+repro-rc4,p_o,0.0,True
+repro-rc4,p_c,0.0,True
+repro-rc4,z,0.0,True
+robust-0,time_s,0.0,True
+robust-0,V_A,0.0,True
+robust-0,P_A,0.0,True
+robust-0,f_o,0.0,True
+robust-0,f_c,0.0,True
+robust-0,p_o,0.0,True
+robust-0,p_c,0.0,True
+robust-0,z,0.0,True
+robust-3,time_s,0.0,True
+robust-3,V_A,0.0,True
+robust-3,P_A,0.0,True
+robust-3,f_o,0.0,True
+robust-3,f_c,0.0,True
+robust-3,p_o,0.0,True
+robust-3,p_c,0.0,True
+robust-3,z,0.0,True
+robust-6,time_s,0.0,True
+robust-6,V_A,0.0,True
+robust-6,P_A,0.0,True
+robust-6,f_o,0.0,True
+robust-6,f_c,0.0,True
+robust-6,p_o,0.0,True
+robust-6,p_c,0.0,True
+robust-6,z,0.0,True
+near-1701-d0,complete schedule,0,True
+near-1701-d1,complete schedule,0,True
+heldout-idle-ascii,complete schedule,0,True

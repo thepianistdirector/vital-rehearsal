@@ -1,0 +1,2 @@
+Vital Rehearsal plan validation PASS: 244 canonical records; preserved original contracts; synchronized views; mapped outcomes; acyclic dependencies and release ordering. Plan checks do not establish product or scientific completion.
+Plan views match canonical ledger.

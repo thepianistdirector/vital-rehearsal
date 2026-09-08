@@ -1,0 +1,29 @@
+case,observable,max_abs,rms,threshold,within_threshold,source_unit
+radau,V_A,9.926252564795846e-06,3.695471250022446e-06,0.0001,True,litre
+radau,P_A,1.6598056504335545e-05,5.244608674454775e-06,0.002,True,mmHg
+radau,f_o,3.540399103052483e-07,1.5537340880549553e-07,1e-05,True,dimensionless
+radau,f_c,2.5451352134511773e-07,1.1157581886746077e-07,1e-05,True,dimensionless
+radau,p_o,0.0013916512251057611,0.0001840826197247516,0.005,True,mmHg
+radau,p_c,0.0002073988157462736,4.328038969752049e-05,0.005,True,mmHg
+radau,z,4.1622137059854625e-08,1.4635791853758158e-08,1e-06,True,dimensionless (source label; unresolved)
+source,V_A,0.0,0.0,0.0001,True,litre
+source,P_A,0.0,0.0,0.002,True,mmHg
+source,f_o,0.0,0.0,1e-05,True,dimensionless
+source,f_c,0.0,0.0,1e-05,True,dimensionless
+source,p_o,0.0,0.0,0.005,True,mmHg
+source,p_c,0.0,0.0,0.005,True,mmHg
+source,z,0.0,0.0,1e-06,True,dimensionless (source label; unresolved)
+radau-tight,V_A,9.926011140137803e-06,3.695480775912639e-06,0.0001,True,litre
+radau-tight,P_A,1.660527652802557e-05,5.2446697697533815e-06,0.002,True,mmHg
+radau-tight,f_o,3.5405881490535585e-07,1.5537396206692777e-07,1e-05,True,dimensionless
+radau-tight,f_c,2.545271113648523e-07,1.1157621927409054e-07,1e-05,True,dimensionless
+radau-tight,p_o,0.0013915530949475396,0.0001840849280064175,0.005,True,mmHg
+radau-tight,p_c,0.00020737323183794842,4.328009882766435e-05,0.005,True,mmHg
+radau-tight,z,4.162220528479421e-08,1.4635854798602197e-08,1e-06,True,dimensionless (source label; unresolved)
+bdf-tight,V_A,9.926013368577458e-06,3.695481130568753e-06,0.0001,True,litre
+bdf-tight,P_A,1.6605400446678686e-05,5.244690551724278e-06,0.002,True,mmHg
+bdf-tight,f_o,3.540503457910571e-07,1.5536997611139853e-07,1e-05,True,dimensionless
+bdf-tight,f_c,2.545210481610938e-07,1.1157335985155148e-07,1e-05,True,dimensionless
+bdf-tight,p_o,0.0013914626908615446,0.00018408230284042658,0.005,True,mmHg
+bdf-tight,p_c,0.00020733665971661708,4.327814087572202e-05,0.005,True,mmHg
+bdf-tight,z,4.1623312711444593e-08,1.4636130010947361e-08,1e-06,True,dimensionless (source label; unresolved)

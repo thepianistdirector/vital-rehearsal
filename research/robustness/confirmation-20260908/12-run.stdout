@@ -1,0 +1,83 @@
+{
+  "bundle": "/home/codex/projects/tanduna-open-source/vital-rehearsal/research/robustness/confirmation-20260908/12-atol-1e-10-attempts/4092e91261014d04a2002bee934ff30c",
+  "comparison": {
+    "P_A": {
+      "final": 757.2974945474916,
+      "max_absolute_difference": 1.2148622090535355e-05,
+      "maximum": 760.0,
+      "minimum": 757.2756563939217,
+      "rms_difference": 4.837400776690984e-06,
+      "unit": "mmHg"
+    },
+    "V_A": {
+      "final": 2.284388431229764,
+      "max_absolute_difference": 1.0025564336491044e-05,
+      "maximum": 2.7166416695850324,
+      "minimum": 1.0,
+      "rms_difference": 4.202552934630785e-06,
+      "unit": "litre"
+    },
+    "f_c": {
+      "final": 0.0001351155179189379,
+      "max_absolute_difference": 2.741804314056878e-07,
+      "maximum": 0.05263,
+      "minimum": 0.0001351155179189379,
+      "rms_difference": 1.082386129857918e-07,
+      "unit": "dimensionless"
+    },
+    "f_o": {
+      "final": 0.2098385433859617,
+      "max_absolute_difference": 3.8121677120583897e-07,
+      "maximum": 0.2098385433859617,
+      "minimum": 0.13679981748120168,
+      "rms_difference": 1.5071437658305552e-07,
+      "unit": "dimensionless"
+    },
+    "p_c": {
+      "final": 0.9010903499430639,
+      "max_absolute_difference": 0.00023459337513287437,
+      "maximum": 46.0,
+      "minimum": 0.9010903499430639,
+      "rms_difference": 3.967082598735327e-05,
+      "unit": "mmHg"
+    },
+    "p_o": {
+      "final": 149.04629088409607,
+      "max_absolute_difference": 0.0015067414746994245,
+      "maximum": 149.04629088409607,
+      "minimum": 40.0,
+      "rms_difference": 0.00017609458934765692,
+      "unit": "mmHg"
+    },
+    "z": {
+      "final": 0.0012196803557478137,
+      "max_absolute_difference": 3.879911684122328e-08,
+      "maximum": 0.006504186337349309,
+      "minimum": 4.4219e-07,
+      "rms_difference": 1.417598547064468e-08,
+      "unit": "dimensionless (source label; unresolved)"
+    }
+  },
+  "conclusion": "NUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS",
+  "cost": {
+    "nfev": 2237,
+    "rows": 2001,
+    "wall_seconds": 0.1569738769903779
+  },
+  "diagnostics": {
+    "basic_state_bounds": true,
+    "finite": true,
+    "physiological_validity": "NOT_ESTABLISHED",
+    "qualified_review": "PENDING",
+    "source_derivative_max_abs_error_mmHg_per_s": 7.40652646249997
+  },
+  "execution_state": "COMPLETED",
+  "limitation": "Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. Source derivative and unit inconsistencies remain unresolved; qualified interpretation review pending.",
+  "reference_cost": {
+    "nfev": null,
+    "rows": 2001,
+    "wall_seconds": 0.11723465600516647
+  },
+  "attempt_id": "4092e91261014d04a2002bee934ff30c",
+  "total_wall_seconds": 1.0758769849780947
+}

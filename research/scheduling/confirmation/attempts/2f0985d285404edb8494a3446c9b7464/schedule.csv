@@ -1,0 +1,4 @@
+id,server,arrival_s,start_s,finish_s,wait_s
+A,0,0.0,0.0,2.0,0.0
+a,1,0.0,0.0,1.0,0.0
+later,1,10.0,10.0,11.0,0.0

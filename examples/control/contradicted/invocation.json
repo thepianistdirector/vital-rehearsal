@@ -1,0 +1,45 @@
+{
+  "attempt_id": "0289122bc3bf4117af278c8cc74efe7d",
+  "budget": {
+    "address_space_mib": 512,
+    "file_bytes": 1048576,
+    "wall_seconds": 2.0
+  },
+  "control_fault": "perturbed",
+  "created_at": "2026-09-07T23:53:44.709530+00:00",
+  "environment": {
+    "architecture": "x86_64",
+    "implementation": "CPython",
+    "network_needed": false,
+    "python": "3.12.14",
+    "system": "Linux",
+    "threads": 1
+  },
+  "execution_boundary": "trusted-built-in-only; not an OS sandbox",
+  "frozen_inputs": {
+    "criteria.json": "eea07308213c2ce7d6709b35396bf4867100018441c303f8f9051cc67ff8cefe",
+    "model-card.json": "dea3dd5f2b5cff5cd38415c103fd2eef3c1caf5ff767576a5f8c3abb1d6e9239",
+    "reference.csv": "2496257bf5b5470056035e4cbcd08531cc78d837b61adeaff10a19be49abb7b8",
+    "runner.pyz": "33a0aa0006ffdfafefe04f276769ef6a6e77f493aaa3d1ca2b32c9b801fd0361",
+    "study.json": "2b1d56b62be0ecf58e1cf5467d729deb4d6085f3f71a61e49f425a9dc20d5e96"
+  },
+  "source_identity": {
+    "files": {
+      "LICENSE": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+      "__init__.py": "c5636f6b13c12466d0a0f06849e10e440e50350aeabcc7ddaf10417a52e9e41c",
+      "attempts.py": "c7efd389f53910867c9234cc65d47c986e3b0534490807a16a18f363368da348",
+      "builtin.py": "b4208cfdd16998f219882194a1211bd811830d007d1612debe69ecf95fbb1176",
+      "cli.py": "565244ad94710a8139fd459bc6d4fecc4e22ed8ec8276513cbd24271367aad89",
+      "contracts.py": "684d68a7bba212e7262c465b64866c58a4af956a0bd5ff2d832bc2a4471b03f9",
+      "evaluation.py": "5b4fad3bdc23124781d8a563eed81bcf86104f3af67b30c307f3e92528aeaed4",
+      "packaging.py": "d633a5035ccdad3439d5b2f958d8d50a7f86948c9af2d97bd0234e2f0e4a314c",
+      "report.py": "5fe905abe94d494bd21d590df8d956dae953e3e5b49a11edbdb827ebcaf6cca4",
+      "worker.py": "907f682a0e6772f67f33d9d2d58c2a2686d7903070f736f6a8fa9213195e3475"
+    },
+    "package_sha256": "a33046ab8e9a0f77e16675c79134aa814027f7f80df9784e7fd226d78e756ad4",
+    "version": "0.1.0.dev1"
+  },
+  "study_identity": "a0724fedd3ca658a6fa8fb03e4573af6112b2cb7f2409cd22e2cd3405c4a0673",
+  "study_sha256": "2b1d56b62be0ecf58e1cf5467d729deb4d6085f3f71a61e49f425a9dc20d5e96",
+  "version": "0.1.0.dev1"
+}

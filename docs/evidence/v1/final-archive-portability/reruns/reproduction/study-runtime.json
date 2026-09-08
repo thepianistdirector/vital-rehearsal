@@ -1,0 +1,17 @@
+{
+  "archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+  "protocol_sha256": "c06c06960ebaf35df4e2024c42924bca67f37b073c3130b45e1c79df44f0d702",
+  "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "matplotlib": "3.10.3",
+  "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+  "model": "gpt-6-astra",
+  "wall_seconds": 4.007060859003104,
+  "cli_calls": 18,
+  "platform_runs": 4,
+  "failed_cli_calls": 0,
+  "total_run_wall_seconds": 2.209716381970793,
+  "paid_services": 0,
+  "limitations": "LLM token usage/billing not exposed to this leaf; wall time is measured, not monetary cost."
+}

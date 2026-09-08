@@ -1,0 +1,11 @@
+{
+  "recorded_at": "2026-09-08T17:56:53.661443+00:00",
+  "owner_instruction": "approved, continue working.",
+  "scope": "Publish 1.0.0rc4 as an explicitly unreviewed prerelease, the three research drafts and prepared plan to the named GitHub repository and Tanduna project.",
+  "github": "https://github.com/thepianistdirector/vital-rehearsal",
+  "tanduna": "https://tanduna.com/projects/vital-rehearsal",
+  "human_qualified_review": "PENDING",
+  "external_human_reproduction": "PENDING",
+  "final_v1_goal": "INCOMPLETE",
+  "immutable_artifacts": "dist/RELEASE_INVENTORY.json"
+}

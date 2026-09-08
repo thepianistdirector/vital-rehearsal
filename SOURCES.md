@@ -69,3 +69,17 @@ No model or dataset download, dependency installation, paid run or external acco
 ## Evidence limits
 
 Official documentation establishes what a source or tool says it provides. Vital Rehearsal must independently verify code behavior and reproduce the selected observable. A model card and qualified review establish only the declared context of use. No source listed here proves a clinical outcome, a safe intervention, a representative synthetic cohort or an implemented integration.
+
+## Local control and development tooling intake
+
+Fresh admission research is in the [Pulse/CellML comparison and HOLD](docs/benchmarks/VR-001-benchmark-decision.md). A subsequent [exact Pulse manifest discovery](docs/benchmarks/pulse-manifest-followup.md) resolves the source commit and engine NOTICE plus one content-addressed baseline pointer, while clearly retaining unverified archive rights, contents, reference criteria, dependency graph and reviewer gates. Neither candidate is adopted.
+
+The current original software control defines `counter(t) = t` at integer seconds 0 through 4. It uses no acquired physiology model, dataset or third-party reference output. Its source/reference card is packaged in `src/vital_rehearsal/builtin.py` under the repository's original-content license. Exact equality is an analytic bookkeeping check and must not be transferred to physiology.
+
+Production runtime remains the already installed CPython 3.12.14 standard library selected in the accepted architecture. No third-party production dependency or packaging backend was adopted. The zipapp includes the original source and repository license, and records its source-file digests within each attempt.
+
+For optional local report verification, the already cached Chromium 140.0.7339.186 lacked three dynamic libraries on AlmaLinux 8.10. Official AlmaLinux AppStream RPMs `atk-2.28.1-1.el8.x86_64`, `at-spi2-atk-2.26.2-1.el8.x86_64`, and `at-spi2-core-2.28.0-1.el8.x86_64` were inspected (LGPLv2+), signature/digests verified successfully with the installed RPM trust store, and only their named shared libraries extracted into the project's ignored `.cache/browser-libs/`. No package installation scripts, ldconfig, daemon, shared configuration or machine-wide installation ran. Existing dependencies resolved through the installed system. These are development-only browser prerequisites, not part of the production CLI or redistributable bundle. Exact URLs, SHA-256, sizes and signature results are retained in `.cache/browser-libs/intake.json`. Chromium used a project-local profile, its default sandbox and a private debugging pipe; no listener or external report asset request was used. Replacement/rollback is simply omitting this optional local browser tooling.
+
+## Admitted exact exposure for the September 8 finite contract
+
+Ben-Tal combination exposure b503501533abcf0e70786789f08cb902, revision 2e0e7ccc682bbf326829b3d78e3137ebdf8dbca0, is admitted only for bounded numerical reproduction and independent semantic diagnostics. Exact downloaded XML/generated source, rights metadata, hashes, attribution and limitations are in docs/benchmarks/bental-2006/. The prior candidate HOLD records remain historical. No rights or reference claim transfers to a different exposure, original article imagery, empirical patient data or broader physiology. SciPy 1.15.3/NumPy 2.2.6 notices accompany the pinned wheels; research plots use pinned Matplotlib and original synthetic data.

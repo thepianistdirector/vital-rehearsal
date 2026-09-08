@@ -1,0 +1,103 @@
+{
+  "retrievalMethod": "Unauthenticated HTTPS GET via curl; no cookies, credentials, POSTs or external mutations. HTML text and server-rendered page data inspected.",
+  "sources": [
+    {
+      "key": "campaign",
+      "url": "https://tanduna.com/projects/vital-rehearsal",
+      "retrieved_at": "2026-09-07T23:10:52.247883+00:00",
+      "http_status": "200",
+      "sha256": "c52e0b1bfa22bb9171dd049137af10cb51a8e75b59f0265db25c72073d0de853"
+    },
+    {
+      "key": "roadmap",
+      "url": "https://tanduna.com/projects/vital-rehearsal/roadmap",
+      "retrieved_at": "2026-09-07T23:10:52.525696+00:00",
+      "http_status": "200",
+      "sha256": "bae67c69c7eb07d5b87bffa1560ba7d8ce433c2da75495ac4e3ff7ea5eb66853"
+    },
+    {
+      "key": "workspace",
+      "url": "https://tanduna.com/p/vital-rehearsal",
+      "retrieved_at": "2026-09-07T23:10:52.932387+00:00",
+      "http_status": "200",
+      "sha256": "99def640392801e3c85c6d94523742daae74eb7be14cf5640107b362e697114a"
+    },
+    {
+      "key": "tasks",
+      "url": "https://tanduna.com/p/vital-rehearsal/tasks",
+      "retrieved_at": "2026-09-07T23:10:53.207986+00:00",
+      "http_status": "200",
+      "sha256": "227a04c6c8312f52101984af3f41223d392db72b2a0b25b8b8ae3f8551f2d393"
+    },
+    {
+      "key": "proposals",
+      "url": "https://tanduna.com/p/vital-rehearsal/proposals",
+      "retrieved_at": "2026-09-07T23:10:53.489915+00:00",
+      "http_status": "200",
+      "sha256": "385fd81254e0ac32620844ac64d793fad38104b2af7dd3d93009001ea63085fa"
+    },
+    {
+      "key": "proposal-foundation",
+      "url": "https://tanduna.com/p/vital-rehearsal/proposals/prp_e78d47cc6b905baa3e96fd4c6ad46f52",
+      "retrieved_at": "2026-09-07T23:10:53.821811+00:00",
+      "http_status": "200",
+      "sha256": "e755ff891b1e4e15cbf142d0e3be9bca07dbbf37d8ba2ab7e6e418491e981dd3"
+    },
+    {
+      "key": "docs",
+      "url": "https://tanduna.com/docs",
+      "retrieved_at": "2026-09-07T23:10:54.144310+00:00",
+      "http_status": "200",
+      "sha256": "2304d2a51af7fe7189a090a18c5b84a113d65b6a85d0653eea41dfabd3955b5d"
+    },
+    {
+      "key": "github-releases",
+      "url": "https://api.github.com/repos/thepianistdirector/vital-rehearsal/releases?per_page=100",
+      "retrieved_at": "2026-09-07T23:10:54.407989+00:00",
+      "http_status": "200",
+      "sha256": "2ba33ca0557f1bb5b7ba88d67f9d0093c7185a36ec51fe2b7bd9372d3e001d6d"
+    },
+    {
+      "key": "guide-mcp",
+      "url": "https://tanduna.com/guide/connect-through-mcp",
+      "retrieved_at": "2026-09-07T23:12:00.509177+00:00",
+      "http_status": "200",
+      "sha256": "e8603ce1bb114bd1cea6832a6559e7fc7ef259f38b2363ee4c8991ca91fa09f2"
+    },
+    {
+      "key": "guide-review",
+      "url": "https://tanduna.com/guide/task-review-checklist",
+      "retrieved_at": "2026-09-07T23:12:00.757099+00:00",
+      "http_status": "200",
+      "sha256": "e4ae8187c585a16170857bd70bc24566039c51c9b141ce07c9bbadfac5ddc0bb"
+    },
+    {
+      "key": "tanduna-releases",
+      "url": "https://tanduna.com/p/vital-rehearsal/releases",
+      "retrieved_at": "2026-09-07T23:12:01.061048+00:00",
+      "http_status": "200",
+      "sha256": "044e332066be1f09d343384dd6b46577c6b458bd8ef5070e151b002fd0ced334"
+    },
+    {
+      "key": "mcp-anonymous-get",
+      "url": "https://tanduna.com/api/mcp",
+      "retrieved_at": "2026-09-07T23:12:01.310702+00:00",
+      "http_status": "405",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "key": "source-frozen-tasks",
+      "url": "https://raw.githubusercontent.com/thepianistdirector/vital-rehearsal/9fa99f392c93f6f1e33a2cd85b9348cb68afe39e/plan/tasks.json",
+      "retrieved_at": "2026-09-07T23:12:01.560190+00:00",
+      "http_status": "200",
+      "sha256": "7814846d68842323eb22efb145f2fd29205b5d31d438a8022f570d9fcf61c3f4"
+    },
+    {
+      "key": "guide-voting",
+      "url": "https://tanduna.com/guide/how-voting-works",
+      "retrieved_at": "2026-09-07T23:12:28.942743+00:00",
+      "http_status": "200",
+      "sha256": "f0fce2ea948ab9fb5571f3f21a72763c208028621f6ff1c65686a3bd6920098f"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "attempt_id": "34aa0084b1da485ea00114a9defc9a7b",
+  "comparison": {
+    "P_A": {
+      "final": 757.5670154671815,
+      "max_absolute_difference": 2.1189880612837442e-05,
+      "maximum": 760.0,
+      "minimum": 757.5431495089921,
+      "rms_difference": 5.380022907922386e-06,
+      "unit": "mmHg"
+    },
+    "V_A": {
+      "final": 2.281199334863128,
+      "max_absolute_difference": 1.0610071705663415e-05,
+      "maximum": 2.720917046856682,
+      "minimum": 0.9999999999999999,
+      "rms_difference": 4.420340465739671e-06,
+      "unit": "litre"
+    },
+    "f_c": {
+      "final": 0.0001322096982013388,
+      "max_absolute_difference": 2.0959239620255143e-07,
+      "maximum": 0.05263,
+      "minimum": 0.0001322096982013388,
+      "rms_difference": 9.659974160330912e-08,
+      "unit": "dimensionless"
+    },
+    "f_o": {
+      "final": 0.2098422268126504,
+      "max_absolute_difference": 2.916311784284531e-07,
+      "maximum": 0.2098422268126504,
+      "minimum": 0.1368,
+      "rms_difference": 1.3451820652841628e-07,
+      "unit": "dimensionless"
+    },
+    "p_c": {
+      "final": 0.8894622251965006,
+      "max_absolute_difference": 0.00023482851857892229,
+      "maximum": 46.0,
+      "minimum": 0.8894622251965006,
+      "rms_difference": 3.669734179439175e-05,
+      "unit": "mmHg"
+    },
+    "p_o": {
+      "final": 149.1054890102536,
+      "max_absolute_difference": 0.0015376902846497842,
+      "maximum": 149.1054890102536,
+      "minimum": 40.0,
+      "rms_difference": 0.0001509275149702109,
+      "unit": "mmHg"
+    },
+    "z": {
+      "final": 0.001204620903876868,
+      "max_absolute_difference": 2.6196519892565662e-08,
+      "maximum": 0.006441238197099398,
+      "minimum": 4.4219e-07,
+      "rms_difference": 1.187030555883741e-08,
+      "unit": "dimensionless (source label; unresolved)"
+    }
+  },
+  "conclusion": "NUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS",
+  "cost": {
+    "nfev": 2998,
+    "rows": 2001,
+    "wall_seconds": 0.21608110499801114
+  },
+  "diagnostics": {
+    "basic_state_bounds": true,
+    "finite": true,
+    "physiological_validity": "NOT_ESTABLISHED",
+    "qualified_review": "PENDING",
+    "source_derivative_max_abs_error_mmHg_per_s": 7.40652646249997
+  },
+  "execution_state": "COMPLETED",
+  "limitation": "Numerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. Source derivative and unit inconsistencies remain unresolved; qualified interpretation review pending.",
+  "reference_cost": {
+    "nfev": null,
+    "rows": 2001,
+    "wall_seconds": 0.09604987199418247
+  },
+  "total_wall_seconds": 0.7687665619887412
+}

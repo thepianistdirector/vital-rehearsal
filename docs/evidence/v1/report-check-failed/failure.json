@@ -1,0 +1,17 @@
+{
+  "width": 390,
+  "documentWidth": 507,
+  "title": "Vital Rehearsal · research report",
+  "text": "Skip to evidence\n\nVITAL REHEARSAL / 1.0.0RC1 / RESEARCH WORKBENCH\n\nInspect the evidence.\n\nbental-2006-combination\n\nNUMERICAL_OUTPUT_WITH_SOURCE_WARNINGS\n\nNumerical reproduction of an unmodified historical CellML combination exposure. Not a reproduction of any single paper model, empirical validation, patient model, or clinical advice. Source derivative and unit inconsistencies remain unresolved; qualified interpretation review pending.\n\nExperiment seal: c1889c5e4edd4d23b83fdf5999516bc87a2054c5fc9325e730b3ff1960c77ec3\n\nExecution: COMPLETED · Qualified interpretation review: pending\n\nSource-default solver comparison\n\nShared equations; this comparator is numerical evidence. Each observable retains its own units.\n\nCandidate versus source VODE\nObservable\tUnit\tMaximum absolute difference\tFinal value\nP_A\tmmHg\t1.65981e-05\t757.297\nV_A\tlitre\t9.92625e-06\t2.28439\nf_c\tdimensionless\t2.54514e-07\t0.000135116\nf_o\tdimensionless\t3.5404e-07\t0.209839\np_c\tmmHg\t0.000207399\t0.90109\np_o\tmmHg\t0.00139165\t149.046\nz\tdimensionless (source label; unresolved)\t4.16221e-08\t0.00121968\nDiagnostics and measurements\n{\n  \"basic_state_bounds\": true,\n  \"finite\": true,\n  \"physiological_validity\": \"NOT_ESTABLISHED\",\n  \"qualified_review\": \"PENDING\",\n  \"source_derivative_max_abs_error_mmHg_per_s\": 7.406520731539602\n}\nReproduce and export\n\nRetain this complete folder. Inspect its manifest using the CLI. Rerun study.json into a new store with the retained source.pyz and the documented dependencies. Use your browser’s Print action for a PDF.\n\nBENTAL_NOTICE.txt algebraic.csv model-card.json reference.csv result.json source.pyz study.json trajectory.csv\nFull result and measured costs\nImmutable experiment settings\n\nHashes detect changes relative to the manifest; they do not establish authorship. No patient records or clinical recommendations.",
+  "links": [
+    "#evidence",
+    "BENTAL_NOTICE.txt",
+    "algebraic.csv",
+    "model-card.json",
+    "reference.csv",
+    "result.json",
+    "source.pyz",
+    "study.json",
+    "trajectory.csv"
+  ]
+}

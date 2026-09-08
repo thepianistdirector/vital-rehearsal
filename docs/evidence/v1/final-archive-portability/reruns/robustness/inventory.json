@@ -1,0 +1,344 @@
+[
+  {
+    "index": 0,
+    "name": "control-0.9-Radau",
+    "bundle": "package-rerun/00-control-0.9-Radau-attempts/97f90c437d6046abaa1f5963affeea1a",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.6497301709605381,
+    "total_wall_s": 1.369470194040332,
+    "nfev": 12265,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889407.3323212,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 1,
+    "name": "control-0.9-BDF",
+    "bundle": "package-rerun/01-control-0.9-BDF-attempts/34aa0084b1da485ea00114a9defc9a7b",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.21608110499801114,
+    "total_wall_s": 0.7687665619887412,
+    "nfev": 2998,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889409.1795053,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 2,
+    "name": "control-0.9-DOP853",
+    "bundle": "package-rerun/02-control-0.9-DOP853-attempts/6dc04d1d1b3f46238756fbc57e6c1dd6",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.660314884968102,
+    "total_wall_s": 1.0658139750012197,
+    "nfev": 15017,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889410.3190675,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 3,
+    "name": "control-1.0-Radau",
+    "bundle": "package-rerun/03-control-1.0-Radau-attempts/3a52bc3666a14cb7ae742d36a62d528c",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 1.0251583500066772,
+    "total_wall_s": 1.416024043050129,
+    "nfev": 12104,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889411.56385,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 4,
+    "name": "control-1.0-BDF",
+    "bundle": "package-rerun/04-control-1.0-BDF-attempts/ee3f6f28ef194175b66dccd2d6b26c5c",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.21614262997172773,
+    "total_wall_s": 0.6150137369986624,
+    "nfev": 2985,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889413.1276412,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 5,
+    "name": "control-1.0-DOP853",
+    "bundle": "package-rerun/05-control-1.0-DOP853-attempts/af48ffa4c0c84326a2ef8f1375e0086f",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.6548136100172997,
+    "total_wall_s": 1.0152934349607676,
+    "nfev": 15017,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889413.893965,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 6,
+    "name": "control-1.1-Radau",
+    "bundle": "package-rerun/06-control-1.1-Radau-attempts/9e8cbc208e5b41fa9ee90f4c56be8d39",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.6378981759771705,
+    "total_wall_s": 0.9653570730006322,
+    "nfev": 12174,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889415.0495372,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 7,
+    "name": "control-1.1-BDF",
+    "bundle": "package-rerun/07-control-1.1-BDF-attempts/e71d6bac64b14c6e883b85e10923b61b",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.3163984580314718,
+    "total_wall_s": 0.7652285700314678,
+    "nfev": 2973,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889416.159307,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 8,
+    "name": "control-1.1-DOP853",
+    "bundle": "package-rerun/08-control-1.1-DOP853-attempts/19078cedeb924b5ebd8e1a2663e4b232",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.6657222359790467,
+    "total_wall_s": 1.1155864230240695,
+    "nfev": 15017,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889417.0796695,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 9,
+    "name": "baseline",
+    "bundle": "package-rerun/09-baseline-attempts/244cc55ffe374e338cf7aadf68b8feb2",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.1703417209791951,
+    "total_wall_s": 0.5653343419544399,
+    "nfev": 2382,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889418.3632267,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 10,
+    "name": "atol-0.001",
+    "bundle": "package-rerun/10-atol-0.001-attempts/8a1ad77a1bc34cfb8f8eea4dbeb12ab3",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.06289638602174819,
+    "total_wall_s": 0.5200878470204771,
+    "nfev": 390,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889419.121325,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 11,
+    "name": "atol-1e-06",
+    "bundle": "package-rerun/11-atol-1e-06-attempts/cc5f77b3c34f4fdfbd46309500006ae4",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.11250663199461997,
+    "total_wall_s": 0.46485653199488297,
+    "nfev": 1396,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889419.7944655,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 12,
+    "name": "atol-1e-10",
+    "bundle": "package-rerun/12-atol-1e-10-attempts/009a280f0c034feab213ac7c3d9c2e2a",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.12942242599092424,
+    "total_wall_s": 0.4648038530140184,
+    "nfev": 2237,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889420.4050314,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 13,
+    "name": "atol-1e-13",
+    "bundle": "package-rerun/13-atol-1e-13-attempts/7937d402a9364cffbcda23117a24f47d",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.158501050027553,
+    "total_wall_s": 0.5150741179822944,
+    "nfev": 2551,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889421.0139656,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 14,
+    "name": "source-default",
+    "bundle": "package-rerun/14-source-default-attempts/7b1334068c8b4d1780cf97d84cd2f8a0",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.10098574601579458,
+    "total_wall_s": 0.4648073409916833,
+    "nfev": null,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889421.665597,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 15,
+    "name": "source-tight",
+    "bundle": "package-rerun/15-source-tight-attempts/9f911c309b2d402280e5495bca4cc3bb",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.11766940797679126,
+    "total_wall_s": 0.464730927022174,
+    "nfev": null,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889422.276103,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 16,
+    "name": "RK45",
+    "bundle": "package-rerun/16-RK45-attempts/78585076ebb042f8b9917cc056e3d2c0",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.08921630802797154,
+    "total_wall_s": 0.4647857900126837,
+    "nfev": 1640,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889422.885749,
+      "version": "1.0.0rc1"
+    }
+  },
+  {
+    "index": 17,
+    "name": "refinement",
+    "bundle": "package-rerun/17-refinement-attempts/33bcdb2bf11e4902add4be187070b304",
+    "execution_state": "COMPLETED",
+    "candidate_wall_s": 0.9408401370164938,
+    "total_wall_s": 1.2661530100158416,
+    "nfev": 18178,
+    "runtime": {
+      "isolation": "second process, same host; artifact access is a workflow convention",
+      "numpy": "2.2.6",
+      "platform": "Linux-4.18.0-553.159.1.el8_10.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "scipy": "1.15.3",
+      "source_archive_sha256": "bc4043aa8c99b16354dd08aaf595c09a65a7b070be981ba435ba4c41210b2db2",
+      "started_unix": 1788889423.4929247,
+      "version": "1.0.0rc1"
+    }
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "label": "create-venv",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.venv/bin/python",
+      "-m",
+      "venv",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/.venv"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.3604103570105508
+  },
+  {
+    "label": "offline-research-install",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/.venv/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--no-index",
+      "--find-links",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/wheels",
+      "--require-hashes",
+      "-r",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/research-requirements-lock.txt"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 7.878078743000515
+  },
+  {
+    "label": "source-tests",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/.venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 10.37694529502187
+  },
+  {
+    "label": "source-study",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/.venv/bin/python",
+      "research/reproduction/study.py",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/research/reproduction/package-rerun"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 4.169445295003243
+  },
+  {
+    "label": "robustness-study",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/.venv/bin/python",
+      "research/robustness/study.py",
+      "--campaign",
+      "package-rerun"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 17.639090941054747
+  },
+  {
+    "label": "robustness-analysis",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/.venv/bin/python",
+      "research/robustness/analyze.py",
+      "package-rerun"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.1833203990245238
+  },
+  {
+    "label": "scheduling-study",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/.venv/bin/python",
+      "research/scheduling/study.py",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/research/scheduling/package-rerun"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 13.105136773025151
+  },
+  {
+    "label": "review-reproduction",
+    "command": [
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/.venv/bin/python",
+      "research/review/reproduce.py",
+      "--output",
+      "/home/codex/projects/tanduna-open-source/vital-rehearsal/.cache/final-archive-check/vital-rehearsal-1.0.0rc4/research/review/package-rerun"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 5.949514017032925
+  }
+]

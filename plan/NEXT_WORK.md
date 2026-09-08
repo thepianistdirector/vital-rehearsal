@@ -1,3 +1,15 @@
+# Approved next work
+
+Publish the approved v1.0.0rc4 prerelease and drafts to GitHub, verify anonymous downloads and execution, then publish the prepared Tanduna plan/findings through the supported authenticated workflow. Preserve original proposal and platform approval/review distinctions. Qualified and external human review remain pending. See ../docs/publication/v1/authorization.json.
+
+---
+
+# Current next work — September 8 v1.0 mandate
+
+The finite v1.0 product and three local research drafts are implemented and reviewed; see ../docs/v1/CONTRACT.md, ../docs/v1/FINDINGS.md and ../docs/v1/REVIEW_AND_PUBLICATION.md. Complete local release inventory, then await concrete qualified/external review and exact public-release authorization. Do not treat the historical intake holds below as a stop on authorized local work. Original acceptance remains preserved.
+
+---
+
 # Next original milestone: VR-001 benchmark and clinical-scope decision
 
 Status: **PLANNED**. Eligible only after VR-F03 is accepted as **DONE** by the assigned root reviewer under the maintainer's current instruction. This packet specifies research and documentation; it does not authorize dependency installation, model/data download, scientific execution, external contact, paid compute, publication or clinical interpretation.

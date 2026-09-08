@@ -1,0 +1,6 @@
+{
+  "coupling": "NONE",
+  "license": "AGPL-3.0-or-later",
+  "model": "synthetic-fcfs",
+  "order": "arrival then ASCII id; lowest server id wins ties"
+}

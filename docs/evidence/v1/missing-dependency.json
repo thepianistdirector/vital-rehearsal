@@ -1,0 +1,8 @@
+{
+  "bundle": "docs/evidence/v1/missing-dependency-attempt/9cba7d1fed124f46b2ecb078995bf868",
+  "execution_state": "FAILED",
+  "conclusion": "NO_SCIENTIFIC_RESULT",
+  "worker_exit_code": 1,
+  "attempt_id": "9cba7d1fed124f46b2ecb078995bf868",
+  "total_wall_seconds": 0.06377356802113354
+}

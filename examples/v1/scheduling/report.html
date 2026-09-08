@@ -1,0 +1,93 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vital Rehearsal · research report</title><style>
+    :root{color-scheme:light}body{font:17px/1.6 system-ui,sans-serif;color:#172f36;background:#f3f6f3;margin:0}main{max-width:1040px;margin:auto;padding:32px 24px}header{border-bottom:2px solid #245e62}h1{font-size:clamp(2rem,6vw,3.5rem);line-height:1.1}h2{margin-top:2rem}.label{font-size:13px;letter-spacing:.12em;text-transform:uppercase}.notice{overflow-wrap:anywhere;padding:20px;background:#fff1d2;border-left:5px solid #986400;margin:24px 0}section{padding:16px 0}a{color:#125465;margin-right:18px;display:inline-block;padding:5px 0}a:focus-visible,summary:focus-visible,.scroll:focus-visible{outline:3px solid #a34b00;outline-offset:3px}table{border-collapse:collapse;width:100%;background:white}th,td{text-align:left;padding:12px;border-bottom:1px solid #ccd7d4}.scroll{overflow:auto}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#e3ece7;padding:18px;font-size:13px}.id{overflow-wrap:anywhere}.skip{position:absolute;left:24px;top:-80px;background:white;padding:8px}.skip:focus{top:0}@media print{body{background:white}main{max-width:none}details{display:block}}</style>
+    <a class="skip" href="#evidence">Skip to evidence</a><main><header><p class="label">Vital Rehearsal / 1.0.0rc4 / research workbench</p><h1>Inspect the evidence.</h1><p>synthetic-fcfs</p></header><div class="notice"><strong>Synthetic schedule · no physiology coupling</strong><p>Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.</p></div>
+    <p class="id">Experiment seal: c7e739d18ecb95c142b403f5fe74e1193c8a5353a9a451ae951b392dd705ccfa</p><p>Execution: <strong>COMPLETED</strong> · Qualified interpretation review: pending</p><h2 id="evidence" tabindex="-1">Diagnostics and measurements</h2><pre>{
+  &quot;jobs&quot;: 12,
+  &quot;makespan_s&quot;: 18.0,
+  &quot;max_wait_s&quot;: 5.5,
+  &quot;mean_wait_s&quot;: 2.75
+}</pre><h2>Reproduce and export</h2><p>Retain this complete folder. Inspect its manifest using the CLI. Rerun study.json into a new store with the retained source.pyz and the documented dependencies. Use your browser’s Print action for a PDF.</p><nav aria-label="Evidence files"><a href="BENTAL_NOTICE.txt">BENTAL_NOTICE.txt</a> <a href="model-card.json">model-card.json</a> <a href="result.json">result.json</a> <a href="schedule.csv">schedule.csv</a> <a href="source.pyz">source.pyz</a> <a href="study.json">study.json</a></nav><details><summary>Full result and measured costs</summary><pre>{
+  &quot;conclusion&quot;: &quot;SYNTHETIC_SCHEDULE_ONLY&quot;,
+  &quot;coupling&quot;: &quot;NONE&quot;,
+  &quot;event_type&quot;: &quot;synthetic.service_completed.v1&quot;,
+  &quot;execution_state&quot;: &quot;COMPLETED&quot;,
+  &quot;limitation&quot;: &quot;Wholly synthetic jobs and service times; no real care data, patient outcomes or physiology coupling.&quot;,
+  &quot;metrics&quot;: {
+    &quot;jobs&quot;: 12,
+    &quot;makespan_s&quot;: 18.0,
+    &quot;max_wait_s&quot;: 5.5,
+    &quot;mean_wait_s&quot;: 2.75
+  },
+  &quot;attempt_id&quot;: &quot;0904c3a90181498291bad680656d54b3&quot;,
+  &quot;total_wall_seconds&quot;: 0.11443199997302145
+}</pre></details><details><summary>Immutable experiment settings</summary><pre>{
+  &quot;jobs&quot;: [
+    {
+      &quot;arrival_s&quot;: 0.0,
+      &quot;id&quot;: &quot;job-0000&quot;,
+      &quot;service_s&quot;: 1.5
+    },
+    {
+      &quot;arrival_s&quot;: 1.0,
+      &quot;id&quot;: &quot;job-0001&quot;,
+      &quot;service_s&quot;: 1.5
+    },
+    {
+      &quot;arrival_s&quot;: 2.0,
+      &quot;id&quot;: &quot;job-0002&quot;,
+      &quot;service_s&quot;: 1.5
+    },
+    {
+      &quot;arrival_s&quot;: 3.0,
+      &quot;id&quot;: &quot;job-0003&quot;,
+      &quot;service_s&quot;: 1.5
+    },
+    {
+      &quot;arrival_s&quot;: 4.0,
+      &quot;id&quot;: &quot;job-0004&quot;,
+      &quot;service_s&quot;: 1.5
+    },
+    {
+      &quot;arrival_s&quot;: 5.0,
+      &quot;id&quot;: &quot;job-0005&quot;,
+      &quot;service_s&quot;: 1.5
+    },
+    {
+      &quot;arrival_s&quot;: 6.0,
+      &quot;id&quot;: &quot;job-0006&quot;,
+      &quot;service_s&quot;: 1.5
+    },
+    {
+      &quot;arrival_s&quot;: 7.0,
+      &quot;id&quot;: &quot;job-0007&quot;,
+      &quot;service_s&quot;: 1.5
+    },
+    {
+      &quot;arrival_s&quot;: 8.0,
+      &quot;id&quot;: &quot;job-0008&quot;,
+      &quot;service_s&quot;: 1.5
+    },
+    {
+      &quot;arrival_s&quot;: 9.0,
+      &quot;id&quot;: &quot;job-0009&quot;,
+      &quot;service_s&quot;: 1.5
+    },
+    {
+      &quot;arrival_s&quot;: 10.0,
+      &quot;id&quot;: &quot;job-0010&quot;,
+      &quot;service_s&quot;: 1.5
+    },
+    {
+      &quot;arrival_s&quot;: 11.0,
+      &quot;id&quot;: &quot;job-0011&quot;,
+      &quot;service_s&quot;: 1.5
+    }
+  ],
+  &quot;model&quot;: &quot;synthetic-fcfs&quot;,
+  &quot;schema&quot;: &quot;vital-research/1&quot;,
+  &quot;seal&quot;: &quot;c7e739d18ecb95c142b403f5fe74e1193c8a5353a9a451ae951b392dd705ccfa&quot;,
+  &quot;servers&quot;: 1,
+  &quot;service_delay_s&quot;: 0.0,
+  &quot;time_unit&quot;: &quot;second&quot;,
+  &quot;timeout_s&quot;: 60
+}</pre></details><p>Hashes detect changes relative to the manifest; they do not establish authorship. No patient records or clinical recommendations.</p></main></html>

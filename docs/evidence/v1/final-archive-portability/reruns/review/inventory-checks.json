@@ -1,0 +1,12 @@
+[
+  {
+    "manifest": "reproduction/artifact-manifest.json",
+    "entries": 97,
+    "mismatches": []
+  },
+  {
+    "manifest": "robustness/confirmation-20260908/sha256.json",
+    "entries": 388,
+    "mismatches": []
+  }
+]

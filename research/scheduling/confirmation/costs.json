@@ -1,0 +1,9 @@
+{
+  "artifact_bytes": 14060885,
+  "command_calls": 88,
+  "expected_rejections": 3,
+  "run_calls": 28,
+  "sum_cli_run_wall_s": 10.921267063065898,
+  "sum_worker_wall_s": 3.545570115034934,
+  "total_driver_wall_s": 21.460535374993924
+}
