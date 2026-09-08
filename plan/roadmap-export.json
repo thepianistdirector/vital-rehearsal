@@ -55,7 +55,7 @@
     "publicRelease": "APPROVED AND PUBLISHED: 1.0.0rc4 prerelease",
     "qualifiedReview": "pending; owner previously reported no reviewer available",
     "externalHumanReproduction": "pending",
-    "nativeGoalStatus": "active",
+    "nativeGoalStatus": "blocked",
     "blockedOn": [
       "Authenticated Tanduna maintainer connection",
       "Qualified interpretation review",

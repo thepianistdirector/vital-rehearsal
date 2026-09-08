@@ -4,7 +4,7 @@
 
 The three research drafts and canonical roadmap are public in GitHub. The 220-task/28-wave Tanduna packet and story update are prepared but **NOT SENT**: no authenticated Tanduna maintainer connection is available in this task. The supported sign-in has been requested. The old proposal and any unobserved private drafts will be reconciled before native writes. Native submission, textual review, recorded decision and published readback remain distinct gates.
 
-Qualified interpretation review and external human reproduction remain pending. The native Goal is active and incomplete. Publication approval has already been supplied and must not be requested again for this approved scope. Earlier state sections below are historical snapshots.
+Qualified interpretation review and external human reproduction remain pending. The native Goal is blocked on authenticated Tanduna access and the remaining human-review gates; it is not complete. Publication approval has already been supplied and must not be requested again for this approved scope. Earlier state sections below are historical snapshots.
 
 ---
 
